@@ -1,0 +1,1970 @@
+﻿#include "pch-c.h"
+#ifndef _MSC_VER
+# include <alloca.h>
+#else
+# include <malloc.h>
+#endif
+
+
+#include "codegen/il2cpp-codegen-metadata.h"
+
+
+extern const RuntimeMethod* AppOpenAdClient_AdDidDismissFullScreenContentCallback_m2D6AD5153EA3DF298571BC371027F4FB98FA0F03_RuntimeMethod_var;
+extern const RuntimeMethod* AppOpenAdClient_AdDidRecordImpressionCallback_m89B4FA206E14A19C98C033FEB2829D3E641368B4_RuntimeMethod_var;
+extern const RuntimeMethod* AppOpenAdClient_AdFailedToPresentFullScreenContentCallback_m203EAABD07153231B220D44A73FD4B0802AE679D_RuntimeMethod_var;
+extern const RuntimeMethod* AppOpenAdClient_AdWillPresentFullScreenContentCallback_m22B6A8F83734DEE33C24C8C5CC38AA53D688D259_RuntimeMethod_var;
+extern const RuntimeMethod* AppOpenAdClient_AppOpenAdFailedToLoadCallback_mC16DC470E32257D43392DABCA54BA59C91F64C1D_RuntimeMethod_var;
+extern const RuntimeMethod* AppOpenAdClient_AppOpenAdLoadedCallback_mB38142C3AB6AE0E7F5360343B938FE933CE2AAE6_RuntimeMethod_var;
+extern const RuntimeMethod* AppOpenAdClient_AppOpenAdPaidEventCallback_m517798F765BAB7105A83E3EB4BBE34E433A8A5DD_RuntimeMethod_var;
+extern const RuntimeMethod* BannerClient_AdViewDidDismissScreenCallback_mCCB7D61A9E02D5C1A9A29FB616F97666CD2C8B2B_RuntimeMethod_var;
+extern const RuntimeMethod* BannerClient_AdViewDidFailToReceiveAdWithErrorCallback_mDA713926142E84827E8B08E66334DDD7234A22E8_RuntimeMethod_var;
+extern const RuntimeMethod* BannerClient_AdViewDidReceiveAdCallback_m083343A1DDD2A57BBEC74A4A9B327CAA9BB961A4_RuntimeMethod_var;
+extern const RuntimeMethod* BannerClient_AdViewPaidEventCallback_m4BEF4BA9013C9ABF4438071DAA0C6171564CD8D3_RuntimeMethod_var;
+extern const RuntimeMethod* BannerClient_AdViewWillPresentScreenCallback_m3F78B1F9B02D9BF9753DE7B83554E197C08BC5A7_RuntimeMethod_var;
+extern const RuntimeMethod* InterstitialClient_AdDidDismissFullScreenContentCallback_mAFA10C82DBA584626AC626C8CC1ABD27BEFD5142_RuntimeMethod_var;
+extern const RuntimeMethod* InterstitialClient_AdDidRecordImpressionCallback_m87BA8289CF579705CDCB7919AFE63C39074920EF_RuntimeMethod_var;
+extern const RuntimeMethod* InterstitialClient_AdFailedToPresentFullScreenContentCallback_m9547576B41A6E0478069F9207F6BD54128D1E9F5_RuntimeMethod_var;
+extern const RuntimeMethod* InterstitialClient_AdWillPresentFullScreenContentCallback_m678899D537A912C01AF3968833FA613AB1C46036_RuntimeMethod_var;
+extern const RuntimeMethod* InterstitialClient_InterstitialFailedToLoadCallback_m3B29A67527159C1A42D22A66EDF21BD7CCB194CE_RuntimeMethod_var;
+extern const RuntimeMethod* InterstitialClient_InterstitialLoadedCallback_m368B82C4CA6BA47076BD02E69EC76530E946FE1A_RuntimeMethod_var;
+extern const RuntimeMethod* InterstitialClient_InterstitialPaidEventCallback_mBD55D1940819BBD364B840D4F596F5DB7B6005C7_RuntimeMethod_var;
+extern const RuntimeMethod* MobileAdsClient_AdInspectorClosedCallback_m71CCB88F3BF826E7320F016145A00A6DD70196F9_RuntimeMethod_var;
+extern const RuntimeMethod* MobileAdsClient_InitializationCompleteCallback_mE013122BE35ABC3BECCB456AF4565FA4BB7D64B9_RuntimeMethod_var;
+extern const RuntimeMethod* RewardedAdClient_AdDidDismissFullScreenContentCallback_mB64A3FE4B78BDA3362FF15DB0BD19B8674D522AD_RuntimeMethod_var;
+extern const RuntimeMethod* RewardedAdClient_AdDidRecordImpressionCallback_m37FA90962C2CF8C91421C2850DFA52144D45E447_RuntimeMethod_var;
+extern const RuntimeMethod* RewardedAdClient_AdFailedToPresentFullScreenContentCallback_mAD6B76E000E53090E0F000BC01FC58F54A60DFA3_RuntimeMethod_var;
+extern const RuntimeMethod* RewardedAdClient_AdWillPresentFullScreenContentCallback_m8B97AE1D2BAF75538F588A76400187764F8BE362_RuntimeMethod_var;
+extern const RuntimeMethod* RewardedAdClient_RewardedAdFailedToLoadCallback_m064E25C933FD7924D1941BD78B3655524F171039_RuntimeMethod_var;
+extern const RuntimeMethod* RewardedAdClient_RewardedAdLoadedCallback_mE0E4A96B961FF0D3C90570C56F29F2AFFF0E8221_RuntimeMethod_var;
+extern const RuntimeMethod* RewardedAdClient_RewardedAdPaidEventCallback_m7710A1F9A90BD5081057D14B6A215EE3ECA5AE0B_RuntimeMethod_var;
+extern const RuntimeMethod* RewardedAdClient_RewardedAdUserDidEarnRewardCallback_mC1985A1F18C6E9A8D71F8FF30744D679A037EAA2_RuntimeMethod_var;
+extern const RuntimeMethod* RewardedInterstitialAdClient_AdDidDismissFullScreenContentCallback_mB0351BC7A58A280BB59C01F4C0C8F9E262C93E70_RuntimeMethod_var;
+extern const RuntimeMethod* RewardedInterstitialAdClient_AdDidRecordImpressionCallback_m30A02604920E78D2255513508F90E1255DF92182_RuntimeMethod_var;
+extern const RuntimeMethod* RewardedInterstitialAdClient_AdFailedToPresentFullScreenContentCallback_m9CDEAA3B429ACA4252C4179CD3EFE80AA833B766_RuntimeMethod_var;
+extern const RuntimeMethod* RewardedInterstitialAdClient_AdWillPresentFullScreenContentCallback_mCAD4621C45FDA4DEBF4A99DBF91BF0AE52BA9E6D_RuntimeMethod_var;
+extern const RuntimeMethod* RewardedInterstitialAdClient_RewardedInterstitialAdFailedToLoadCallback_m8D6235A7FA6B064C35D489AE061069377ECA6016_RuntimeMethod_var;
+extern const RuntimeMethod* RewardedInterstitialAdClient_RewardedInterstitialAdLoadedCallback_m3C198B805390488E7DFA1A4C32D72BAFB5559C5B_RuntimeMethod_var;
+extern const RuntimeMethod* RewardedInterstitialAdClient_RewardedInterstitialAdPaidEventCallback_m83A9819AC3247112D0ADAF0D6B40F0CC0FE9D86C_RuntimeMethod_var;
+extern const RuntimeMethod* RewardedInterstitialAdClient_RewardedInterstitialAdUserDidEarnRewardCallback_mF56FA1935C15033D0FC5BF50DC3144BDE4FD6B79_RuntimeMethod_var;
+
+
+
+// 0x00000001 System.Void GoogleMobileAds.iOS.AdErrorClient::.ctor(System.IntPtr)
+extern void AdErrorClient__ctor_m564CE5B6B78DDB0D6A54757F411238CD61DCFA79 (void);
+// 0x00000002 System.Int32 GoogleMobileAds.iOS.AdErrorClient::GetCode()
+extern void AdErrorClient_GetCode_m5E29FCAAF9FF06FD102B5E17345618FBC7F74DA3 (void);
+// 0x00000003 System.String GoogleMobileAds.iOS.AdErrorClient::GetDomain()
+extern void AdErrorClient_GetDomain_mF9CEC46064342C7884BA8706B9C97499F5A662C6 (void);
+// 0x00000004 System.String GoogleMobileAds.iOS.AdErrorClient::GetMessage()
+extern void AdErrorClient_GetMessage_mBCAF2699B5771D9C3B8C7F7F1DD2E567B4347A51 (void);
+// 0x00000005 GoogleMobileAds.Common.IAdErrorClient GoogleMobileAds.iOS.AdErrorClient::GetCause()
+extern void AdErrorClient_GetCause_mCE8A22EAD94BC065AAC92B0FF180DB6BFED9C3C8 (void);
+// 0x00000006 System.String GoogleMobileAds.iOS.AdErrorClient::ToString()
+extern void AdErrorClient_ToString_m523BBD77950FDF18E841A000684A048603774540 (void);
+// 0x00000007 System.Void GoogleMobileAds.iOS.AdInspectorErrorClient::.ctor(System.IntPtr)
+extern void AdInspectorErrorClient__ctor_m86C78BEE2C53A1AB756ABFA912E212B5E7C841F6 (void);
+// 0x00000008 System.Void GoogleMobileAds.iOS.AppOpenAdClient::.ctor()
+extern void AppOpenAdClient__ctor_m7F1A454A5CF450F44BACFE1F08FD36670EF6A91B (void);
+// 0x00000009 System.Void GoogleMobileAds.iOS.AppOpenAdClient::add_OnAdLoaded(System.EventHandler`1<System.EventArgs>)
+extern void AppOpenAdClient_add_OnAdLoaded_m5D78645A131C5A1D28730290A3425B56F9E85A1F (void);
+// 0x0000000A System.Void GoogleMobileAds.iOS.AppOpenAdClient::remove_OnAdLoaded(System.EventHandler`1<System.EventArgs>)
+extern void AppOpenAdClient_remove_OnAdLoaded_m2B570A39AFDB05419A7C6056B9E001838C01FA0D (void);
+// 0x0000000B System.Void GoogleMobileAds.iOS.AppOpenAdClient::add_OnAdFailedToLoad(System.EventHandler`1<GoogleMobileAds.Common.LoadAdErrorClientEventArgs>)
+extern void AppOpenAdClient_add_OnAdFailedToLoad_mFD77DBDE7AD05F03A711C0BF3742C6B6512F70C6 (void);
+// 0x0000000C System.Void GoogleMobileAds.iOS.AppOpenAdClient::remove_OnAdFailedToLoad(System.EventHandler`1<GoogleMobileAds.Common.LoadAdErrorClientEventArgs>)
+extern void AppOpenAdClient_remove_OnAdFailedToLoad_m5A2D205291C076545D1BB4605A91CECE84199610 (void);
+// 0x0000000D System.Void GoogleMobileAds.iOS.AppOpenAdClient::add_OnPaidEvent(System.EventHandler`1<GoogleMobileAds.Api.AdValueEventArgs>)
+extern void AppOpenAdClient_add_OnPaidEvent_mB948665F93919954235D5248A460346FE32590DA (void);
+// 0x0000000E System.Void GoogleMobileAds.iOS.AppOpenAdClient::remove_OnPaidEvent(System.EventHandler`1<GoogleMobileAds.Api.AdValueEventArgs>)
+extern void AppOpenAdClient_remove_OnPaidEvent_mFCD85A8B23B67DFC78A7DAFABF093AAE98054168 (void);
+// 0x0000000F System.Void GoogleMobileAds.iOS.AppOpenAdClient::add_OnAdFailedToPresentFullScreenContent(System.EventHandler`1<GoogleMobileAds.Common.AdErrorClientEventArgs>)
+extern void AppOpenAdClient_add_OnAdFailedToPresentFullScreenContent_m2F538D3B3979E322313723D9DE7ADEBFB08D8A02 (void);
+// 0x00000010 System.Void GoogleMobileAds.iOS.AppOpenAdClient::remove_OnAdFailedToPresentFullScreenContent(System.EventHandler`1<GoogleMobileAds.Common.AdErrorClientEventArgs>)
+extern void AppOpenAdClient_remove_OnAdFailedToPresentFullScreenContent_m8D2C4CE7B831EC628A1E990CC3959208C4AFDB68 (void);
+// 0x00000011 System.Void GoogleMobileAds.iOS.AppOpenAdClient::add_OnAdDidPresentFullScreenContent(System.EventHandler`1<System.EventArgs>)
+extern void AppOpenAdClient_add_OnAdDidPresentFullScreenContent_m43FF757C17D87D4C7C9A21FB59F1FC9BBFD85F9F (void);
+// 0x00000012 System.Void GoogleMobileAds.iOS.AppOpenAdClient::remove_OnAdDidPresentFullScreenContent(System.EventHandler`1<System.EventArgs>)
+extern void AppOpenAdClient_remove_OnAdDidPresentFullScreenContent_mA63ABDCD022BD4B635F49493A2D70246D6D34AA3 (void);
+// 0x00000013 System.Void GoogleMobileAds.iOS.AppOpenAdClient::add_OnAdDidRecordImpression(System.EventHandler`1<System.EventArgs>)
+extern void AppOpenAdClient_add_OnAdDidRecordImpression_m6F5FE9A8B036807834C9D3478FE990906B2B49C9 (void);
+// 0x00000014 System.Void GoogleMobileAds.iOS.AppOpenAdClient::remove_OnAdDidRecordImpression(System.EventHandler`1<System.EventArgs>)
+extern void AppOpenAdClient_remove_OnAdDidRecordImpression_mAD89B1429E4E7C6A794109023655966213CFFC2F (void);
+// 0x00000015 System.Void GoogleMobileAds.iOS.AppOpenAdClient::add_OnAdDidDismissFullScreenContent(System.EventHandler`1<System.EventArgs>)
+extern void AppOpenAdClient_add_OnAdDidDismissFullScreenContent_m2B884DB6E31261E906F04C0A95F2E4546C5B0912 (void);
+// 0x00000016 System.Void GoogleMobileAds.iOS.AppOpenAdClient::remove_OnAdDidDismissFullScreenContent(System.EventHandler`1<System.EventArgs>)
+extern void AppOpenAdClient_remove_OnAdDidDismissFullScreenContent_mB2DC01A24A768E367EC4E19FD3E60FCC2194ACED (void);
+// 0x00000017 System.IntPtr GoogleMobileAds.iOS.AppOpenAdClient::get_AppOpenAdPtr()
+extern void AppOpenAdClient_get_AppOpenAdPtr_mCAD86194396ADED47D56099FCB621F0286059BFE (void);
+// 0x00000018 System.Void GoogleMobileAds.iOS.AppOpenAdClient::set_AppOpenAdPtr(System.IntPtr)
+extern void AppOpenAdClient_set_AppOpenAdPtr_m436B4A49FEF538FC7012290BC291C8BCBD7DFFFC (void);
+// 0x00000019 System.Void GoogleMobileAds.iOS.AppOpenAdClient::CreateAppOpenAd()
+extern void AppOpenAdClient_CreateAppOpenAd_m9ED39C6C7BEE53C330AB50E17B9F625156E84DB6 (void);
+// 0x0000001A System.Void GoogleMobileAds.iOS.AppOpenAdClient::LoadAd(System.String,GoogleMobileAds.Api.AdRequest,UnityEngine.ScreenOrientation)
+extern void AppOpenAdClient_LoadAd_m2E3CD5A3D7752EA6CEA2C501C9B361CD3BFD9203 (void);
+// 0x0000001B System.Void GoogleMobileAds.iOS.AppOpenAdClient::Show()
+extern void AppOpenAdClient_Show_mC85EC8044FF6F8C340A9C8440A5219BBF5A7DD49 (void);
+// 0x0000001C GoogleMobileAds.Common.IResponseInfoClient GoogleMobileAds.iOS.AppOpenAdClient::GetResponseInfoClient()
+extern void AppOpenAdClient_GetResponseInfoClient_m943F838C41BEDA68EA3380C1190F95C2508863E5 (void);
+// 0x0000001D System.Void GoogleMobileAds.iOS.AppOpenAdClient::DestroyAppOpenAd()
+extern void AppOpenAdClient_DestroyAppOpenAd_m6EEF4D95456D8010846B8DF5D379ABA0FADBA5C5 (void);
+// 0x0000001E System.Void GoogleMobileAds.iOS.AppOpenAdClient::Dispose()
+extern void AppOpenAdClient_Dispose_mCD26B173ACB02D057832DA249D19DE232325DAC9 (void);
+// 0x0000001F System.Void GoogleMobileAds.iOS.AppOpenAdClient::Finalize()
+extern void AppOpenAdClient_Finalize_mCD49B76C49B24F62023129CF4823D7C0CA2864AE (void);
+// 0x00000020 System.Void GoogleMobileAds.iOS.AppOpenAdClient::AppOpenAdLoadedCallback(System.IntPtr)
+extern void AppOpenAdClient_AppOpenAdLoadedCallback_mB38142C3AB6AE0E7F5360343B938FE933CE2AAE6 (void);
+// 0x00000021 System.Void GoogleMobileAds.iOS.AppOpenAdClient::AppOpenAdFailedToLoadCallback(System.IntPtr,System.IntPtr)
+extern void AppOpenAdClient_AppOpenAdFailedToLoadCallback_mC16DC470E32257D43392DABCA54BA59C91F64C1D (void);
+// 0x00000022 System.Void GoogleMobileAds.iOS.AppOpenAdClient::AppOpenAdPaidEventCallback(System.IntPtr,System.Int32,System.Int64,System.String)
+extern void AppOpenAdClient_AppOpenAdPaidEventCallback_m517798F765BAB7105A83E3EB4BBE34E433A8A5DD (void);
+// 0x00000023 System.Void GoogleMobileAds.iOS.AppOpenAdClient::AdFailedToPresentFullScreenContentCallback(System.IntPtr,System.IntPtr)
+extern void AppOpenAdClient_AdFailedToPresentFullScreenContentCallback_m203EAABD07153231B220D44A73FD4B0802AE679D (void);
+// 0x00000024 System.Void GoogleMobileAds.iOS.AppOpenAdClient::AdWillPresentFullScreenContentCallback(System.IntPtr)
+extern void AppOpenAdClient_AdWillPresentFullScreenContentCallback_m22B6A8F83734DEE33C24C8C5CC38AA53D688D259 (void);
+// 0x00000025 System.Void GoogleMobileAds.iOS.AppOpenAdClient::AdDidDismissFullScreenContentCallback(System.IntPtr)
+extern void AppOpenAdClient_AdDidDismissFullScreenContentCallback_m2D6AD5153EA3DF298571BC371027F4FB98FA0F03 (void);
+// 0x00000026 System.Void GoogleMobileAds.iOS.AppOpenAdClient::AdDidRecordImpressionCallback(System.IntPtr)
+extern void AppOpenAdClient_AdDidRecordImpressionCallback_m89B4FA206E14A19C98C033FEB2829D3E641368B4 (void);
+// 0x00000027 GoogleMobileAds.iOS.AppOpenAdClient GoogleMobileAds.iOS.AppOpenAdClient::IntPtrToAppOpenAdClient(System.IntPtr)
+extern void AppOpenAdClient_IntPtrToAppOpenAdClient_m7258D5CFC14D611B391F1626382F27A26A776245 (void);
+// 0x00000028 System.Void GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdLoadedCallback::.ctor(System.Object,System.IntPtr)
+extern void GADUAppOpenAdLoadedCallback__ctor_m0B2F031704280680BD8645607C0C392849E7C762 (void);
+// 0x00000029 System.Void GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdLoadedCallback::Invoke(System.IntPtr)
+extern void GADUAppOpenAdLoadedCallback_Invoke_m36F3AB34E91A25B5D028D672BD51A854386603F6 (void);
+// 0x0000002A System.IAsyncResult GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdLoadedCallback::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADUAppOpenAdLoadedCallback_BeginInvoke_mEF51CD83B2E63B483D04AE3C1F89BFEBE0FB71F5 (void);
+// 0x0000002B System.Void GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdLoadedCallback::EndInvoke(System.IAsyncResult)
+extern void GADUAppOpenAdLoadedCallback_EndInvoke_m5819EC92E82A25676218B21123E3FFB05522707A (void);
+// 0x0000002C System.Void GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdFailToLoadCallback::.ctor(System.Object,System.IntPtr)
+extern void GADUAppOpenAdFailToLoadCallback__ctor_m7D5B79C8C2BF6FCCBBAA7EBB885D68BF4B7102AB (void);
+// 0x0000002D System.Void GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdFailToLoadCallback::Invoke(System.IntPtr,System.IntPtr)
+extern void GADUAppOpenAdFailToLoadCallback_Invoke_m1C9B70E8D05E32508E0772403AC956D368585BB0 (void);
+// 0x0000002E System.IAsyncResult GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdFailToLoadCallback::BeginInvoke(System.IntPtr,System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADUAppOpenAdFailToLoadCallback_BeginInvoke_m55613D322581FABCC7E33E4723E9DE99ACCB3030 (void);
+// 0x0000002F System.Void GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdFailToLoadCallback::EndInvoke(System.IAsyncResult)
+extern void GADUAppOpenAdFailToLoadCallback_EndInvoke_mB78F527FC9A6431889248A722DFA69EA487E4BCF (void);
+// 0x00000030 System.Void GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdPaidEventCallback::.ctor(System.Object,System.IntPtr)
+extern void GADUAppOpenAdPaidEventCallback__ctor_m829EA30312063BFB0190D64B1790545C59048FD6 (void);
+// 0x00000031 System.Void GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdPaidEventCallback::Invoke(System.IntPtr,System.Int32,System.Int64,System.String)
+extern void GADUAppOpenAdPaidEventCallback_Invoke_m30B7018A6A8D159199A52AE2185DAE0DB20BBD06 (void);
+// 0x00000032 System.IAsyncResult GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdPaidEventCallback::BeginInvoke(System.IntPtr,System.Int32,System.Int64,System.String,System.AsyncCallback,System.Object)
+extern void GADUAppOpenAdPaidEventCallback_BeginInvoke_m4ADB5AF20B457A62E6DADD082D7E9A276514A6F4 (void);
+// 0x00000033 System.Void GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdPaidEventCallback::EndInvoke(System.IAsyncResult)
+extern void GADUAppOpenAdPaidEventCallback_EndInvoke_mD7C49848D5C4924181F2E1B6DB17B0CFFD3C6B5A (void);
+// 0x00000034 System.Void GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdFailedToPresentFullScreenContentCallback::.ctor(System.Object,System.IntPtr)
+extern void GADUAppOpenAdFailedToPresentFullScreenContentCallback__ctor_mA63D0B158C5713CBBEFF8471ECBD54BDC0D75929 (void);
+// 0x00000035 System.Void GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdFailedToPresentFullScreenContentCallback::Invoke(System.IntPtr,System.IntPtr)
+extern void GADUAppOpenAdFailedToPresentFullScreenContentCallback_Invoke_m56DDA7DFBA02C2BE714993001FEB96118B30A256 (void);
+// 0x00000036 System.IAsyncResult GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdFailedToPresentFullScreenContentCallback::BeginInvoke(System.IntPtr,System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADUAppOpenAdFailedToPresentFullScreenContentCallback_BeginInvoke_mCD7555A24E2836809B6C4C924A7FA237AC56A197 (void);
+// 0x00000037 System.Void GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdFailedToPresentFullScreenContentCallback::EndInvoke(System.IAsyncResult)
+extern void GADUAppOpenAdFailedToPresentFullScreenContentCallback_EndInvoke_m051A85186D8B624EA6920DA79A768E05DD650923 (void);
+// 0x00000038 System.Void GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdWillPresentFullScreenContentCallback::.ctor(System.Object,System.IntPtr)
+extern void GADUAppOpenAdWillPresentFullScreenContentCallback__ctor_m693571A45328A157D96651F851BB428670D9D3AD (void);
+// 0x00000039 System.Void GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdWillPresentFullScreenContentCallback::Invoke(System.IntPtr)
+extern void GADUAppOpenAdWillPresentFullScreenContentCallback_Invoke_mE313BBCA89E8206443E13E0E6025005B02AB62A9 (void);
+// 0x0000003A System.IAsyncResult GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdWillPresentFullScreenContentCallback::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADUAppOpenAdWillPresentFullScreenContentCallback_BeginInvoke_mF500077B65DCCA6728A88421F073DA154EBE9650 (void);
+// 0x0000003B System.Void GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdWillPresentFullScreenContentCallback::EndInvoke(System.IAsyncResult)
+extern void GADUAppOpenAdWillPresentFullScreenContentCallback_EndInvoke_m0C87E0C23D3D3D1F09910F89CB2697B2B2F21CAF (void);
+// 0x0000003C System.Void GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdDidDismissFullScreenContentCallback::.ctor(System.Object,System.IntPtr)
+extern void GADUAppOpenAdDidDismissFullScreenContentCallback__ctor_mB7FCD8BB16F1FC85F8FC3E9102F4BB0D24783E52 (void);
+// 0x0000003D System.Void GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdDidDismissFullScreenContentCallback::Invoke(System.IntPtr)
+extern void GADUAppOpenAdDidDismissFullScreenContentCallback_Invoke_m4519279B4768D057884956BF7F028A724B13863E (void);
+// 0x0000003E System.IAsyncResult GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdDidDismissFullScreenContentCallback::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADUAppOpenAdDidDismissFullScreenContentCallback_BeginInvoke_mA965C86549EEBB37948096F419183A89EEBF3DE8 (void);
+// 0x0000003F System.Void GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdDidDismissFullScreenContentCallback::EndInvoke(System.IAsyncResult)
+extern void GADUAppOpenAdDidDismissFullScreenContentCallback_EndInvoke_mF706174A7381B080742EF1FDEB0E942FCAD6EF0D (void);
+// 0x00000040 System.Void GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdDidRecordImpressionCallback::.ctor(System.Object,System.IntPtr)
+extern void GADUAppOpenAdDidRecordImpressionCallback__ctor_m6FE5429035598E56150AECC0791DEE9B9767A6E3 (void);
+// 0x00000041 System.Void GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdDidRecordImpressionCallback::Invoke(System.IntPtr)
+extern void GADUAppOpenAdDidRecordImpressionCallback_Invoke_m3698003150A94350D1DC8598B26B6AAA49D69581 (void);
+// 0x00000042 System.IAsyncResult GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdDidRecordImpressionCallback::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADUAppOpenAdDidRecordImpressionCallback_BeginInvoke_m4E247B473995775121C8C587438225805110C28E (void);
+// 0x00000043 System.Void GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdDidRecordImpressionCallback::EndInvoke(System.IAsyncResult)
+extern void GADUAppOpenAdDidRecordImpressionCallback_EndInvoke_m51C61B5147E948C212A4D8EB3D4F82124B5BDE70 (void);
+// 0x00000044 System.Void GoogleMobileAds.iOS.BannerClient::.ctor()
+extern void BannerClient__ctor_m2A999CB3CDD4B45A245B1D1A9D3A6974EDB545CB (void);
+// 0x00000045 System.Void GoogleMobileAds.iOS.BannerClient::add_OnAdLoaded(System.EventHandler`1<System.EventArgs>)
+extern void BannerClient_add_OnAdLoaded_m7ADE50A431B636D93371D9B5BCA06DD6BC23A974 (void);
+// 0x00000046 System.Void GoogleMobileAds.iOS.BannerClient::remove_OnAdLoaded(System.EventHandler`1<System.EventArgs>)
+extern void BannerClient_remove_OnAdLoaded_m031F35FE4AA0FD02572E9A4EB4B462540867609E (void);
+// 0x00000047 System.Void GoogleMobileAds.iOS.BannerClient::add_OnAdFailedToLoad(System.EventHandler`1<GoogleMobileAds.Common.LoadAdErrorClientEventArgs>)
+extern void BannerClient_add_OnAdFailedToLoad_m5D7A2A551AF83F93B95A54533C619AC0603C624C (void);
+// 0x00000048 System.Void GoogleMobileAds.iOS.BannerClient::remove_OnAdFailedToLoad(System.EventHandler`1<GoogleMobileAds.Common.LoadAdErrorClientEventArgs>)
+extern void BannerClient_remove_OnAdFailedToLoad_m29D8CCADBD3710BE3FA0CE771E4E82EF646FA3CB (void);
+// 0x00000049 System.Void GoogleMobileAds.iOS.BannerClient::add_OnAdOpening(System.EventHandler`1<System.EventArgs>)
+extern void BannerClient_add_OnAdOpening_mC206FC66F596B88AE5330FDE3F3BB9A24DC5A6CB (void);
+// 0x0000004A System.Void GoogleMobileAds.iOS.BannerClient::remove_OnAdOpening(System.EventHandler`1<System.EventArgs>)
+extern void BannerClient_remove_OnAdOpening_mAC1ECC7EF0B446FB7515F31594A9DC08C7E231CA (void);
+// 0x0000004B System.Void GoogleMobileAds.iOS.BannerClient::add_OnAdClosed(System.EventHandler`1<System.EventArgs>)
+extern void BannerClient_add_OnAdClosed_m9D34A02D10499AE8F576D036EC841D96EFC67930 (void);
+// 0x0000004C System.Void GoogleMobileAds.iOS.BannerClient::remove_OnAdClosed(System.EventHandler`1<System.EventArgs>)
+extern void BannerClient_remove_OnAdClosed_mFB335AF1F007E70FC6DA540B7938F95A3B5AD3A9 (void);
+// 0x0000004D System.Void GoogleMobileAds.iOS.BannerClient::add_OnPaidEvent(System.EventHandler`1<GoogleMobileAds.Api.AdValueEventArgs>)
+extern void BannerClient_add_OnPaidEvent_mCBA7ED4A6C8ED662D15AD4B087D9128E3E5709E6 (void);
+// 0x0000004E System.Void GoogleMobileAds.iOS.BannerClient::remove_OnPaidEvent(System.EventHandler`1<GoogleMobileAds.Api.AdValueEventArgs>)
+extern void BannerClient_remove_OnPaidEvent_mB1B13B2FE1FCF9FC2278097CC56448C13794FC02 (void);
+// 0x0000004F System.IntPtr GoogleMobileAds.iOS.BannerClient::get_BannerViewPtr()
+extern void BannerClient_get_BannerViewPtr_mFE9721BC89B4D39753E3B9173DE42C8C99574A68 (void);
+// 0x00000050 System.Void GoogleMobileAds.iOS.BannerClient::set_BannerViewPtr(System.IntPtr)
+extern void BannerClient_set_BannerViewPtr_m9997AE2A5655AC1AF4F31F4DCC784B617A9FC2EC (void);
+// 0x00000051 System.Void GoogleMobileAds.iOS.BannerClient::CreateBannerView(System.String,GoogleMobileAds.Api.AdSize,GoogleMobileAds.Api.AdPosition)
+extern void BannerClient_CreateBannerView_m89D5C7F7A3D732C6AFE6D42791459F65F469344D (void);
+// 0x00000052 System.Void GoogleMobileAds.iOS.BannerClient::CreateBannerView(System.String,GoogleMobileAds.Api.AdSize,System.Int32,System.Int32)
+extern void BannerClient_CreateBannerView_mB4CA8B64DC38024728917FDBC42D2A65F36A2088 (void);
+// 0x00000053 System.Void GoogleMobileAds.iOS.BannerClient::LoadAd(GoogleMobileAds.Api.AdRequest)
+extern void BannerClient_LoadAd_mB7D111DB2AA5EF38339CB1CC3F7A45AEEA960D65 (void);
+// 0x00000054 System.Void GoogleMobileAds.iOS.BannerClient::ShowBannerView()
+extern void BannerClient_ShowBannerView_mD6B18150A2FBA3C3817EBFA85823E9A946121E11 (void);
+// 0x00000055 System.Void GoogleMobileAds.iOS.BannerClient::HideBannerView()
+extern void BannerClient_HideBannerView_mF9CB8A0959ACB8DEF0A95F36CAAD2541F21AC273 (void);
+// 0x00000056 System.Void GoogleMobileAds.iOS.BannerClient::DestroyBannerView()
+extern void BannerClient_DestroyBannerView_m4B624DC3751AC3832CF03D2171549C9DE15ABEC6 (void);
+// 0x00000057 System.Single GoogleMobileAds.iOS.BannerClient::GetHeightInPixels()
+extern void BannerClient_GetHeightInPixels_mB300A2734D3855CD0E0DB8B7FEAB8D3525C79CD9 (void);
+// 0x00000058 System.Single GoogleMobileAds.iOS.BannerClient::GetWidthInPixels()
+extern void BannerClient_GetWidthInPixels_m2DD0901CA1B9D93875D01C36074157CB7E1BB883 (void);
+// 0x00000059 System.Void GoogleMobileAds.iOS.BannerClient::SetPosition(GoogleMobileAds.Api.AdPosition)
+extern void BannerClient_SetPosition_mB3980827B21024A58308643C8FC835D5FF38CAB6 (void);
+// 0x0000005A System.Void GoogleMobileAds.iOS.BannerClient::SetPosition(System.Int32,System.Int32)
+extern void BannerClient_SetPosition_mB8410A280E26829484F490FA56340D109B207CFF (void);
+// 0x0000005B GoogleMobileAds.Common.IResponseInfoClient GoogleMobileAds.iOS.BannerClient::GetResponseInfoClient()
+extern void BannerClient_GetResponseInfoClient_m6325F81969F640721965A2C840298DDDE3031061 (void);
+// 0x0000005C System.Void GoogleMobileAds.iOS.BannerClient::Dispose()
+extern void BannerClient_Dispose_m8672056AAD8DEB41AE6E4946842C46B827CC54F3 (void);
+// 0x0000005D System.Void GoogleMobileAds.iOS.BannerClient::Finalize()
+extern void BannerClient_Finalize_m60F5C8083BC59F9041FD78A118ED24CDEAA2240F (void);
+// 0x0000005E System.Void GoogleMobileAds.iOS.BannerClient::AdViewDidReceiveAdCallback(System.IntPtr)
+extern void BannerClient_AdViewDidReceiveAdCallback_m083343A1DDD2A57BBEC74A4A9B327CAA9BB961A4 (void);
+// 0x0000005F System.Void GoogleMobileAds.iOS.BannerClient::AdViewDidFailToReceiveAdWithErrorCallback(System.IntPtr,System.IntPtr)
+extern void BannerClient_AdViewDidFailToReceiveAdWithErrorCallback_mDA713926142E84827E8B08E66334DDD7234A22E8 (void);
+// 0x00000060 System.Void GoogleMobileAds.iOS.BannerClient::AdViewWillPresentScreenCallback(System.IntPtr)
+extern void BannerClient_AdViewWillPresentScreenCallback_m3F78B1F9B02D9BF9753DE7B83554E197C08BC5A7 (void);
+// 0x00000061 System.Void GoogleMobileAds.iOS.BannerClient::AdViewDidDismissScreenCallback(System.IntPtr)
+extern void BannerClient_AdViewDidDismissScreenCallback_mCCB7D61A9E02D5C1A9A29FB616F97666CD2C8B2B (void);
+// 0x00000062 System.Void GoogleMobileAds.iOS.BannerClient::AdViewPaidEventCallback(System.IntPtr,System.Int32,System.Int64,System.String)
+extern void BannerClient_AdViewPaidEventCallback_m4BEF4BA9013C9ABF4438071DAA0C6171564CD8D3 (void);
+// 0x00000063 GoogleMobileAds.iOS.BannerClient GoogleMobileAds.iOS.BannerClient::IntPtrToBannerClient(System.IntPtr)
+extern void BannerClient_IntPtrToBannerClient_mC9C6F9C5917330D775319130C0E1529FF5BA3AB8 (void);
+// 0x00000064 System.Void GoogleMobileAds.iOS.BannerClient/GADUAdViewDidReceiveAdCallback::.ctor(System.Object,System.IntPtr)
+extern void GADUAdViewDidReceiveAdCallback__ctor_m9305A7851D314FC063D8C6B44F134F03A28627F2 (void);
+// 0x00000065 System.Void GoogleMobileAds.iOS.BannerClient/GADUAdViewDidReceiveAdCallback::Invoke(System.IntPtr)
+extern void GADUAdViewDidReceiveAdCallback_Invoke_mC31E7D1B884C02488BD66964FF62244CBA8DC47E (void);
+// 0x00000066 System.IAsyncResult GoogleMobileAds.iOS.BannerClient/GADUAdViewDidReceiveAdCallback::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADUAdViewDidReceiveAdCallback_BeginInvoke_m5FFA111B0CBCEC16F5B7C277E07B77297520A703 (void);
+// 0x00000067 System.Void GoogleMobileAds.iOS.BannerClient/GADUAdViewDidReceiveAdCallback::EndInvoke(System.IAsyncResult)
+extern void GADUAdViewDidReceiveAdCallback_EndInvoke_mDC68683DF9944B4EAB4292C7F80CD8CBD148FA5F (void);
+// 0x00000068 System.Void GoogleMobileAds.iOS.BannerClient/GADUAdViewDidFailToReceiveAdWithErrorCallback::.ctor(System.Object,System.IntPtr)
+extern void GADUAdViewDidFailToReceiveAdWithErrorCallback__ctor_m92EFF391CC08FD582D12551C112D5BF648DCB453 (void);
+// 0x00000069 System.Void GoogleMobileAds.iOS.BannerClient/GADUAdViewDidFailToReceiveAdWithErrorCallback::Invoke(System.IntPtr,System.IntPtr)
+extern void GADUAdViewDidFailToReceiveAdWithErrorCallback_Invoke_m48240381CFB10D9FB2E35E08094D74033D8162CF (void);
+// 0x0000006A System.IAsyncResult GoogleMobileAds.iOS.BannerClient/GADUAdViewDidFailToReceiveAdWithErrorCallback::BeginInvoke(System.IntPtr,System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADUAdViewDidFailToReceiveAdWithErrorCallback_BeginInvoke_mE0EF4C932C504D30873A8E0D8395F74AC319524D (void);
+// 0x0000006B System.Void GoogleMobileAds.iOS.BannerClient/GADUAdViewDidFailToReceiveAdWithErrorCallback::EndInvoke(System.IAsyncResult)
+extern void GADUAdViewDidFailToReceiveAdWithErrorCallback_EndInvoke_m70C7E6C5CB35DCE03A0BDA3EFDE9084EB31809DE (void);
+// 0x0000006C System.Void GoogleMobileAds.iOS.BannerClient/GADUAdViewWillPresentScreenCallback::.ctor(System.Object,System.IntPtr)
+extern void GADUAdViewWillPresentScreenCallback__ctor_mBCDB587D928251D03044AE11418AB608D262F6E7 (void);
+// 0x0000006D System.Void GoogleMobileAds.iOS.BannerClient/GADUAdViewWillPresentScreenCallback::Invoke(System.IntPtr)
+extern void GADUAdViewWillPresentScreenCallback_Invoke_m531AC0B9ECBD00652E7618D567922C9E7DDCCD81 (void);
+// 0x0000006E System.IAsyncResult GoogleMobileAds.iOS.BannerClient/GADUAdViewWillPresentScreenCallback::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADUAdViewWillPresentScreenCallback_BeginInvoke_mE87F12BB3D9787E29C11D226DC9DC9832831C110 (void);
+// 0x0000006F System.Void GoogleMobileAds.iOS.BannerClient/GADUAdViewWillPresentScreenCallback::EndInvoke(System.IAsyncResult)
+extern void GADUAdViewWillPresentScreenCallback_EndInvoke_mD213A29C2CA000F0AB169AC3724FA32A8E8F0366 (void);
+// 0x00000070 System.Void GoogleMobileAds.iOS.BannerClient/GADUAdViewDidDismissScreenCallback::.ctor(System.Object,System.IntPtr)
+extern void GADUAdViewDidDismissScreenCallback__ctor_mE016B8C574DD3AEF0214CA9C5B859FD2E25B71C0 (void);
+// 0x00000071 System.Void GoogleMobileAds.iOS.BannerClient/GADUAdViewDidDismissScreenCallback::Invoke(System.IntPtr)
+extern void GADUAdViewDidDismissScreenCallback_Invoke_mCB1DE0CF7AE1FC7D2C35CBB0CE9A84491275B538 (void);
+// 0x00000072 System.IAsyncResult GoogleMobileAds.iOS.BannerClient/GADUAdViewDidDismissScreenCallback::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADUAdViewDidDismissScreenCallback_BeginInvoke_m1813BB8B665739DB83F864AACDF547075EFFFBCA (void);
+// 0x00000073 System.Void GoogleMobileAds.iOS.BannerClient/GADUAdViewDidDismissScreenCallback::EndInvoke(System.IAsyncResult)
+extern void GADUAdViewDidDismissScreenCallback_EndInvoke_m9C386E142A0A42CD2CEEF7475F1B4616B15C85DB (void);
+// 0x00000074 System.Void GoogleMobileAds.iOS.BannerClient/GADUAdViewPaidEventCallback::.ctor(System.Object,System.IntPtr)
+extern void GADUAdViewPaidEventCallback__ctor_m0DB3510690B13B23312F5C8B684089F4526102E7 (void);
+// 0x00000075 System.Void GoogleMobileAds.iOS.BannerClient/GADUAdViewPaidEventCallback::Invoke(System.IntPtr,System.Int32,System.Int64,System.String)
+extern void GADUAdViewPaidEventCallback_Invoke_mF374823ADA502B77221EE2AD6C031326129CCBAA (void);
+// 0x00000076 System.IAsyncResult GoogleMobileAds.iOS.BannerClient/GADUAdViewPaidEventCallback::BeginInvoke(System.IntPtr,System.Int32,System.Int64,System.String,System.AsyncCallback,System.Object)
+extern void GADUAdViewPaidEventCallback_BeginInvoke_m813300B57B9F4982EFD293727A8A0FC8CD49F134 (void);
+// 0x00000077 System.Void GoogleMobileAds.iOS.BannerClient/GADUAdViewPaidEventCallback::EndInvoke(System.IAsyncResult)
+extern void GADUAdViewPaidEventCallback_EndInvoke_mC027A7C82C2659FFEFAB535112BA600230C64CCE (void);
+// 0x00000078 System.Void GoogleMobileAds.iOS.Externs::.ctor()
+extern void Externs__ctor_m93B38CA105EBB22753D02A6D598EB957B76A7E93 (void);
+// 0x00000079 System.Void GoogleMobileAds.iOS.Externs::GADUInitializeWithCallback(System.IntPtr,GoogleMobileAds.iOS.MobileAdsClient/GADUInitializationCompleteCallback)
+extern void Externs_GADUInitializeWithCallback_m68AB66017CAD0A481D8A1256D42844F6F4B751C8 (void);
+// 0x0000007A System.Void GoogleMobileAds.iOS.Externs::GADUDisableMediationInitialization()
+extern void Externs_GADUDisableMediationInitialization_m8EF17965D2F09068CA663B6B5D15452BA3A9B07C (void);
+// 0x0000007B System.IntPtr GoogleMobileAds.iOS.Externs::GADUGetInitDescription(System.IntPtr,System.String)
+extern void Externs_GADUGetInitDescription_mF10B86B2D83BD25E2A975305281203A898934BC4 (void);
+// 0x0000007C System.Int32 GoogleMobileAds.iOS.Externs::GADUGetInitLatency(System.IntPtr,System.String)
+extern void Externs_GADUGetInitLatency_mA7B4D287F673C5542472A2ADC2BC304D890CCE2D (void);
+// 0x0000007D System.Int32 GoogleMobileAds.iOS.Externs::GADUGetInitState(System.IntPtr,System.String)
+extern void Externs_GADUGetInitState_mD3AF7D2AD4E5E03F6D4CE49485EBA16119F26411 (void);
+// 0x0000007E System.IntPtr GoogleMobileAds.iOS.Externs::GADUGetInitAdapterClasses(System.IntPtr)
+extern void Externs_GADUGetInitAdapterClasses_mF7881B0BC3A9DB526CF63B78D661E784271FD4ED (void);
+// 0x0000007F System.Int32 GoogleMobileAds.iOS.Externs::GADUGetInitNumberOfAdapterClasses(System.IntPtr)
+extern void Externs_GADUGetInitNumberOfAdapterClasses_m2A1B5DB47397D3FDD99A74A33BFE243F2134936A (void);
+// 0x00000080 System.Void GoogleMobileAds.iOS.Externs::GADUSetApplicationVolume(System.Single)
+extern void Externs_GADUSetApplicationVolume_mC1233CA9810F25254437A242CEDC0A16948E6DE4 (void);
+// 0x00000081 System.Void GoogleMobileAds.iOS.Externs::GADUSetApplicationMuted(System.Boolean)
+extern void Externs_GADUSetApplicationMuted_mF34A36E7E8637F5CA1A31AA791FF050B05199B3F (void);
+// 0x00000082 System.Void GoogleMobileAds.iOS.Externs::GADUSetiOSAppPauseOnBackground(System.Boolean)
+extern void Externs_GADUSetiOSAppPauseOnBackground_mC2701D64101939987687CF72E9B13679742D5813 (void);
+// 0x00000083 System.Single GoogleMobileAds.iOS.Externs::GADUDeviceScale()
+extern void Externs_GADUDeviceScale_m383A74056422B0C745A79F31BAD2E98F97B828FE (void);
+// 0x00000084 System.Int32 GoogleMobileAds.iOS.Externs::GADUDeviceSafeWidth()
+extern void Externs_GADUDeviceSafeWidth_m00FD5EF4598E1CCBC844BC7589D10C4D177EF33F (void);
+// 0x00000085 System.IntPtr GoogleMobileAds.iOS.Externs::GADUCreateRequest()
+extern void Externs_GADUCreateRequest_mEF5A4D6911DBE85B4F3764DEE1BD1C9B8D153211 (void);
+// 0x00000086 System.IntPtr GoogleMobileAds.iOS.Externs::GADUCreateMutableDictionary()
+extern void Externs_GADUCreateMutableDictionary_m1C6F46B6E845179108F457A1647E3BF714A71F96 (void);
+// 0x00000087 System.Void GoogleMobileAds.iOS.Externs::GADUMutableDictionarySetValue(System.IntPtr,System.String,System.String)
+extern void Externs_GADUMutableDictionarySetValue_m6EF515E855E8D4CB680B7D283159D1017CF8B716 (void);
+// 0x00000088 System.Void GoogleMobileAds.iOS.Externs::GADUSetMediationExtras(System.IntPtr,System.IntPtr,System.String)
+extern void Externs_GADUSetMediationExtras_mC627E6371DAD0A2D3D2E8AB20F6D2A07B57F7DD5 (void);
+// 0x00000089 System.Void GoogleMobileAds.iOS.Externs::GADUAddKeyword(System.IntPtr,System.String)
+extern void Externs_GADUAddKeyword_m3C2B55F3954369783B32160193F25539CAADCA4A (void);
+// 0x0000008A System.Void GoogleMobileAds.iOS.Externs::GADUSetExtra(System.IntPtr,System.String,System.String)
+extern void Externs_GADUSetExtra_m40C8026AC18F79062BEDA55FF71BB318A191C95B (void);
+// 0x0000008B System.Void GoogleMobileAds.iOS.Externs::GADUSetRequestAgent(System.IntPtr,System.String)
+extern void Externs_GADUSetRequestAgent_m858A7BC50E44D4FD831A5D60C08779000171DC3F (void);
+// 0x0000008C System.Void GoogleMobileAds.iOS.Externs::GADURelease(System.IntPtr)
+extern void Externs_GADURelease_m7FED9EC0AEF5CFD67CFF777B488FA2C59DACC038 (void);
+// 0x0000008D System.IntPtr GoogleMobileAds.iOS.Externs::GADUCreateRequestConfiguration()
+extern void Externs_GADUCreateRequestConfiguration_m7B3298D04A8A354A46758080DF758968E8117D49 (void);
+// 0x0000008E System.Void GoogleMobileAds.iOS.Externs::GADUSetRequestConfiguration(System.IntPtr)
+extern void Externs_GADUSetRequestConfiguration_mDB341DECEE4A7902AD6554E3178A7E13A9972FC1 (void);
+// 0x0000008F System.Void GoogleMobileAds.iOS.Externs::GADUSetRequestConfigurationTestDeviceIdentifiers(System.IntPtr,System.String[],System.Int32)
+extern void Externs_GADUSetRequestConfigurationTestDeviceIdentifiers_mECAFB8FC700B00F0B7797BB0D9859AD145BC5566 (void);
+// 0x00000090 System.Void GoogleMobileAds.iOS.Externs::GADUSetRequestConfigurationMaxAdContentRating(System.IntPtr,System.String)
+extern void Externs_GADUSetRequestConfigurationMaxAdContentRating_m195BFD236600D42FD59F4D6478DBFE136D1AD6FC (void);
+// 0x00000091 System.Void GoogleMobileAds.iOS.Externs::GADUSetRequestConfigurationTagForUnderAgeOfConsent(System.IntPtr,System.Int32)
+extern void Externs_GADUSetRequestConfigurationTagForUnderAgeOfConsent_mB9E6ADE56EE89DADE73A424521DF02DBB881C125 (void);
+// 0x00000092 System.Void GoogleMobileAds.iOS.Externs::GADUSetRequestConfigurationTagForChildDirectedTreatment(System.IntPtr,System.Int32)
+extern void Externs_GADUSetRequestConfigurationTagForChildDirectedTreatment_m70F6D07492066D3C962D054248B527279A6CFA10 (void);
+// 0x00000093 System.Void GoogleMobileAds.iOS.Externs::GADUSetRequestConfigurationSameAppKeyEnabled(System.IntPtr,System.Boolean)
+extern void Externs_GADUSetRequestConfigurationSameAppKeyEnabled_m8B809E1AD80F9584C5B9F291BB6F902DADFE48DF (void);
+// 0x00000094 System.IntPtr GoogleMobileAds.iOS.Externs::GADUGetTestDeviceIdentifiers(System.IntPtr)
+extern void Externs_GADUGetTestDeviceIdentifiers_m6DD59812B4EEB12FC64F982B2537316356BA43CB (void);
+// 0x00000095 System.Int32 GoogleMobileAds.iOS.Externs::GADUGetTestDeviceIdentifiersCount(System.IntPtr)
+extern void Externs_GADUGetTestDeviceIdentifiersCount_mC5268CFA85EB436BA8E14A91143651751F9E6947 (void);
+// 0x00000096 System.String GoogleMobileAds.iOS.Externs::GADUGetMaxAdContentRating(System.IntPtr)
+extern void Externs_GADUGetMaxAdContentRating_m6765952A25895A5D90C30BFED0163539A15E6F55 (void);
+// 0x00000097 System.Int32 GoogleMobileAds.iOS.Externs::GADUGetRequestConfigurationTagForUnderAgeOfConsent(System.IntPtr)
+extern void Externs_GADUGetRequestConfigurationTagForUnderAgeOfConsent_m4BC90D02BBA753FCF6E3C93C4D15BB3234860737 (void);
+// 0x00000098 System.Int32 GoogleMobileAds.iOS.Externs::GADUGetRequestConfigurationTagForChildDirectedTreatment(System.IntPtr)
+extern void Externs_GADUGetRequestConfigurationTagForChildDirectedTreatment_m520A7FF0D011DD2A35DB320F4251D010428B0A43 (void);
+// 0x00000099 System.Boolean GoogleMobileAds.iOS.Externs::GADUGetRequestConfigurationSameAppKeyEnabled(System.IntPtr)
+extern void Externs_GADUGetRequestConfigurationSameAppKeyEnabled_m597FA042E72020CD9760C4C6430B97AA07B98F55 (void);
+// 0x0000009A System.IntPtr GoogleMobileAds.iOS.Externs::GADUCreateAppOpenAd(System.IntPtr)
+extern void Externs_GADUCreateAppOpenAd_m6ECBDB8B79FA71729A10D01FDCAB5508A7514C1D (void);
+// 0x0000009B System.Void GoogleMobileAds.iOS.Externs::GADULoadAppOpenAd(System.IntPtr,System.String,System.Int32,System.IntPtr)
+extern void Externs_GADULoadAppOpenAd_m4CB96A56C3675E39881621D9542511FB72488E4D (void);
+// 0x0000009C System.Void GoogleMobileAds.iOS.Externs::GADUShowAppOpenAd(System.IntPtr)
+extern void Externs_GADUShowAppOpenAd_mB0680AAF5BD87FC594022349517856FD9C07729C (void);
+// 0x0000009D System.Void GoogleMobileAds.iOS.Externs::GADUSetAppOpenAdCallbacks(System.IntPtr,GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdLoadedCallback,GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdFailToLoadCallback,GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdPaidEventCallback,GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdFailedToPresentFullScreenContentCallback,GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdWillPresentFullScreenContentCallback,GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdDidDismissFullScreenContentCallback,GoogleMobileAds.iOS.AppOpenAdClient/GADUAppOpenAdDidRecordImpressionCallback)
+extern void Externs_GADUSetAppOpenAdCallbacks_m55ED18F5C5DE84F7385CDF49309317BB6A6B1480 (void);
+// 0x0000009E System.IntPtr GoogleMobileAds.iOS.Externs::GADUCreateBannerView(System.IntPtr,System.String,System.Int32,System.Int32,System.Int32)
+extern void Externs_GADUCreateBannerView_mD9DBB76D2030F4288D950644CCF0A62D18245CDD (void);
+// 0x0000009F System.IntPtr GoogleMobileAds.iOS.Externs::GADUCreateBannerViewWithCustomPosition(System.IntPtr,System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+extern void Externs_GADUCreateBannerViewWithCustomPosition_m8EA77C14B8477A910F66CD31B3356D7C17D1FD03 (void);
+// 0x000000A0 System.IntPtr GoogleMobileAds.iOS.Externs::GADUCreateSmartBannerView(System.IntPtr,System.String,System.Int32)
+extern void Externs_GADUCreateSmartBannerView_m967EC6C9123BA61CD267F33B1B39C3E7E06706E8 (void);
+// 0x000000A1 System.IntPtr GoogleMobileAds.iOS.Externs::GADUCreateSmartBannerViewWithCustomPosition(System.IntPtr,System.String,System.Int32,System.Int32)
+extern void Externs_GADUCreateSmartBannerViewWithCustomPosition_m5B021BD669169C73B06BA5665C49F546C32730AA (void);
+// 0x000000A2 System.IntPtr GoogleMobileAds.iOS.Externs::GADUCreateAnchoredAdaptiveBannerView(System.IntPtr,System.String,System.Int32,System.Int32,System.Int32)
+extern void Externs_GADUCreateAnchoredAdaptiveBannerView_m2BA84FECC7577A83EAB72F97BFD3AB27BDB82989 (void);
+// 0x000000A3 System.IntPtr GoogleMobileAds.iOS.Externs::GADUCreateAnchoredAdaptiveBannerViewWithCustomPosition(System.IntPtr,System.String,System.Int32,System.Int32,System.Int32,System.Int32)
+extern void Externs_GADUCreateAnchoredAdaptiveBannerViewWithCustomPosition_m537319AC1247107F68016D3E4D2034153F8DB9C3 (void);
+// 0x000000A4 System.Void GoogleMobileAds.iOS.Externs::GADUSetBannerCallbacks(System.IntPtr,GoogleMobileAds.iOS.BannerClient/GADUAdViewDidReceiveAdCallback,GoogleMobileAds.iOS.BannerClient/GADUAdViewDidFailToReceiveAdWithErrorCallback,GoogleMobileAds.iOS.BannerClient/GADUAdViewWillPresentScreenCallback,GoogleMobileAds.iOS.BannerClient/GADUAdViewDidDismissScreenCallback,GoogleMobileAds.iOS.BannerClient/GADUAdViewPaidEventCallback)
+extern void Externs_GADUSetBannerCallbacks_m916DD33234142FB01A9A11626EFE6CF31E7EF27D (void);
+// 0x000000A5 System.Void GoogleMobileAds.iOS.Externs::GADUHideBannerView(System.IntPtr)
+extern void Externs_GADUHideBannerView_mFCF0DBC74C9763197D461E73F3DBB2EB3770A19D (void);
+// 0x000000A6 System.Void GoogleMobileAds.iOS.Externs::GADUShowBannerView(System.IntPtr)
+extern void Externs_GADUShowBannerView_mF4F81545FDD779F28442965B395F7D122E2885A3 (void);
+// 0x000000A7 System.Void GoogleMobileAds.iOS.Externs::GADURemoveBannerView(System.IntPtr)
+extern void Externs_GADURemoveBannerView_m6AA298D0E0F3C6C11C849602A0162A0210884B6F (void);
+// 0x000000A8 System.Void GoogleMobileAds.iOS.Externs::GADURequestBannerAd(System.IntPtr,System.IntPtr)
+extern void Externs_GADURequestBannerAd_m5DBA2A686D20EB9DAC4A3156DACBAC9C28AA190F (void);
+// 0x000000A9 System.Single GoogleMobileAds.iOS.Externs::GADUGetBannerViewHeightInPixels(System.IntPtr)
+extern void Externs_GADUGetBannerViewHeightInPixels_m624C93A49BA16046C9ADC489A7738D9A6FFFC6DE (void);
+// 0x000000AA System.Single GoogleMobileAds.iOS.Externs::GADUGetBannerViewWidthInPixels(System.IntPtr)
+extern void Externs_GADUGetBannerViewWidthInPixels_m816B05EF8C8639CBF4FBB42D5E6AF4CFC42C60E4 (void);
+// 0x000000AB System.Void GoogleMobileAds.iOS.Externs::GADUSetBannerViewAdPosition(System.IntPtr,System.Int32)
+extern void Externs_GADUSetBannerViewAdPosition_m3E612364A6F1E4A6BF44713A6C045A1AB25C8E09 (void);
+// 0x000000AC System.Void GoogleMobileAds.iOS.Externs::GADUSetBannerViewCustomPosition(System.IntPtr,System.Int32,System.Int32)
+extern void Externs_GADUSetBannerViewCustomPosition_m93DD54C048BA2A975D70AAF4DCC496A38C3104D5 (void);
+// 0x000000AD System.IntPtr GoogleMobileAds.iOS.Externs::GADUGetResponseInfo(System.IntPtr)
+extern void Externs_GADUGetResponseInfo_m3EDC5AB2F103710DD1BB844D8475B1E5FDE3CF75 (void);
+// 0x000000AE System.String GoogleMobileAds.iOS.Externs::GADUResponseInfoMediationAdapterClassName(System.IntPtr)
+extern void Externs_GADUResponseInfoMediationAdapterClassName_m008A352D7BE280076CAF2A23759ECA2DC2A961DF (void);
+// 0x000000AF System.String GoogleMobileAds.iOS.Externs::GADUResponseInfoResponseId(System.IntPtr)
+extern void Externs_GADUResponseInfoResponseId_m51B73D6CBAEBE33E7177AE536C0DE62183F595B1 (void);
+// 0x000000B0 System.String GoogleMobileAds.iOS.Externs::GADUGetResponseInfoDescription(System.IntPtr)
+extern void Externs_GADUGetResponseInfoDescription_mE01E912C6B105B60D020E2736FFEDE39F6BC41C6 (void);
+// 0x000000B1 System.Int32 GoogleMobileAds.iOS.Externs::GADUGetAdErrorCode(System.IntPtr)
+extern void Externs_GADUGetAdErrorCode_mC4F9BF6CA414271F2278611A98A0DCE337B8FFDE (void);
+// 0x000000B2 System.String GoogleMobileAds.iOS.Externs::GADUGetAdErrorDomain(System.IntPtr)
+extern void Externs_GADUGetAdErrorDomain_m2E19EC934E4A1C858C3043697E8E0326A8B52587 (void);
+// 0x000000B3 System.String GoogleMobileAds.iOS.Externs::GADUGetAdErrorMessage(System.IntPtr)
+extern void Externs_GADUGetAdErrorMessage_m3BAAA68867913DC7EED0CA94ACBDD737FE7D140A (void);
+// 0x000000B4 System.IntPtr GoogleMobileAds.iOS.Externs::GADUGetAdErrorUnderLyingError(System.IntPtr)
+extern void Externs_GADUGetAdErrorUnderLyingError_m84E70B24901C49C93C21653A5476CDA80B0CF745 (void);
+// 0x000000B5 System.IntPtr GoogleMobileAds.iOS.Externs::GADUGetAdErrorResponseInfo(System.IntPtr)
+extern void Externs_GADUGetAdErrorResponseInfo_m0DC8541DD95A862D67E876A7B1A56BE5F38EC261 (void);
+// 0x000000B6 System.String GoogleMobileAds.iOS.Externs::GADUGetAdErrorDescription(System.IntPtr)
+extern void Externs_GADUGetAdErrorDescription_m9F98DEF8F9A91C5C43B296B6A5C315BC4BDFA35F (void);
+// 0x000000B7 System.IntPtr GoogleMobileAds.iOS.Externs::GADUCreateInterstitial(System.IntPtr)
+extern void Externs_GADUCreateInterstitial_mD8EAD878E4489AF1404A465FE78B2435D9063C73 (void);
+// 0x000000B8 System.IntPtr GoogleMobileAds.iOS.Externs::GADULoadInterstitialAd(System.IntPtr,System.String,System.IntPtr)
+extern void Externs_GADULoadInterstitialAd_mF773B37985EA4A8248B0ED2D29798B785D9A1DD0 (void);
+// 0x000000B9 System.Void GoogleMobileAds.iOS.Externs::GADUSetInterstitialCallbacks(System.IntPtr,GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdLoadedCallback,GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdFailedToLoadCallback,GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdWillPresentFullScreenContentCallback,GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdFailedToPresentFullScreenContentCallback,GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdDidDismissFullScreenContentCallback,GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdDidRecordImpressionCallback,GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialPaidEventCallback)
+extern void Externs_GADUSetInterstitialCallbacks_m582B90F73A5A5E49AF0EBCBCDBA1C70A993A0F78 (void);
+// 0x000000BA System.Void GoogleMobileAds.iOS.Externs::GADUShowInterstitial(System.IntPtr)
+extern void Externs_GADUShowInterstitial_mBB1400E5F2DF59D6F2FD8CC415C965436A759FE8 (void);
+// 0x000000BB System.IntPtr GoogleMobileAds.iOS.Externs::GADUCreateRewardedAd(System.IntPtr)
+extern void Externs_GADUCreateRewardedAd_mB95B8667AE510D36BEB87348D4F055A3A26BBB50 (void);
+// 0x000000BC System.IntPtr GoogleMobileAds.iOS.Externs::GADULoadRewardedAd(System.IntPtr,System.String,System.IntPtr)
+extern void Externs_GADULoadRewardedAd_mEE4994EE75ED46944C4A6AA17E3CF2DE6BC1880C (void);
+// 0x000000BD System.Void GoogleMobileAds.iOS.Externs::GADUShowRewardedAd(System.IntPtr)
+extern void Externs_GADUShowRewardedAd_m0123A51F89408FF743E4A62B2623514D647E6E4A (void);
+// 0x000000BE System.Void GoogleMobileAds.iOS.Externs::GADUSetRewardedAdCallbacks(System.IntPtr,GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdLoadedCallback,GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdFailedToLoadCallback,GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdWillPresentFullScreenContentCallback,GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdFailedToPresentFullScreenContentCallback,GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdDidDismissFullScreenContentCallback,GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdDidRecordImpressionCallback,GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdUserEarnedRewardCallback,GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdPaidEventCallback)
+extern void Externs_GADUSetRewardedAdCallbacks_mC2B9A1E4C7B065449D19DCF275C785983787CD80 (void);
+// 0x000000BF System.IntPtr GoogleMobileAds.iOS.Externs::GADUCreateServerSideVerificationOptions()
+extern void Externs_GADUCreateServerSideVerificationOptions_m779DA32A3B06AFA0C86745760D7ABB105A5217D7 (void);
+// 0x000000C0 System.Void GoogleMobileAds.iOS.Externs::GADUServerSideVerificationOptionsSetUserId(System.IntPtr,System.String)
+extern void Externs_GADUServerSideVerificationOptionsSetUserId_m2FF8A898DC4779231BCDFD1B6A4D2E639012996D (void);
+// 0x000000C1 System.Void GoogleMobileAds.iOS.Externs::GADUServerSideVerificationOptionsSetCustomRewardString(System.IntPtr,System.String)
+extern void Externs_GADUServerSideVerificationOptionsSetCustomRewardString_mA4AEEC684987A3672F5B1EB4A3F89DE8563F0E02 (void);
+// 0x000000C2 System.Void GoogleMobileAds.iOS.Externs::GADURewardedAdSetServerSideVerificationOptions(System.IntPtr,System.IntPtr)
+extern void Externs_GADURewardedAdSetServerSideVerificationOptions_m7C3E6AA15EDA66D773676275EFA27F266A445F0A (void);
+// 0x000000C3 System.String GoogleMobileAds.iOS.Externs::GADURewardedAdGetRewardType(System.IntPtr)
+extern void Externs_GADURewardedAdGetRewardType_m30DA335C131B306488EC3599C146D532253F7656 (void);
+// 0x000000C4 System.Double GoogleMobileAds.iOS.Externs::GADURewardedAdGetRewardAmount(System.IntPtr)
+extern void Externs_GADURewardedAdGetRewardAmount_m849EB11EB65993DE72BD2BEADDC37BD66D261BE3 (void);
+// 0x000000C5 System.IntPtr GoogleMobileAds.iOS.Externs::GADUCreateRewardedInterstitialAd(System.IntPtr)
+extern void Externs_GADUCreateRewardedInterstitialAd_mA8AA2CFAD488D7754BE2A124935E3ED2E8199193 (void);
+// 0x000000C6 System.IntPtr GoogleMobileAds.iOS.Externs::GADULoadRewardedInterstitialAd(System.IntPtr,System.String,System.IntPtr)
+extern void Externs_GADULoadRewardedInterstitialAd_mD7DBA48CFB8248C1F69786BA685E81925A686517 (void);
+// 0x000000C7 System.Void GoogleMobileAds.iOS.Externs::GADUShowRewardedInterstitialAd(System.IntPtr)
+extern void Externs_GADUShowRewardedInterstitialAd_m1F459EDCFE0E8DF7A0CF1C5202530BE0CC957024 (void);
+// 0x000000C8 System.Void GoogleMobileAds.iOS.Externs::GADUSetRewardedInterstitialAdCallbacks(System.IntPtr,GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdLoadedCallback,GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdFailedToLoadCallback,GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdUserEarnedRewardCallback,GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdPaidEventCallback,GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdFailedToPresentFullScreenContentCallback,GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdWillPresentFullScreenContentCallback,GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdDidDismissFullScreenContentCallback,GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdDidRecordImpressionCallback)
+extern void Externs_GADUSetRewardedInterstitialAdCallbacks_m4723EC9B473930DEF31E65B1BB8C40B08DEC8762 (void);
+// 0x000000C9 System.Void GoogleMobileAds.iOS.Externs::GADURewardedInterstitialAdSetServerSideVerificationOptions(System.IntPtr,System.IntPtr)
+extern void Externs_GADURewardedInterstitialAdSetServerSideVerificationOptions_m208B2CD151A4241DBE11C55A3C8806983DD63957 (void);
+// 0x000000CA System.String GoogleMobileAds.iOS.Externs::GADURewardedInterstitialAdGetRewardType(System.IntPtr)
+extern void Externs_GADURewardedInterstitialAdGetRewardType_m323EA2879CCE4A9980E57CFF1CBFD7D594FC1975 (void);
+// 0x000000CB System.Double GoogleMobileAds.iOS.Externs::GADURewardedInterstitialAdGetRewardAmount(System.IntPtr)
+extern void Externs_GADURewardedInterstitialAdGetRewardAmount_m24E89388E08A688E561F258BB08C8784F62CF607 (void);
+// 0x000000CC System.Void GoogleMobileAds.iOS.Externs::GADUPresentAdInspector(System.IntPtr,GoogleMobileAds.iOS.MobileAdsClient/GADUAdInspectorClosedCallback)
+extern void Externs_GADUPresentAdInspector_mD988B535B66B5324D44136C2268AD81E45043EFE (void);
+// 0x000000CD System.Void GoogleMobileAds.GoogleMobileAdsClientFactory::.ctor()
+extern void GoogleMobileAdsClientFactory__ctor_m67A11481320C323CDCD2BF1158E2F84C1EAB564F (void);
+// 0x000000CE GoogleMobileAds.Common.IAppOpenAdClient GoogleMobileAds.GoogleMobileAdsClientFactory::BuildAppOpenAdClient()
+extern void GoogleMobileAdsClientFactory_BuildAppOpenAdClient_m8087D0A93CB1E1E132FEC3693331067453D00AEB (void);
+// 0x000000CF GoogleMobileAds.Common.IBannerClient GoogleMobileAds.GoogleMobileAdsClientFactory::BuildBannerClient()
+extern void GoogleMobileAdsClientFactory_BuildBannerClient_m4F101422036466E2ACA0949974949BF5AC2EE852 (void);
+// 0x000000D0 GoogleMobileAds.Common.IInterstitialClient GoogleMobileAds.GoogleMobileAdsClientFactory::BuildInterstitialClient()
+extern void GoogleMobileAdsClientFactory_BuildInterstitialClient_m149D1EAFB4FDEC6A28491BCCD2F6A12381E70E8F (void);
+// 0x000000D1 GoogleMobileAds.Common.IRewardedAdClient GoogleMobileAds.GoogleMobileAdsClientFactory::BuildRewardedAdClient()
+extern void GoogleMobileAdsClientFactory_BuildRewardedAdClient_mD298E400A439D65AF6D264B15D393E857DEBE763 (void);
+// 0x000000D2 GoogleMobileAds.Common.IRewardedInterstitialAdClient GoogleMobileAds.GoogleMobileAdsClientFactory::BuildRewardedInterstitialAdClient()
+extern void GoogleMobileAdsClientFactory_BuildRewardedInterstitialAdClient_mB982C1C3D60615F8AC3F0DECA4761FD298529733 (void);
+// 0x000000D3 GoogleMobileAds.Common.IMobileAdsClient GoogleMobileAds.GoogleMobileAdsClientFactory::MobileAdsInstance()
+extern void GoogleMobileAdsClientFactory_MobileAdsInstance_mF59A6552F70A3061A1ACDC29496DE32CF736E562 (void);
+// 0x000000D4 System.Void GoogleMobileAds.iOS.InitializationStatusClient::.ctor(System.IntPtr)
+extern void InitializationStatusClient__ctor_mDE93C0FA861099F8818A145BF3C4880B33CC8DA4 (void);
+// 0x000000D5 GoogleMobileAds.Api.AdapterStatus GoogleMobileAds.iOS.InitializationStatusClient::getAdapterStatusForClassName(System.String)
+extern void InitializationStatusClient_getAdapterStatusForClassName_m93B31C8687D35DFDA72B54E8F8AAF98D41A61995 (void);
+// 0x000000D6 System.Collections.Generic.Dictionary`2<System.String,GoogleMobileAds.Api.AdapterStatus> GoogleMobileAds.iOS.InitializationStatusClient::getAdapterStatusMap()
+extern void InitializationStatusClient_getAdapterStatusMap_m94CBFEA4F49B3452954725657F9684345185A17A (void);
+// 0x000000D7 System.Collections.Generic.List`1<System.String> GoogleMobileAds.iOS.InitializationStatusClient::GetAdapterClassNames()
+extern void InitializationStatusClient_GetAdapterClassNames_m4209C3E1F12D408DC81E607653A34364CE6B08A9 (void);
+// 0x000000D8 System.Void GoogleMobileAds.iOS.InitializationStatusClient::Dispose()
+extern void InitializationStatusClient_Dispose_mA986A4F254E70513EC69BB609DC56BCD4EDA6CA1 (void);
+// 0x000000D9 System.Void GoogleMobileAds.iOS.InitializationStatusClient::Finalize()
+extern void InitializationStatusClient_Finalize_m94853C7CCADBE511B5C5C0B77377EDA842547988 (void);
+// 0x000000DA System.Void GoogleMobileAds.iOS.InterstitialClient::.ctor()
+extern void InterstitialClient__ctor_m690E1C855056543831494E7FFF6ABBDC3B91B4D7 (void);
+// 0x000000DB System.Void GoogleMobileAds.iOS.InterstitialClient::add_OnAdLoaded(System.EventHandler`1<System.EventArgs>)
+extern void InterstitialClient_add_OnAdLoaded_m3005C21DC537FE22EA924FC06644CDC531CD36DA (void);
+// 0x000000DC System.Void GoogleMobileAds.iOS.InterstitialClient::remove_OnAdLoaded(System.EventHandler`1<System.EventArgs>)
+extern void InterstitialClient_remove_OnAdLoaded_m98546B2D51D2C66279245A62E4E0E8937AF9F857 (void);
+// 0x000000DD System.Void GoogleMobileAds.iOS.InterstitialClient::add_OnAdFailedToLoad(System.EventHandler`1<GoogleMobileAds.Common.LoadAdErrorClientEventArgs>)
+extern void InterstitialClient_add_OnAdFailedToLoad_mD4E1D5AF0233ABBA650A3A33FFEB6C3291BCD06C (void);
+// 0x000000DE System.Void GoogleMobileAds.iOS.InterstitialClient::remove_OnAdFailedToLoad(System.EventHandler`1<GoogleMobileAds.Common.LoadAdErrorClientEventArgs>)
+extern void InterstitialClient_remove_OnAdFailedToLoad_m0F238643BDAEF9201AAD40ED604755C43F526A53 (void);
+// 0x000000DF System.Void GoogleMobileAds.iOS.InterstitialClient::add_OnPaidEvent(System.EventHandler`1<GoogleMobileAds.Api.AdValueEventArgs>)
+extern void InterstitialClient_add_OnPaidEvent_mEC47F27D98AF47AD1F612A7BAB6BD21438E1ADD2 (void);
+// 0x000000E0 System.Void GoogleMobileAds.iOS.InterstitialClient::remove_OnPaidEvent(System.EventHandler`1<GoogleMobileAds.Api.AdValueEventArgs>)
+extern void InterstitialClient_remove_OnPaidEvent_mC20925C92ECB90C5CEC09474B25A6824993B7B35 (void);
+// 0x000000E1 System.Void GoogleMobileAds.iOS.InterstitialClient::add_OnAdFailedToPresentFullScreenContent(System.EventHandler`1<GoogleMobileAds.Common.AdErrorClientEventArgs>)
+extern void InterstitialClient_add_OnAdFailedToPresentFullScreenContent_m1B8E78905064D44A42916C732783BFF5D643C373 (void);
+// 0x000000E2 System.Void GoogleMobileAds.iOS.InterstitialClient::remove_OnAdFailedToPresentFullScreenContent(System.EventHandler`1<GoogleMobileAds.Common.AdErrorClientEventArgs>)
+extern void InterstitialClient_remove_OnAdFailedToPresentFullScreenContent_m19231C38E7AD7747109DA4950EA846F3F64809ED (void);
+// 0x000000E3 System.Void GoogleMobileAds.iOS.InterstitialClient::add_OnAdDidPresentFullScreenContent(System.EventHandler`1<System.EventArgs>)
+extern void InterstitialClient_add_OnAdDidPresentFullScreenContent_m8B61F8E4E43FA2F3A37C3C89C0AE225BDD9E4108 (void);
+// 0x000000E4 System.Void GoogleMobileAds.iOS.InterstitialClient::remove_OnAdDidPresentFullScreenContent(System.EventHandler`1<System.EventArgs>)
+extern void InterstitialClient_remove_OnAdDidPresentFullScreenContent_m397276FE3459F77A950960613317CB90D42FB486 (void);
+// 0x000000E5 System.Void GoogleMobileAds.iOS.InterstitialClient::add_OnAdDidDismissFullScreenContent(System.EventHandler`1<System.EventArgs>)
+extern void InterstitialClient_add_OnAdDidDismissFullScreenContent_m46527063B8E745A8D1C8C206A3F8E9F8D9C7B001 (void);
+// 0x000000E6 System.Void GoogleMobileAds.iOS.InterstitialClient::remove_OnAdDidDismissFullScreenContent(System.EventHandler`1<System.EventArgs>)
+extern void InterstitialClient_remove_OnAdDidDismissFullScreenContent_mC15D62AF930B0F6F46EFEDA8FF9403BFA84A379B (void);
+// 0x000000E7 System.Void GoogleMobileAds.iOS.InterstitialClient::add_OnAdDidRecordImpression(System.EventHandler`1<System.EventArgs>)
+extern void InterstitialClient_add_OnAdDidRecordImpression_mB07B30D92055E554054912CB6A0B4E7B9C3FD65B (void);
+// 0x000000E8 System.Void GoogleMobileAds.iOS.InterstitialClient::remove_OnAdDidRecordImpression(System.EventHandler`1<System.EventArgs>)
+extern void InterstitialClient_remove_OnAdDidRecordImpression_m23CA8DBEEF450A0983B792F4878E10351C62E211 (void);
+// 0x000000E9 System.IntPtr GoogleMobileAds.iOS.InterstitialClient::get_InterstitialPtr()
+extern void InterstitialClient_get_InterstitialPtr_mB668B3F4C5FFB83B001F6C8E61F97B22F4E72C4A (void);
+// 0x000000EA System.Void GoogleMobileAds.iOS.InterstitialClient::set_InterstitialPtr(System.IntPtr)
+extern void InterstitialClient_set_InterstitialPtr_m961D9DA4C6F9307A2FF973B567C4230C92B8066B (void);
+// 0x000000EB System.Void GoogleMobileAds.iOS.InterstitialClient::CreateInterstitialAd()
+extern void InterstitialClient_CreateInterstitialAd_m35FA38414578EE70079FC30A7C924206F7AD432F (void);
+// 0x000000EC System.Void GoogleMobileAds.iOS.InterstitialClient::LoadAd(System.String,GoogleMobileAds.Api.AdRequest)
+extern void InterstitialClient_LoadAd_m22071B1B3F9A0990F6BE992AE0454FF23BA47746 (void);
+// 0x000000ED System.Void GoogleMobileAds.iOS.InterstitialClient::Show()
+extern void InterstitialClient_Show_m3D43D48086F95DA1B254B40C439B06ECC98C1B6E (void);
+// 0x000000EE GoogleMobileAds.Common.IResponseInfoClient GoogleMobileAds.iOS.InterstitialClient::GetResponseInfoClient()
+extern void InterstitialClient_GetResponseInfoClient_m023E5C98FED17688F0F20CE01F99E9D71547E27A (void);
+// 0x000000EF System.Void GoogleMobileAds.iOS.InterstitialClient::DestroyInterstitial()
+extern void InterstitialClient_DestroyInterstitial_m39369ED18C70843E1396C556FAA16C8819AF2A46 (void);
+// 0x000000F0 System.Void GoogleMobileAds.iOS.InterstitialClient::Dispose()
+extern void InterstitialClient_Dispose_m8FB2855A695A6AB758EFF986EC575717684A4911 (void);
+// 0x000000F1 System.Void GoogleMobileAds.iOS.InterstitialClient::Finalize()
+extern void InterstitialClient_Finalize_m66312AC9C9B3FED93E02F5A132E1F16A79A1A84E (void);
+// 0x000000F2 System.Void GoogleMobileAds.iOS.InterstitialClient::InterstitialLoadedCallback(System.IntPtr)
+extern void InterstitialClient_InterstitialLoadedCallback_m368B82C4CA6BA47076BD02E69EC76530E946FE1A (void);
+// 0x000000F3 System.Void GoogleMobileAds.iOS.InterstitialClient::InterstitialFailedToLoadCallback(System.IntPtr,System.IntPtr)
+extern void InterstitialClient_InterstitialFailedToLoadCallback_m3B29A67527159C1A42D22A66EDF21BD7CCB194CE (void);
+// 0x000000F4 System.Void GoogleMobileAds.iOS.InterstitialClient::InterstitialPaidEventCallback(System.IntPtr,System.Int32,System.Int64,System.String)
+extern void InterstitialClient_InterstitialPaidEventCallback_mBD55D1940819BBD364B840D4F596F5DB7B6005C7 (void);
+// 0x000000F5 System.Void GoogleMobileAds.iOS.InterstitialClient::AdFailedToPresentFullScreenContentCallback(System.IntPtr,System.IntPtr)
+extern void InterstitialClient_AdFailedToPresentFullScreenContentCallback_m9547576B41A6E0478069F9207F6BD54128D1E9F5 (void);
+// 0x000000F6 System.Void GoogleMobileAds.iOS.InterstitialClient::AdWillPresentFullScreenContentCallback(System.IntPtr)
+extern void InterstitialClient_AdWillPresentFullScreenContentCallback_m678899D537A912C01AF3968833FA613AB1C46036 (void);
+// 0x000000F7 System.Void GoogleMobileAds.iOS.InterstitialClient::AdDidDismissFullScreenContentCallback(System.IntPtr)
+extern void InterstitialClient_AdDidDismissFullScreenContentCallback_mAFA10C82DBA584626AC626C8CC1ABD27BEFD5142 (void);
+// 0x000000F8 System.Void GoogleMobileAds.iOS.InterstitialClient::AdDidRecordImpressionCallback(System.IntPtr)
+extern void InterstitialClient_AdDidRecordImpressionCallback_m87BA8289CF579705CDCB7919AFE63C39074920EF (void);
+// 0x000000F9 GoogleMobileAds.iOS.InterstitialClient GoogleMobileAds.iOS.InterstitialClient::IntPtrToInterstitialClient(System.IntPtr)
+extern void InterstitialClient_IntPtrToInterstitialClient_mE0DE26716604CC4C9BC563E0D8DF25ACE42A0415 (void);
+// 0x000000FA System.Void GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdLoadedCallback::.ctor(System.Object,System.IntPtr)
+extern void GADUInterstitialAdLoadedCallback__ctor_m49DDD1D746C00AC3BF7C4C49C09F8D3CFA939C55 (void);
+// 0x000000FB System.Void GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdLoadedCallback::Invoke(System.IntPtr)
+extern void GADUInterstitialAdLoadedCallback_Invoke_mCA5C411AB71112DB71BD0772E47D76649E0E46ED (void);
+// 0x000000FC System.IAsyncResult GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdLoadedCallback::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADUInterstitialAdLoadedCallback_BeginInvoke_mDCCB1C02E3587DB69C69B6EE80DF3FF6C767F7AA (void);
+// 0x000000FD System.Void GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdLoadedCallback::EndInvoke(System.IAsyncResult)
+extern void GADUInterstitialAdLoadedCallback_EndInvoke_m66DF8A247ABCFE20A22E62DDE6D0299EDB69B5E8 (void);
+// 0x000000FE System.Void GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdFailedToLoadCallback::.ctor(System.Object,System.IntPtr)
+extern void GADUInterstitialAdFailedToLoadCallback__ctor_m6C1635D7AF37B4C6A2982E6548424228BD091847 (void);
+// 0x000000FF System.Void GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdFailedToLoadCallback::Invoke(System.IntPtr,System.IntPtr)
+extern void GADUInterstitialAdFailedToLoadCallback_Invoke_m52D5A686393E9D986B5941D32CE170FEADE97039 (void);
+// 0x00000100 System.IAsyncResult GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdFailedToLoadCallback::BeginInvoke(System.IntPtr,System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADUInterstitialAdFailedToLoadCallback_BeginInvoke_m628DC3A4EF1E49EC0003CE4E11959D7993D6F5F7 (void);
+// 0x00000101 System.Void GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdFailedToLoadCallback::EndInvoke(System.IAsyncResult)
+extern void GADUInterstitialAdFailedToLoadCallback_EndInvoke_mCCE9C011A00549B915E1D9C058138D13141B972E (void);
+// 0x00000102 System.Void GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialPaidEventCallback::.ctor(System.Object,System.IntPtr)
+extern void GADUInterstitialPaidEventCallback__ctor_m46F49EB0A965CA588477BCE7D5930E86FFA5214E (void);
+// 0x00000103 System.Void GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialPaidEventCallback::Invoke(System.IntPtr,System.Int32,System.Int64,System.String)
+extern void GADUInterstitialPaidEventCallback_Invoke_mADA8CDBCCE2C931E68F43B6C80CD429F3503B3DD (void);
+// 0x00000104 System.IAsyncResult GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialPaidEventCallback::BeginInvoke(System.IntPtr,System.Int32,System.Int64,System.String,System.AsyncCallback,System.Object)
+extern void GADUInterstitialPaidEventCallback_BeginInvoke_mD6F4D25A3290FF6B5222B35BD23F31E973348FCF (void);
+// 0x00000105 System.Void GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialPaidEventCallback::EndInvoke(System.IAsyncResult)
+extern void GADUInterstitialPaidEventCallback_EndInvoke_m186F677A53FF754D3C25EB49391CA76D8E22F594 (void);
+// 0x00000106 System.Void GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdFailedToPresentFullScreenContentCallback::.ctor(System.Object,System.IntPtr)
+extern void GADUInterstitialAdFailedToPresentFullScreenContentCallback__ctor_mDF3B7C7B1D59ADEA0E4E760EDE2E6FFF0F48F4B3 (void);
+// 0x00000107 System.Void GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdFailedToPresentFullScreenContentCallback::Invoke(System.IntPtr,System.IntPtr)
+extern void GADUInterstitialAdFailedToPresentFullScreenContentCallback_Invoke_m1F38C9DDD5351BFE2523175262EA73AC3C118219 (void);
+// 0x00000108 System.IAsyncResult GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdFailedToPresentFullScreenContentCallback::BeginInvoke(System.IntPtr,System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADUInterstitialAdFailedToPresentFullScreenContentCallback_BeginInvoke_m18356E0D2C96A876169EB73A48A40B0CB9186F0C (void);
+// 0x00000109 System.Void GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdFailedToPresentFullScreenContentCallback::EndInvoke(System.IAsyncResult)
+extern void GADUInterstitialAdFailedToPresentFullScreenContentCallback_EndInvoke_m4F9F63701671CADE3CED1FABD123EAEC0DB51C44 (void);
+// 0x0000010A System.Void GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdWillPresentFullScreenContentCallback::.ctor(System.Object,System.IntPtr)
+extern void GADUInterstitialAdWillPresentFullScreenContentCallback__ctor_mEDCF7716DE27045AE5268A3F28DBB7C37A231067 (void);
+// 0x0000010B System.Void GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdWillPresentFullScreenContentCallback::Invoke(System.IntPtr)
+extern void GADUInterstitialAdWillPresentFullScreenContentCallback_Invoke_m57B90E34A24A303DA8BFDC2E0AF0BA7DA4C76130 (void);
+// 0x0000010C System.IAsyncResult GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdWillPresentFullScreenContentCallback::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADUInterstitialAdWillPresentFullScreenContentCallback_BeginInvoke_mABF6D4E270DC642EEAB46D03EF5B45CA7B025EDF (void);
+// 0x0000010D System.Void GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdWillPresentFullScreenContentCallback::EndInvoke(System.IAsyncResult)
+extern void GADUInterstitialAdWillPresentFullScreenContentCallback_EndInvoke_m66CB6C8E3BC6B26F142778E269E6D7010CC7CA84 (void);
+// 0x0000010E System.Void GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdDidDismissFullScreenContentCallback::.ctor(System.Object,System.IntPtr)
+extern void GADUInterstitialAdDidDismissFullScreenContentCallback__ctor_mEFF0F13FE4DF1A13D5CA72DC42E1E426D09B8307 (void);
+// 0x0000010F System.Void GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdDidDismissFullScreenContentCallback::Invoke(System.IntPtr)
+extern void GADUInterstitialAdDidDismissFullScreenContentCallback_Invoke_m8C3FCC425DA5958801A8B5F1421E90E3AC644A51 (void);
+// 0x00000110 System.IAsyncResult GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdDidDismissFullScreenContentCallback::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADUInterstitialAdDidDismissFullScreenContentCallback_BeginInvoke_m968FAB88CF4240C7D46E1FBF20F2DE987C7A3C0D (void);
+// 0x00000111 System.Void GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdDidDismissFullScreenContentCallback::EndInvoke(System.IAsyncResult)
+extern void GADUInterstitialAdDidDismissFullScreenContentCallback_EndInvoke_mE0CFD8F9D19F4FF52B6940A8C025AC7D204356E3 (void);
+// 0x00000112 System.Void GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdDidRecordImpressionCallback::.ctor(System.Object,System.IntPtr)
+extern void GADUInterstitialAdDidRecordImpressionCallback__ctor_m074BC3A8F77239D460933F9E1A42E3852F301739 (void);
+// 0x00000113 System.Void GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdDidRecordImpressionCallback::Invoke(System.IntPtr)
+extern void GADUInterstitialAdDidRecordImpressionCallback_Invoke_m048DAF34FE88D8D162DF0FB52A8C99F37CFC4DFC (void);
+// 0x00000114 System.IAsyncResult GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdDidRecordImpressionCallback::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADUInterstitialAdDidRecordImpressionCallback_BeginInvoke_mAB815A14B0C46F486B6A0118D69F586B91CDF0A7 (void);
+// 0x00000115 System.Void GoogleMobileAds.iOS.InterstitialClient/GADUInterstitialAdDidRecordImpressionCallback::EndInvoke(System.IAsyncResult)
+extern void GADUInterstitialAdDidRecordImpressionCallback_EndInvoke_mB08E7FF4FA5E8FB22A157F83642C6B1F83D4482E (void);
+// 0x00000116 System.Void GoogleMobileAds.iOS.LoadAdErrorClient::.ctor(System.IntPtr)
+extern void LoadAdErrorClient__ctor_mA07305CC473E15C70165E245E1CBE43164F0BDF1 (void);
+// 0x00000117 System.Int32 GoogleMobileAds.iOS.LoadAdErrorClient::GetCode()
+extern void LoadAdErrorClient_GetCode_mF3C553227C7BE8C0A70160A14AFCC1531B11CD17 (void);
+// 0x00000118 System.String GoogleMobileAds.iOS.LoadAdErrorClient::GetDomain()
+extern void LoadAdErrorClient_GetDomain_m889CD9369E5BC426EE97922D7D424F786BB3AC1E (void);
+// 0x00000119 System.String GoogleMobileAds.iOS.LoadAdErrorClient::GetMessage()
+extern void LoadAdErrorClient_GetMessage_m841ED200B6E5B95473E3EC2BC7394037761C72AA (void);
+// 0x0000011A GoogleMobileAds.Common.IAdErrorClient GoogleMobileAds.iOS.LoadAdErrorClient::GetCause()
+extern void LoadAdErrorClient_GetCause_m851A8D6BB6BBED436B43659A228A663FAA1FE0DC (void);
+// 0x0000011B GoogleMobileAds.Common.IResponseInfoClient GoogleMobileAds.iOS.LoadAdErrorClient::GetResponseInfoClient()
+extern void LoadAdErrorClient_GetResponseInfoClient_m752F64C8EB720675F2AF74F923563902CC4E66A9 (void);
+// 0x0000011C System.String GoogleMobileAds.iOS.LoadAdErrorClient::ToString()
+extern void LoadAdErrorClient_ToString_m805E5A41539410A9CABDBADEBC456F7F6872EE35 (void);
+// 0x0000011D System.Void GoogleMobileAds.iOS.MobileAdsClient::.ctor()
+extern void MobileAdsClient__ctor_m37406C7FFE3C2E280C5D329BDEFECB23414F6F00 (void);
+// 0x0000011E GoogleMobileAds.iOS.MobileAdsClient GoogleMobileAds.iOS.MobileAdsClient::get_Instance()
+extern void MobileAdsClient_get_Instance_mEA2F9587657277F5CF6FF7F5916A620EC222BCBD (void);
+// 0x0000011F System.Void GoogleMobileAds.iOS.MobileAdsClient::Initialize(System.Action`1<GoogleMobileAds.Common.IInitializationStatusClient>)
+extern void MobileAdsClient_Initialize_mE08381F70952826A7D02F998D85BAC6A6F3C603A (void);
+// 0x00000120 System.Void GoogleMobileAds.iOS.MobileAdsClient::DisableMediationInitialization()
+extern void MobileAdsClient_DisableMediationInitialization_mACAC97D97D28DAA41AEEE34085D59AAB20F8E494 (void);
+// 0x00000121 System.Void GoogleMobileAds.iOS.MobileAdsClient::SetApplicationVolume(System.Single)
+extern void MobileAdsClient_SetApplicationVolume_mEE86BFA5129BAD3BFEE4574183478B2143E3C8A4 (void);
+// 0x00000122 System.Void GoogleMobileAds.iOS.MobileAdsClient::SetApplicationMuted(System.Boolean)
+extern void MobileAdsClient_SetApplicationMuted_m1942F3C5D147A11A77756167CEAE9BE9FC91C0E4 (void);
+// 0x00000123 System.Void GoogleMobileAds.iOS.MobileAdsClient::SetRequestConfiguration(GoogleMobileAds.Api.RequestConfiguration)
+extern void MobileAdsClient_SetRequestConfiguration_m6138968CFF951F1371C59634B2D6BA60C8552A64 (void);
+// 0x00000124 GoogleMobileAds.Api.RequestConfiguration GoogleMobileAds.iOS.MobileAdsClient::GetRequestConfiguration()
+extern void MobileAdsClient_GetRequestConfiguration_m5EA816BEE706D8BE22777347B787A271F722A58A (void);
+// 0x00000125 System.Void GoogleMobileAds.iOS.MobileAdsClient::SetiOSAppPauseOnBackground(System.Boolean)
+extern void MobileAdsClient_SetiOSAppPauseOnBackground_mE0C6F2EA4591CC2C6B5D5DAC384DE3ED89BB7E9A (void);
+// 0x00000126 System.Single GoogleMobileAds.iOS.MobileAdsClient::GetDeviceScale()
+extern void MobileAdsClient_GetDeviceScale_m79C2D308A2427FF4B6EBD0BDE7262682472225A4 (void);
+// 0x00000127 System.Int32 GoogleMobileAds.iOS.MobileAdsClient::GetDeviceSafeWidth()
+extern void MobileAdsClient_GetDeviceSafeWidth_m844DAC3F2F1FF9F1E89541DE191891D8CA0C324C (void);
+// 0x00000128 System.Void GoogleMobileAds.iOS.MobileAdsClient::OpenAdInspector(System.Action`1<GoogleMobileAds.Common.AdInspectorErrorClientEventArgs>)
+extern void MobileAdsClient_OpenAdInspector_m2F389A2306413E1867AF83EFC9F619B8A1E1E6F0 (void);
+// 0x00000129 System.Void GoogleMobileAds.iOS.MobileAdsClient::AdInspectorClosedCallback(System.IntPtr,System.IntPtr)
+extern void MobileAdsClient_AdInspectorClosedCallback_m71CCB88F3BF826E7320F016145A00A6DD70196F9 (void);
+// 0x0000012A System.Void GoogleMobileAds.iOS.MobileAdsClient::InitializationCompleteCallback(System.IntPtr,System.IntPtr)
+extern void MobileAdsClient_InitializationCompleteCallback_mE013122BE35ABC3BECCB456AF4565FA4BB7D64B9 (void);
+// 0x0000012B GoogleMobileAds.iOS.MobileAdsClient GoogleMobileAds.iOS.MobileAdsClient::IntPtrToMobileAdsClient(System.IntPtr)
+extern void MobileAdsClient_IntPtrToMobileAdsClient_m9E5469B4F0296EBA72E16C24FD5D76503A83164C (void);
+// 0x0000012C System.Void GoogleMobileAds.iOS.MobileAdsClient::Dispose()
+extern void MobileAdsClient_Dispose_m16D69D2A4E08AB21B9196D7C7F9D3C8A0C8B0995 (void);
+// 0x0000012D System.Void GoogleMobileAds.iOS.MobileAdsClient::Finalize()
+extern void MobileAdsClient_Finalize_mDB607341075A360DB2830173899F595BC9AA68F5 (void);
+// 0x0000012E System.Void GoogleMobileAds.iOS.MobileAdsClient::.cctor()
+extern void MobileAdsClient__cctor_m776FBA14F7F3549546C85BF33B5F65A27E271AAF (void);
+// 0x0000012F System.Void GoogleMobileAds.iOS.MobileAdsClient/GADUAdInspectorClosedCallback::.ctor(System.Object,System.IntPtr)
+extern void GADUAdInspectorClosedCallback__ctor_m83CA289663EB12E871300CD52738AEB5AAA8BCD6 (void);
+// 0x00000130 System.Void GoogleMobileAds.iOS.MobileAdsClient/GADUAdInspectorClosedCallback::Invoke(System.IntPtr,System.IntPtr)
+extern void GADUAdInspectorClosedCallback_Invoke_m58C4E7BBD0EC29AD4B7FB435849C3DE59C1E9FA2 (void);
+// 0x00000131 System.IAsyncResult GoogleMobileAds.iOS.MobileAdsClient/GADUAdInspectorClosedCallback::BeginInvoke(System.IntPtr,System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADUAdInspectorClosedCallback_BeginInvoke_m9FC5C206E429D38B7AEEB73FAF0B6CF5C2AF7F59 (void);
+// 0x00000132 System.Void GoogleMobileAds.iOS.MobileAdsClient/GADUAdInspectorClosedCallback::EndInvoke(System.IAsyncResult)
+extern void GADUAdInspectorClosedCallback_EndInvoke_mCED1F5782FA37B87FF58DB057A9FB8AE48F2C34A (void);
+// 0x00000133 System.Void GoogleMobileAds.iOS.MobileAdsClient/GADUInitializationCompleteCallback::.ctor(System.Object,System.IntPtr)
+extern void GADUInitializationCompleteCallback__ctor_m52854BF4534586568E1C9B3B3784885E231A2D2A (void);
+// 0x00000134 System.Void GoogleMobileAds.iOS.MobileAdsClient/GADUInitializationCompleteCallback::Invoke(System.IntPtr,System.IntPtr)
+extern void GADUInitializationCompleteCallback_Invoke_m1BF744FCD76105B844DA093FFFF0EEA900C2A3B1 (void);
+// 0x00000135 System.IAsyncResult GoogleMobileAds.iOS.MobileAdsClient/GADUInitializationCompleteCallback::BeginInvoke(System.IntPtr,System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADUInitializationCompleteCallback_BeginInvoke_m0BA01BB91990C74E69F88503744C9FB3B07ABD53 (void);
+// 0x00000136 System.Void GoogleMobileAds.iOS.MobileAdsClient/GADUInitializationCompleteCallback::EndInvoke(System.IAsyncResult)
+extern void GADUInitializationCompleteCallback_EndInvoke_mEFAA3CAD0FBDBFD662C260525E465F85A208DB11 (void);
+// 0x00000137 System.Void MonoPInvokeCallbackAttribute::.ctor(System.Type)
+extern void MonoPInvokeCallbackAttribute__ctor_m6207C5F79BB9B9240481D0B2648C700351F5E336 (void);
+// 0x00000138 System.Void GoogleMobileAds.iOS.RequestConfigurationClient::.ctor()
+extern void RequestConfigurationClient__ctor_m22DF7188087B25224077EA69A7EF11F43B0946AC (void);
+// 0x00000139 System.Void GoogleMobileAds.iOS.RequestConfigurationClient::SetRequestConfiguration(GoogleMobileAds.Api.RequestConfiguration)
+extern void RequestConfigurationClient_SetRequestConfiguration_m7EB64A06154076632AD37E770129693A7E874862 (void);
+// 0x0000013A GoogleMobileAds.Api.RequestConfiguration GoogleMobileAds.iOS.RequestConfigurationClient::GetRequestConfiguration()
+extern void RequestConfigurationClient_GetRequestConfiguration_m6C5F2E39EBA1FBE74E8C9802BAC6A752497AB739 (void);
+// 0x0000013B System.Void GoogleMobileAds.iOS.RequestConfigurationClient::.cctor()
+extern void RequestConfigurationClient__cctor_mCE976ABC7657F29B83E2037C008AD2AB4B339E49 (void);
+// 0x0000013C System.Void GoogleMobileAds.iOS.ResponseInfoClient::.ctor(GoogleMobileAds.Common.ResponseInfoClientType,System.IntPtr)
+extern void ResponseInfoClient__ctor_m6C344F37F0C39F6CF7E3418872CA408DB9BB3560 (void);
+// 0x0000013D System.Void GoogleMobileAds.iOS.ResponseInfoClient::.ctor(System.IntPtr,System.IntPtr)
+extern void ResponseInfoClient__ctor_mB7672CB4134C73DEA6F6DD70BADD80F834228169 (void);
+// 0x0000013E System.String GoogleMobileAds.iOS.ResponseInfoClient::GetMediationAdapterClassName()
+extern void ResponseInfoClient_GetMediationAdapterClassName_mAB3DBA7A3CFFA0CFD492E1B62DCA43FEA0AD9430 (void);
+// 0x0000013F System.String GoogleMobileAds.iOS.ResponseInfoClient::GetResponseId()
+extern void ResponseInfoClient_GetResponseId_mBCFFCAB6A4F1601EE2FD948ECF871E12AFEFA0F4 (void);
+// 0x00000140 System.String GoogleMobileAds.iOS.ResponseInfoClient::ToString()
+extern void ResponseInfoClient_ToString_m712679B2A6F2A5879883BA12F29B0F3D101EC265 (void);
+// 0x00000141 System.Void GoogleMobileAds.iOS.RewardedAdClient::.ctor()
+extern void RewardedAdClient__ctor_m7E7B78D3FF45AFE0C7455D8A893B01592EC94311 (void);
+// 0x00000142 System.Void GoogleMobileAds.iOS.RewardedAdClient::add_OnAdLoaded(System.EventHandler`1<System.EventArgs>)
+extern void RewardedAdClient_add_OnAdLoaded_mE9AC8D7655C6C94049CA0C5E8E7FAAF4C493011C (void);
+// 0x00000143 System.Void GoogleMobileAds.iOS.RewardedAdClient::remove_OnAdLoaded(System.EventHandler`1<System.EventArgs>)
+extern void RewardedAdClient_remove_OnAdLoaded_m7286584C437F8AE095EEE657ED20139131823287 (void);
+// 0x00000144 System.Void GoogleMobileAds.iOS.RewardedAdClient::add_OnAdFailedToLoad(System.EventHandler`1<GoogleMobileAds.Common.LoadAdErrorClientEventArgs>)
+extern void RewardedAdClient_add_OnAdFailedToLoad_mB5971CA084C99AAD835F1C26667269FC0B96C323 (void);
+// 0x00000145 System.Void GoogleMobileAds.iOS.RewardedAdClient::remove_OnAdFailedToLoad(System.EventHandler`1<GoogleMobileAds.Common.LoadAdErrorClientEventArgs>)
+extern void RewardedAdClient_remove_OnAdFailedToLoad_m82AC06BA8465C58D2F80A912A9CA3B31D1FDEAE8 (void);
+// 0x00000146 System.Void GoogleMobileAds.iOS.RewardedAdClient::add_OnUserEarnedReward(System.EventHandler`1<GoogleMobileAds.Api.Reward>)
+extern void RewardedAdClient_add_OnUserEarnedReward_m9C1652A8DFA8CC6849E18452782A25D614301BAA (void);
+// 0x00000147 System.Void GoogleMobileAds.iOS.RewardedAdClient::remove_OnUserEarnedReward(System.EventHandler`1<GoogleMobileAds.Api.Reward>)
+extern void RewardedAdClient_remove_OnUserEarnedReward_m282481A67814E52C2D5CC439F20763FBF1B1DB1E (void);
+// 0x00000148 System.Void GoogleMobileAds.iOS.RewardedAdClient::add_OnPaidEvent(System.EventHandler`1<GoogleMobileAds.Api.AdValueEventArgs>)
+extern void RewardedAdClient_add_OnPaidEvent_m294A6DE810F7F49B667EB23B3A2778B6D2D69086 (void);
+// 0x00000149 System.Void GoogleMobileAds.iOS.RewardedAdClient::remove_OnPaidEvent(System.EventHandler`1<GoogleMobileAds.Api.AdValueEventArgs>)
+extern void RewardedAdClient_remove_OnPaidEvent_m03A322AB2E55CC0B1E3C4F3BE87827BD9B54966C (void);
+// 0x0000014A System.Void GoogleMobileAds.iOS.RewardedAdClient::add_OnAdFailedToPresentFullScreenContent(System.EventHandler`1<GoogleMobileAds.Common.AdErrorClientEventArgs>)
+extern void RewardedAdClient_add_OnAdFailedToPresentFullScreenContent_m018DDE88AA9E76BF3175183114535BAB0EEEB069 (void);
+// 0x0000014B System.Void GoogleMobileAds.iOS.RewardedAdClient::remove_OnAdFailedToPresentFullScreenContent(System.EventHandler`1<GoogleMobileAds.Common.AdErrorClientEventArgs>)
+extern void RewardedAdClient_remove_OnAdFailedToPresentFullScreenContent_mC88B1E5986324B8044A6F54C14F7A7642FB6366D (void);
+// 0x0000014C System.Void GoogleMobileAds.iOS.RewardedAdClient::add_OnAdDidPresentFullScreenContent(System.EventHandler`1<System.EventArgs>)
+extern void RewardedAdClient_add_OnAdDidPresentFullScreenContent_m0510849E63086703E42921016FD56EFF042882A9 (void);
+// 0x0000014D System.Void GoogleMobileAds.iOS.RewardedAdClient::remove_OnAdDidPresentFullScreenContent(System.EventHandler`1<System.EventArgs>)
+extern void RewardedAdClient_remove_OnAdDidPresentFullScreenContent_m863A91CEBD3EBB5F998F20D605D8ED93C8CD4D95 (void);
+// 0x0000014E System.Void GoogleMobileAds.iOS.RewardedAdClient::add_OnAdDidDismissFullScreenContent(System.EventHandler`1<System.EventArgs>)
+extern void RewardedAdClient_add_OnAdDidDismissFullScreenContent_m4ABA1074BF1B24E9C5713AD5C006FE7D78EF07F7 (void);
+// 0x0000014F System.Void GoogleMobileAds.iOS.RewardedAdClient::remove_OnAdDidDismissFullScreenContent(System.EventHandler`1<System.EventArgs>)
+extern void RewardedAdClient_remove_OnAdDidDismissFullScreenContent_mC35CDAED0F7043785A047B47169AD9A47C56C05B (void);
+// 0x00000150 System.Void GoogleMobileAds.iOS.RewardedAdClient::add_OnAdDidRecordImpression(System.EventHandler`1<System.EventArgs>)
+extern void RewardedAdClient_add_OnAdDidRecordImpression_m07462D0A08B56FA77E1E68F96AB2FBA578771293 (void);
+// 0x00000151 System.Void GoogleMobileAds.iOS.RewardedAdClient::remove_OnAdDidRecordImpression(System.EventHandler`1<System.EventArgs>)
+extern void RewardedAdClient_remove_OnAdDidRecordImpression_mCE3BCE12DC96E5CA65FD0A8DC04716E4DFA603DE (void);
+// 0x00000152 System.IntPtr GoogleMobileAds.iOS.RewardedAdClient::get_RewardedAdPtr()
+extern void RewardedAdClient_get_RewardedAdPtr_m9D5C7C8191A31FB6A71A7E45B9C24215D6FC29BE (void);
+// 0x00000153 System.Void GoogleMobileAds.iOS.RewardedAdClient::set_RewardedAdPtr(System.IntPtr)
+extern void RewardedAdClient_set_RewardedAdPtr_mCA80FE51C121CDF37DA806A199AE9690F5528118 (void);
+// 0x00000154 System.Void GoogleMobileAds.iOS.RewardedAdClient::CreateRewardedAd()
+extern void RewardedAdClient_CreateRewardedAd_mB5F1DDF7FC470B8003FA9C8691B4DAD21111CB44 (void);
+// 0x00000155 System.Void GoogleMobileAds.iOS.RewardedAdClient::LoadAd(System.String,GoogleMobileAds.Api.AdRequest)
+extern void RewardedAdClient_LoadAd_mDD5D9F6536415A723D54E77096F9651076AED7BE (void);
+// 0x00000156 System.Void GoogleMobileAds.iOS.RewardedAdClient::Show()
+extern void RewardedAdClient_Show_mF116DD0ACD1FA2978DBFA75380C4ABA559788ED0 (void);
+// 0x00000157 System.Void GoogleMobileAds.iOS.RewardedAdClient::SetServerSideVerificationOptions(GoogleMobileAds.Api.ServerSideVerificationOptions)
+extern void RewardedAdClient_SetServerSideVerificationOptions_m4301FD84A23BEBF6F260E1045386C861339EF294 (void);
+// 0x00000158 GoogleMobileAds.Api.Reward GoogleMobileAds.iOS.RewardedAdClient::GetRewardItem()
+extern void RewardedAdClient_GetRewardItem_m4CB7B0EF72E79373A6611CC04D54EEC584494BDA (void);
+// 0x00000159 GoogleMobileAds.Common.IResponseInfoClient GoogleMobileAds.iOS.RewardedAdClient::GetResponseInfoClient()
+extern void RewardedAdClient_GetResponseInfoClient_mCA381A2B9185D0D0B8F82A505EBC940E88AE6F77 (void);
+// 0x0000015A System.Void GoogleMobileAds.iOS.RewardedAdClient::DestroyRewardedAd()
+extern void RewardedAdClient_DestroyRewardedAd_m19E82C1D90BD984F2CC3C5C9206FFDADF366D843 (void);
+// 0x0000015B System.Void GoogleMobileAds.iOS.RewardedAdClient::Dispose()
+extern void RewardedAdClient_Dispose_mE5C981F4A8A2346DF4C3F5B1BCF4650373E469FF (void);
+// 0x0000015C System.Void GoogleMobileAds.iOS.RewardedAdClient::Finalize()
+extern void RewardedAdClient_Finalize_m0FE6ACC5417451BD7589F2F533D6473EA9D123CA (void);
+// 0x0000015D System.Void GoogleMobileAds.iOS.RewardedAdClient::RewardedAdLoadedCallback(System.IntPtr)
+extern void RewardedAdClient_RewardedAdLoadedCallback_mE0E4A96B961FF0D3C90570C56F29F2AFFF0E8221 (void);
+// 0x0000015E System.Void GoogleMobileAds.iOS.RewardedAdClient::RewardedAdFailedToLoadCallback(System.IntPtr,System.IntPtr)
+extern void RewardedAdClient_RewardedAdFailedToLoadCallback_m064E25C933FD7924D1941BD78B3655524F171039 (void);
+// 0x0000015F System.Void GoogleMobileAds.iOS.RewardedAdClient::RewardedAdUserDidEarnRewardCallback(System.IntPtr,System.String,System.Double)
+extern void RewardedAdClient_RewardedAdUserDidEarnRewardCallback_mC1985A1F18C6E9A8D71F8FF30744D679A037EAA2 (void);
+// 0x00000160 System.Void GoogleMobileAds.iOS.RewardedAdClient::RewardedAdPaidEventCallback(System.IntPtr,System.Int32,System.Int64,System.String)
+extern void RewardedAdClient_RewardedAdPaidEventCallback_m7710A1F9A90BD5081057D14B6A215EE3ECA5AE0B (void);
+// 0x00000161 System.Void GoogleMobileAds.iOS.RewardedAdClient::AdFailedToPresentFullScreenContentCallback(System.IntPtr,System.IntPtr)
+extern void RewardedAdClient_AdFailedToPresentFullScreenContentCallback_mAD6B76E000E53090E0F000BC01FC58F54A60DFA3 (void);
+// 0x00000162 System.Void GoogleMobileAds.iOS.RewardedAdClient::AdWillPresentFullScreenContentCallback(System.IntPtr)
+extern void RewardedAdClient_AdWillPresentFullScreenContentCallback_m8B97AE1D2BAF75538F588A76400187764F8BE362 (void);
+// 0x00000163 System.Void GoogleMobileAds.iOS.RewardedAdClient::AdDidDismissFullScreenContentCallback(System.IntPtr)
+extern void RewardedAdClient_AdDidDismissFullScreenContentCallback_mB64A3FE4B78BDA3362FF15DB0BD19B8674D522AD (void);
+// 0x00000164 System.Void GoogleMobileAds.iOS.RewardedAdClient::AdDidRecordImpressionCallback(System.IntPtr)
+extern void RewardedAdClient_AdDidRecordImpressionCallback_m37FA90962C2CF8C91421C2850DFA52144D45E447 (void);
+// 0x00000165 GoogleMobileAds.iOS.RewardedAdClient GoogleMobileAds.iOS.RewardedAdClient::IntPtrToRewardedAdClient(System.IntPtr)
+extern void RewardedAdClient_IntPtrToRewardedAdClient_mD18E9E76A08ACEB432C6BBA95613F74093D54EF3 (void);
+// 0x00000166 System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdLoadedCallback::.ctor(System.Object,System.IntPtr)
+extern void GADURewardedAdLoadedCallback__ctor_mAB4343558F716A1FD7A954EA2B9828064F683754 (void);
+// 0x00000167 System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdLoadedCallback::Invoke(System.IntPtr)
+extern void GADURewardedAdLoadedCallback_Invoke_m17BB2914A68E6AA85B4469A7194532021938F292 (void);
+// 0x00000168 System.IAsyncResult GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdLoadedCallback::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADURewardedAdLoadedCallback_BeginInvoke_mE8FB181442805CC77F9161A3ABCE364D07FD5B8E (void);
+// 0x00000169 System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdLoadedCallback::EndInvoke(System.IAsyncResult)
+extern void GADURewardedAdLoadedCallback_EndInvoke_mCA23E942B61AB9B32642DAED1DD2038917FB1C05 (void);
+// 0x0000016A System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdFailedToLoadCallback::.ctor(System.Object,System.IntPtr)
+extern void GADURewardedAdFailedToLoadCallback__ctor_m53CE3C261CCEB2AE3066C2D11801E871AC41A52E (void);
+// 0x0000016B System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdFailedToLoadCallback::Invoke(System.IntPtr,System.IntPtr)
+extern void GADURewardedAdFailedToLoadCallback_Invoke_mCC10B1F01067DE542BE8054F7D910351CC2896A3 (void);
+// 0x0000016C System.IAsyncResult GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdFailedToLoadCallback::BeginInvoke(System.IntPtr,System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADURewardedAdFailedToLoadCallback_BeginInvoke_mE379397C08817001B07E676EE3F458FF619676E3 (void);
+// 0x0000016D System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdFailedToLoadCallback::EndInvoke(System.IAsyncResult)
+extern void GADURewardedAdFailedToLoadCallback_EndInvoke_mC79486D5A60A164FF0C3E38924EAC373E98DAFCA (void);
+// 0x0000016E System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdUserEarnedRewardCallback::.ctor(System.Object,System.IntPtr)
+extern void GADURewardedAdUserEarnedRewardCallback__ctor_m3F987217B3D27799C552E287178D82F91FD5C56B (void);
+// 0x0000016F System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdUserEarnedRewardCallback::Invoke(System.IntPtr,System.String,System.Double)
+extern void GADURewardedAdUserEarnedRewardCallback_Invoke_m8342A73A5BBB577F7945F351B5CB7EFEA26B215E (void);
+// 0x00000170 System.IAsyncResult GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdUserEarnedRewardCallback::BeginInvoke(System.IntPtr,System.String,System.Double,System.AsyncCallback,System.Object)
+extern void GADURewardedAdUserEarnedRewardCallback_BeginInvoke_mFCDA5B08650FE8AD1606E6B3C29D19E2750EAD49 (void);
+// 0x00000171 System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdUserEarnedRewardCallback::EndInvoke(System.IAsyncResult)
+extern void GADURewardedAdUserEarnedRewardCallback_EndInvoke_mAF79E633DBDC776ACF948C005899C2ACE0EBDCF4 (void);
+// 0x00000172 System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdPaidEventCallback::.ctor(System.Object,System.IntPtr)
+extern void GADURewardedAdPaidEventCallback__ctor_m7D972EBAE73AF733497FF3D12D6848383FF092B4 (void);
+// 0x00000173 System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdPaidEventCallback::Invoke(System.IntPtr,System.Int32,System.Int64,System.String)
+extern void GADURewardedAdPaidEventCallback_Invoke_mBBD715EE105485078AD7CCF79B86E48EA75D0871 (void);
+// 0x00000174 System.IAsyncResult GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdPaidEventCallback::BeginInvoke(System.IntPtr,System.Int32,System.Int64,System.String,System.AsyncCallback,System.Object)
+extern void GADURewardedAdPaidEventCallback_BeginInvoke_mD5ED92C23EA04F2ADF2B01805491F1A44E05C5EA (void);
+// 0x00000175 System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdPaidEventCallback::EndInvoke(System.IAsyncResult)
+extern void GADURewardedAdPaidEventCallback_EndInvoke_mB0AD2A5F0B346A80A5D5B7AE2AFD91CAAD347DC7 (void);
+// 0x00000176 System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdFailedToPresentFullScreenContentCallback::.ctor(System.Object,System.IntPtr)
+extern void GADURewardedAdFailedToPresentFullScreenContentCallback__ctor_m01C668CAACFECFE11058C7EB564801863A8461CB (void);
+// 0x00000177 System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdFailedToPresentFullScreenContentCallback::Invoke(System.IntPtr,System.IntPtr)
+extern void GADURewardedAdFailedToPresentFullScreenContentCallback_Invoke_m4D6CEC29D6EB9E1AFBFE798CE11799337931A578 (void);
+// 0x00000178 System.IAsyncResult GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdFailedToPresentFullScreenContentCallback::BeginInvoke(System.IntPtr,System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADURewardedAdFailedToPresentFullScreenContentCallback_BeginInvoke_m5FAC1E006379B83AAA2707F156F360387F6BF50D (void);
+// 0x00000179 System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdFailedToPresentFullScreenContentCallback::EndInvoke(System.IAsyncResult)
+extern void GADURewardedAdFailedToPresentFullScreenContentCallback_EndInvoke_m8F6ACFC57F18C427EA23C422C33745512936E278 (void);
+// 0x0000017A System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdWillPresentFullScreenContentCallback::.ctor(System.Object,System.IntPtr)
+extern void GADURewardedAdWillPresentFullScreenContentCallback__ctor_mB29EFB6AB4051F57419CE50C6598F9754F52CFF2 (void);
+// 0x0000017B System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdWillPresentFullScreenContentCallback::Invoke(System.IntPtr)
+extern void GADURewardedAdWillPresentFullScreenContentCallback_Invoke_mB1DEFB7DEBFE43A2C772CA576C1698C81AD9A947 (void);
+// 0x0000017C System.IAsyncResult GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdWillPresentFullScreenContentCallback::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADURewardedAdWillPresentFullScreenContentCallback_BeginInvoke_m6FE2C203B44F6795D1B6BC0B010611DE7A0AA9AC (void);
+// 0x0000017D System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdWillPresentFullScreenContentCallback::EndInvoke(System.IAsyncResult)
+extern void GADURewardedAdWillPresentFullScreenContentCallback_EndInvoke_m1699F1A878EB873EC3B0A90A4A4500EDDE610FA0 (void);
+// 0x0000017E System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdDidDismissFullScreenContentCallback::.ctor(System.Object,System.IntPtr)
+extern void GADURewardedAdDidDismissFullScreenContentCallback__ctor_m6105C6D1B29FD5CB4B3425A13A68DC2B42AAC27F (void);
+// 0x0000017F System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdDidDismissFullScreenContentCallback::Invoke(System.IntPtr)
+extern void GADURewardedAdDidDismissFullScreenContentCallback_Invoke_m4D84EE8C2042C141A86607BA7251F21B5CDD9159 (void);
+// 0x00000180 System.IAsyncResult GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdDidDismissFullScreenContentCallback::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADURewardedAdDidDismissFullScreenContentCallback_BeginInvoke_m444E5BB33DE841401CA96FDB3A7B539B897A2565 (void);
+// 0x00000181 System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdDidDismissFullScreenContentCallback::EndInvoke(System.IAsyncResult)
+extern void GADURewardedAdDidDismissFullScreenContentCallback_EndInvoke_m7E87C511508EF8470B5645158DEDBF3EC7B5BCCC (void);
+// 0x00000182 System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdDidRecordImpressionCallback::.ctor(System.Object,System.IntPtr)
+extern void GADURewardedAdDidRecordImpressionCallback__ctor_mB7B0530FF42FA92922A3EFFB52E88F36299E89ED (void);
+// 0x00000183 System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdDidRecordImpressionCallback::Invoke(System.IntPtr)
+extern void GADURewardedAdDidRecordImpressionCallback_Invoke_mAA48DD5787990187A16E6B9D48B011CF264800FE (void);
+// 0x00000184 System.IAsyncResult GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdDidRecordImpressionCallback::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADURewardedAdDidRecordImpressionCallback_BeginInvoke_mAD0C815CB2ECBCC2F078F9B0311BB4C39ED2B155 (void);
+// 0x00000185 System.Void GoogleMobileAds.iOS.RewardedAdClient/GADURewardedAdDidRecordImpressionCallback::EndInvoke(System.IAsyncResult)
+extern void GADURewardedAdDidRecordImpressionCallback_EndInvoke_m5D15AFC43E89A8137823DF9864CA2F5D055545CF (void);
+// 0x00000186 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::.ctor()
+extern void RewardedInterstitialAdClient__ctor_m2D9AA18220E15B12E56D3B683F5D484543CE4ACF (void);
+// 0x00000187 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::add_OnAdLoaded(System.EventHandler`1<System.EventArgs>)
+extern void RewardedInterstitialAdClient_add_OnAdLoaded_m4F3ED9C738D8039A0D5EBEA209F643106018C193 (void);
+// 0x00000188 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::remove_OnAdLoaded(System.EventHandler`1<System.EventArgs>)
+extern void RewardedInterstitialAdClient_remove_OnAdLoaded_m3C1B7973E27B02FC649016D3CFC3432A61597F1B (void);
+// 0x00000189 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::add_OnAdFailedToLoad(System.EventHandler`1<GoogleMobileAds.Common.LoadAdErrorClientEventArgs>)
+extern void RewardedInterstitialAdClient_add_OnAdFailedToLoad_mDF62CFA9ED72722F93CD5F7C8C4C4C59C4FFBECD (void);
+// 0x0000018A System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::remove_OnAdFailedToLoad(System.EventHandler`1<GoogleMobileAds.Common.LoadAdErrorClientEventArgs>)
+extern void RewardedInterstitialAdClient_remove_OnAdFailedToLoad_mD0338A5443C7EDD8BC82D4535550ACE28A0ED465 (void);
+// 0x0000018B System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::add_OnUserEarnedReward(System.EventHandler`1<GoogleMobileAds.Api.Reward>)
+extern void RewardedInterstitialAdClient_add_OnUserEarnedReward_m7169A9AA01EB8B218F8812FC9A092669A63CF0EA (void);
+// 0x0000018C System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::remove_OnUserEarnedReward(System.EventHandler`1<GoogleMobileAds.Api.Reward>)
+extern void RewardedInterstitialAdClient_remove_OnUserEarnedReward_mEC2FF0BD00D25086D51CEFF10FF1E0F3045B1D92 (void);
+// 0x0000018D System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::add_OnPaidEvent(System.EventHandler`1<GoogleMobileAds.Api.AdValueEventArgs>)
+extern void RewardedInterstitialAdClient_add_OnPaidEvent_m7E75FC5562C6AAF1736B43782D686BB70DA5E711 (void);
+// 0x0000018E System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::remove_OnPaidEvent(System.EventHandler`1<GoogleMobileAds.Api.AdValueEventArgs>)
+extern void RewardedInterstitialAdClient_remove_OnPaidEvent_mBE4C77BEA4F576D8FDB20E69D1E8C2C89478C641 (void);
+// 0x0000018F System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::add_OnAdFailedToPresentFullScreenContent(System.EventHandler`1<GoogleMobileAds.Common.AdErrorClientEventArgs>)
+extern void RewardedInterstitialAdClient_add_OnAdFailedToPresentFullScreenContent_m2BAC6B236FDA794688F10E3FC89FFCC23CC74AA4 (void);
+// 0x00000190 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::remove_OnAdFailedToPresentFullScreenContent(System.EventHandler`1<GoogleMobileAds.Common.AdErrorClientEventArgs>)
+extern void RewardedInterstitialAdClient_remove_OnAdFailedToPresentFullScreenContent_m902E55E0C42D9330BDB119950A93C519C11DC843 (void);
+// 0x00000191 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::add_OnAdDidPresentFullScreenContent(System.EventHandler`1<System.EventArgs>)
+extern void RewardedInterstitialAdClient_add_OnAdDidPresentFullScreenContent_m681506D8A1CCD427C60D9664D70AA69D8364B300 (void);
+// 0x00000192 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::remove_OnAdDidPresentFullScreenContent(System.EventHandler`1<System.EventArgs>)
+extern void RewardedInterstitialAdClient_remove_OnAdDidPresentFullScreenContent_m755D14BB948C17AA9425E21A50ED7E6A738AF5AE (void);
+// 0x00000193 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::add_OnAdDidDismissFullScreenContent(System.EventHandler`1<System.EventArgs>)
+extern void RewardedInterstitialAdClient_add_OnAdDidDismissFullScreenContent_mF73BD1326FC1A986BE33184324FBAE8E06373B66 (void);
+// 0x00000194 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::remove_OnAdDidDismissFullScreenContent(System.EventHandler`1<System.EventArgs>)
+extern void RewardedInterstitialAdClient_remove_OnAdDidDismissFullScreenContent_m08304D53C6BE46F7691831AC7DBBBBC40A79CC32 (void);
+// 0x00000195 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::add_OnAdDidRecordImpression(System.EventHandler`1<System.EventArgs>)
+extern void RewardedInterstitialAdClient_add_OnAdDidRecordImpression_m6F76BE200EDF4698E04E6DA641EC5B374FCC37F3 (void);
+// 0x00000196 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::remove_OnAdDidRecordImpression(System.EventHandler`1<System.EventArgs>)
+extern void RewardedInterstitialAdClient_remove_OnAdDidRecordImpression_m5B80D0D00F0EF210ED287D6913E7F4CC1AD4FB31 (void);
+// 0x00000197 System.IntPtr GoogleMobileAds.iOS.RewardedInterstitialAdClient::get_RewardedInterstitialAdPtr()
+extern void RewardedInterstitialAdClient_get_RewardedInterstitialAdPtr_m323F17BC68DB8C1D7B3E1C04630ADDA61EAEEEE8 (void);
+// 0x00000198 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::set_RewardedInterstitialAdPtr(System.IntPtr)
+extern void RewardedInterstitialAdClient_set_RewardedInterstitialAdPtr_m9A7EE9C79B399ECCDEF7A8D32C6C741F9E4F76F3 (void);
+// 0x00000199 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::CreateRewardedInterstitialAd()
+extern void RewardedInterstitialAdClient_CreateRewardedInterstitialAd_m77CBDB4BCF71DEC1D046D846AFF493B65A4B3826 (void);
+// 0x0000019A System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::LoadAd(System.String,GoogleMobileAds.Api.AdRequest)
+extern void RewardedInterstitialAdClient_LoadAd_mD6B151C8C72F30E1ED95F1752408B8FFBB7174C3 (void);
+// 0x0000019B System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::Show()
+extern void RewardedInterstitialAdClient_Show_m2B89722827624CAA68EB2C1BDD65402F824579F6 (void);
+// 0x0000019C System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::SetServerSideVerificationOptions(GoogleMobileAds.Api.ServerSideVerificationOptions)
+extern void RewardedInterstitialAdClient_SetServerSideVerificationOptions_m8446761E276DC574F4F84C9B37122333799A0A71 (void);
+// 0x0000019D GoogleMobileAds.Api.Reward GoogleMobileAds.iOS.RewardedInterstitialAdClient::GetRewardItem()
+extern void RewardedInterstitialAdClient_GetRewardItem_mACBD2EB8F270FE5236777CBB2F466444447FCFD5 (void);
+// 0x0000019E GoogleMobileAds.Common.IResponseInfoClient GoogleMobileAds.iOS.RewardedInterstitialAdClient::GetResponseInfoClient()
+extern void RewardedInterstitialAdClient_GetResponseInfoClient_m33EF91C2BD4AE1B9E156DE240D6A4B5E10E18313 (void);
+// 0x0000019F System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::DestroyRewardedInterstitialAd()
+extern void RewardedInterstitialAdClient_DestroyRewardedInterstitialAd_mBFFA3CECCFBD99AB20E259F2C95C655FBA87FBC8 (void);
+// 0x000001A0 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::Dispose()
+extern void RewardedInterstitialAdClient_Dispose_mA2C74F31CA044CC8BA9514E970BAD4DB611CC5D9 (void);
+// 0x000001A1 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::Finalize()
+extern void RewardedInterstitialAdClient_Finalize_m3D560BB9CDC69FCC3028E9B04A7DA7C8DE4CF6E2 (void);
+// 0x000001A2 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::RewardedInterstitialAdLoadedCallback(System.IntPtr)
+extern void RewardedInterstitialAdClient_RewardedInterstitialAdLoadedCallback_m3C198B805390488E7DFA1A4C32D72BAFB5559C5B (void);
+// 0x000001A3 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::RewardedInterstitialAdFailedToLoadCallback(System.IntPtr,System.IntPtr)
+extern void RewardedInterstitialAdClient_RewardedInterstitialAdFailedToLoadCallback_m8D6235A7FA6B064C35D489AE061069377ECA6016 (void);
+// 0x000001A4 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::RewardedInterstitialAdUserDidEarnRewardCallback(System.IntPtr,System.String,System.Double)
+extern void RewardedInterstitialAdClient_RewardedInterstitialAdUserDidEarnRewardCallback_mF56FA1935C15033D0FC5BF50DC3144BDE4FD6B79 (void);
+// 0x000001A5 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::RewardedInterstitialAdPaidEventCallback(System.IntPtr,System.Int32,System.Int64,System.String)
+extern void RewardedInterstitialAdClient_RewardedInterstitialAdPaidEventCallback_m83A9819AC3247112D0ADAF0D6B40F0CC0FE9D86C (void);
+// 0x000001A6 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::AdFailedToPresentFullScreenContentCallback(System.IntPtr,System.IntPtr)
+extern void RewardedInterstitialAdClient_AdFailedToPresentFullScreenContentCallback_m9CDEAA3B429ACA4252C4179CD3EFE80AA833B766 (void);
+// 0x000001A7 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::AdWillPresentFullScreenContentCallback(System.IntPtr)
+extern void RewardedInterstitialAdClient_AdWillPresentFullScreenContentCallback_mCAD4621C45FDA4DEBF4A99DBF91BF0AE52BA9E6D (void);
+// 0x000001A8 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::AdDidDismissFullScreenContentCallback(System.IntPtr)
+extern void RewardedInterstitialAdClient_AdDidDismissFullScreenContentCallback_mB0351BC7A58A280BB59C01F4C0C8F9E262C93E70 (void);
+// 0x000001A9 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient::AdDidRecordImpressionCallback(System.IntPtr)
+extern void RewardedInterstitialAdClient_AdDidRecordImpressionCallback_m30A02604920E78D2255513508F90E1255DF92182 (void);
+// 0x000001AA GoogleMobileAds.iOS.RewardedInterstitialAdClient GoogleMobileAds.iOS.RewardedInterstitialAdClient::IntPtrToRewardedInterstitialAdClient(System.IntPtr)
+extern void RewardedInterstitialAdClient_IntPtrToRewardedInterstitialAdClient_m207C0041903F774490874541E91DB1B9EA85AAC9 (void);
+// 0x000001AB System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdLoadedCallback::.ctor(System.Object,System.IntPtr)
+extern void GADURewardedInterstitialAdLoadedCallback__ctor_m20F9B31DF38EDCD59429DD70F49361216C8532B9 (void);
+// 0x000001AC System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdLoadedCallback::Invoke(System.IntPtr)
+extern void GADURewardedInterstitialAdLoadedCallback_Invoke_mEA35D906FFF060E07902C5ADB24CDAB8F558E763 (void);
+// 0x000001AD System.IAsyncResult GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdLoadedCallback::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADURewardedInterstitialAdLoadedCallback_BeginInvoke_mF8999D96AC93AE59CCC5519E9A2D1E0EC34B7016 (void);
+// 0x000001AE System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdLoadedCallback::EndInvoke(System.IAsyncResult)
+extern void GADURewardedInterstitialAdLoadedCallback_EndInvoke_m77770AC2AF086C844A6FE33C9087F502A5780EB6 (void);
+// 0x000001AF System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdFailedToLoadCallback::.ctor(System.Object,System.IntPtr)
+extern void GADURewardedInterstitialAdFailedToLoadCallback__ctor_m079CBF393A6D84A760A07818FBA2A811BB012004 (void);
+// 0x000001B0 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdFailedToLoadCallback::Invoke(System.IntPtr,System.IntPtr)
+extern void GADURewardedInterstitialAdFailedToLoadCallback_Invoke_m659CCB2F6094631AD3A60505C91CEE22F3082A87 (void);
+// 0x000001B1 System.IAsyncResult GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdFailedToLoadCallback::BeginInvoke(System.IntPtr,System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADURewardedInterstitialAdFailedToLoadCallback_BeginInvoke_mF303E42770325FCAF58752220713B1D83E3C492A (void);
+// 0x000001B2 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdFailedToLoadCallback::EndInvoke(System.IAsyncResult)
+extern void GADURewardedInterstitialAdFailedToLoadCallback_EndInvoke_mBC32576384E7F8869C59B545074758EA4A785720 (void);
+// 0x000001B3 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdUserEarnedRewardCallback::.ctor(System.Object,System.IntPtr)
+extern void GADURewardedInterstitialAdUserEarnedRewardCallback__ctor_mBD859FFB3913ED467F8FE3598B28F3A1627117D7 (void);
+// 0x000001B4 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdUserEarnedRewardCallback::Invoke(System.IntPtr,System.String,System.Double)
+extern void GADURewardedInterstitialAdUserEarnedRewardCallback_Invoke_mBA20BD60BBE3133C7E884E3A4F47D31B65937FA6 (void);
+// 0x000001B5 System.IAsyncResult GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdUserEarnedRewardCallback::BeginInvoke(System.IntPtr,System.String,System.Double,System.AsyncCallback,System.Object)
+extern void GADURewardedInterstitialAdUserEarnedRewardCallback_BeginInvoke_m168F6674EAA8A09A9C459EFB847988C6AA3AE53E (void);
+// 0x000001B6 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdUserEarnedRewardCallback::EndInvoke(System.IAsyncResult)
+extern void GADURewardedInterstitialAdUserEarnedRewardCallback_EndInvoke_mE074DF78A7469D7885370824D7138547E831AF66 (void);
+// 0x000001B7 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdPaidEventCallback::.ctor(System.Object,System.IntPtr)
+extern void GADURewardedInterstitialAdPaidEventCallback__ctor_m6EE9E2FC68D79449C5668734C208E1235EEBD896 (void);
+// 0x000001B8 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdPaidEventCallback::Invoke(System.IntPtr,System.Int32,System.Int64,System.String)
+extern void GADURewardedInterstitialAdPaidEventCallback_Invoke_m4285C90659BFB32AAD418278D9A5FFFAE8956E8A (void);
+// 0x000001B9 System.IAsyncResult GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdPaidEventCallback::BeginInvoke(System.IntPtr,System.Int32,System.Int64,System.String,System.AsyncCallback,System.Object)
+extern void GADURewardedInterstitialAdPaidEventCallback_BeginInvoke_m0B5F860C4719B5D98222102CBB087065E7A9F60F (void);
+// 0x000001BA System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdPaidEventCallback::EndInvoke(System.IAsyncResult)
+extern void GADURewardedInterstitialAdPaidEventCallback_EndInvoke_mC97D38489456F9621A45C34CF9829FF1D8FCD2BF (void);
+// 0x000001BB System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdFailedToPresentFullScreenContentCallback::.ctor(System.Object,System.IntPtr)
+extern void GADURewardedInterstitialAdFailedToPresentFullScreenContentCallback__ctor_mFF0C8390911A49E11C79611A086B6CD6547B30F7 (void);
+// 0x000001BC System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdFailedToPresentFullScreenContentCallback::Invoke(System.IntPtr,System.IntPtr)
+extern void GADURewardedInterstitialAdFailedToPresentFullScreenContentCallback_Invoke_m652C988A5DF8A71EF3E0BF4E7AB20AE13B10C6C3 (void);
+// 0x000001BD System.IAsyncResult GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdFailedToPresentFullScreenContentCallback::BeginInvoke(System.IntPtr,System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADURewardedInterstitialAdFailedToPresentFullScreenContentCallback_BeginInvoke_mBF7103708F1B7E2CA8E7EBE4C2E3FF034DE977AD (void);
+// 0x000001BE System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdFailedToPresentFullScreenContentCallback::EndInvoke(System.IAsyncResult)
+extern void GADURewardedInterstitialAdFailedToPresentFullScreenContentCallback_EndInvoke_mC287923F3A38F728F8FB8DD0C3047EB31D6BF0FA (void);
+// 0x000001BF System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdWillPresentFullScreenContentCallback::.ctor(System.Object,System.IntPtr)
+extern void GADURewardedInterstitialAdWillPresentFullScreenContentCallback__ctor_mE5435F371D6D0E554402C538F73A4FD35245E6EE (void);
+// 0x000001C0 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdWillPresentFullScreenContentCallback::Invoke(System.IntPtr)
+extern void GADURewardedInterstitialAdWillPresentFullScreenContentCallback_Invoke_mAC0EF08A5D69F2C98C8302D18169F293F0D9EC6A (void);
+// 0x000001C1 System.IAsyncResult GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdWillPresentFullScreenContentCallback::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADURewardedInterstitialAdWillPresentFullScreenContentCallback_BeginInvoke_mD34B08A607D469E7A11DDB0BB66DF69C31271FD2 (void);
+// 0x000001C2 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdWillPresentFullScreenContentCallback::EndInvoke(System.IAsyncResult)
+extern void GADURewardedInterstitialAdWillPresentFullScreenContentCallback_EndInvoke_m960DB2273A33001D14F9817592904F8506B501FD (void);
+// 0x000001C3 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdDidDismissFullScreenContentCallback::.ctor(System.Object,System.IntPtr)
+extern void GADURewardedInterstitialAdDidDismissFullScreenContentCallback__ctor_m149B78952FDCDF9121ACA16717AB6B97D3FD0845 (void);
+// 0x000001C4 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdDidDismissFullScreenContentCallback::Invoke(System.IntPtr)
+extern void GADURewardedInterstitialAdDidDismissFullScreenContentCallback_Invoke_m78F4F2A6375136F403D8F9CC7C9414D4F5244B49 (void);
+// 0x000001C5 System.IAsyncResult GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdDidDismissFullScreenContentCallback::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADURewardedInterstitialAdDidDismissFullScreenContentCallback_BeginInvoke_m948433AA136A73546206CDF4AE7096B9B0D96C6E (void);
+// 0x000001C6 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdDidDismissFullScreenContentCallback::EndInvoke(System.IAsyncResult)
+extern void GADURewardedInterstitialAdDidDismissFullScreenContentCallback_EndInvoke_m82BBCFA493524806ABE441C1AEB080CEA10DC6A3 (void);
+// 0x000001C7 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdDidRecordImpressionCallback::.ctor(System.Object,System.IntPtr)
+extern void GADURewardedInterstitialAdDidRecordImpressionCallback__ctor_mB2CB6224BFDAE68A3D23FA9C75DDD9004915BF95 (void);
+// 0x000001C8 System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdDidRecordImpressionCallback::Invoke(System.IntPtr)
+extern void GADURewardedInterstitialAdDidRecordImpressionCallback_Invoke_mBC3D9BF92997A21558920243F7FC158FA2C0A340 (void);
+// 0x000001C9 System.IAsyncResult GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdDidRecordImpressionCallback::BeginInvoke(System.IntPtr,System.AsyncCallback,System.Object)
+extern void GADURewardedInterstitialAdDidRecordImpressionCallback_BeginInvoke_mCD2422EFFEE15A8B48D2D6FC0C98B757D259D596 (void);
+// 0x000001CA System.Void GoogleMobileAds.iOS.RewardedInterstitialAdClient/GADURewardedInterstitialAdDidRecordImpressionCallback::EndInvoke(System.IAsyncResult)
+extern void GADURewardedInterstitialAdDidRecordImpressionCallback_EndInvoke_m9D8A30F6CED54832AED488A911542B07B046FD5D (void);
+// 0x000001CB System.Void GoogleMobileAds.iOS.Utils::.ctor()
+extern void Utils__ctor_mA447CFE3B47D42DD02289B7CCB5D37FBD2E43685 (void);
+// 0x000001CC System.IntPtr GoogleMobileAds.iOS.Utils::BuildAdRequest(GoogleMobileAds.Api.AdRequest,System.String)
+extern void Utils_BuildAdRequest_m4175342151681E043424D403CF80A3531150CEDD (void);
+// 0x000001CD System.IntPtr GoogleMobileAds.iOS.Utils::BuildServerSideVerificationOptions(GoogleMobileAds.Api.ServerSideVerificationOptions)
+extern void Utils_BuildServerSideVerificationOptions_m0093831CEAA627500056871DB9EFCEAD182E60A7 (void);
+// 0x000001CE System.String GoogleMobileAds.iOS.Utils::PtrToString(System.IntPtr)
+extern void Utils_PtrToString_m0230B2903AC08132A532FFCCEB47FCD34A6659A6 (void);
+// 0x000001CF System.Collections.Generic.List`1<System.String> GoogleMobileAds.iOS.Utils::PtrArrayToManagedList(System.IntPtr,System.Int32)
+extern void Utils_PtrArrayToManagedList_m037EA912187730527C2BA269EADB1ECA32B60B71 (void);
+static Il2CppMethodPointer s_methodPointers[463] = 
+{
+	AdErrorClient__ctor_m564CE5B6B78DDB0D6A54757F411238CD61DCFA79,
+	AdErrorClient_GetCode_m5E29FCAAF9FF06FD102B5E17345618FBC7F74DA3,
+	AdErrorClient_GetDomain_mF9CEC46064342C7884BA8706B9C97499F5A662C6,
+	AdErrorClient_GetMessage_mBCAF2699B5771D9C3B8C7F7F1DD2E567B4347A51,
+	AdErrorClient_GetCause_mCE8A22EAD94BC065AAC92B0FF180DB6BFED9C3C8,
+	AdErrorClient_ToString_m523BBD77950FDF18E841A000684A048603774540,
+	AdInspectorErrorClient__ctor_m86C78BEE2C53A1AB756ABFA912E212B5E7C841F6,
+	AppOpenAdClient__ctor_m7F1A454A5CF450F44BACFE1F08FD36670EF6A91B,
+	AppOpenAdClient_add_OnAdLoaded_m5D78645A131C5A1D28730290A3425B56F9E85A1F,
+	AppOpenAdClient_remove_OnAdLoaded_m2B570A39AFDB05419A7C6056B9E001838C01FA0D,
+	AppOpenAdClient_add_OnAdFailedToLoad_mFD77DBDE7AD05F03A711C0BF3742C6B6512F70C6,
+	AppOpenAdClient_remove_OnAdFailedToLoad_m5A2D205291C076545D1BB4605A91CECE84199610,
+	AppOpenAdClient_add_OnPaidEvent_mB948665F93919954235D5248A460346FE32590DA,
+	AppOpenAdClient_remove_OnPaidEvent_mFCD85A8B23B67DFC78A7DAFABF093AAE98054168,
+	AppOpenAdClient_add_OnAdFailedToPresentFullScreenContent_m2F538D3B3979E322313723D9DE7ADEBFB08D8A02,
+	AppOpenAdClient_remove_OnAdFailedToPresentFullScreenContent_m8D2C4CE7B831EC628A1E990CC3959208C4AFDB68,
+	AppOpenAdClient_add_OnAdDidPresentFullScreenContent_m43FF757C17D87D4C7C9A21FB59F1FC9BBFD85F9F,
+	AppOpenAdClient_remove_OnAdDidPresentFullScreenContent_mA63ABDCD022BD4B635F49493A2D70246D6D34AA3,
+	AppOpenAdClient_add_OnAdDidRecordImpression_m6F5FE9A8B036807834C9D3478FE990906B2B49C9,
+	AppOpenAdClient_remove_OnAdDidRecordImpression_mAD89B1429E4E7C6A794109023655966213CFFC2F,
+	AppOpenAdClient_add_OnAdDidDismissFullScreenContent_m2B884DB6E31261E906F04C0A95F2E4546C5B0912,
+	AppOpenAdClient_remove_OnAdDidDismissFullScreenContent_mB2DC01A24A768E367EC4E19FD3E60FCC2194ACED,
+	AppOpenAdClient_get_AppOpenAdPtr_mCAD86194396ADED47D56099FCB621F0286059BFE,
+	AppOpenAdClient_set_AppOpenAdPtr_m436B4A49FEF538FC7012290BC291C8BCBD7DFFFC,
+	AppOpenAdClient_CreateAppOpenAd_m9ED39C6C7BEE53C330AB50E17B9F625156E84DB6,
+	AppOpenAdClient_LoadAd_m2E3CD5A3D7752EA6CEA2C501C9B361CD3BFD9203,
+	AppOpenAdClient_Show_mC85EC8044FF6F8C340A9C8440A5219BBF5A7DD49,
+	AppOpenAdClient_GetResponseInfoClient_m943F838C41BEDA68EA3380C1190F95C2508863E5,
+	AppOpenAdClient_DestroyAppOpenAd_m6EEF4D95456D8010846B8DF5D379ABA0FADBA5C5,
+	AppOpenAdClient_Dispose_mCD26B173ACB02D057832DA249D19DE232325DAC9,
+	AppOpenAdClient_Finalize_mCD49B76C49B24F62023129CF4823D7C0CA2864AE,
+	AppOpenAdClient_AppOpenAdLoadedCallback_mB38142C3AB6AE0E7F5360343B938FE933CE2AAE6,
+	AppOpenAdClient_AppOpenAdFailedToLoadCallback_mC16DC470E32257D43392DABCA54BA59C91F64C1D,
+	AppOpenAdClient_AppOpenAdPaidEventCallback_m517798F765BAB7105A83E3EB4BBE34E433A8A5DD,
+	AppOpenAdClient_AdFailedToPresentFullScreenContentCallback_m203EAABD07153231B220D44A73FD4B0802AE679D,
+	AppOpenAdClient_AdWillPresentFullScreenContentCallback_m22B6A8F83734DEE33C24C8C5CC38AA53D688D259,
+	AppOpenAdClient_AdDidDismissFullScreenContentCallback_m2D6AD5153EA3DF298571BC371027F4FB98FA0F03,
+	AppOpenAdClient_AdDidRecordImpressionCallback_m89B4FA206E14A19C98C033FEB2829D3E641368B4,
+	AppOpenAdClient_IntPtrToAppOpenAdClient_m7258D5CFC14D611B391F1626382F27A26A776245,
+	GADUAppOpenAdLoadedCallback__ctor_m0B2F031704280680BD8645607C0C392849E7C762,
+	GADUAppOpenAdLoadedCallback_Invoke_m36F3AB34E91A25B5D028D672BD51A854386603F6,
+	GADUAppOpenAdLoadedCallback_BeginInvoke_mEF51CD83B2E63B483D04AE3C1F89BFEBE0FB71F5,
+	GADUAppOpenAdLoadedCallback_EndInvoke_m5819EC92E82A25676218B21123E3FFB05522707A,
+	GADUAppOpenAdFailToLoadCallback__ctor_m7D5B79C8C2BF6FCCBBAA7EBB885D68BF4B7102AB,
+	GADUAppOpenAdFailToLoadCallback_Invoke_m1C9B70E8D05E32508E0772403AC956D368585BB0,
+	GADUAppOpenAdFailToLoadCallback_BeginInvoke_m55613D322581FABCC7E33E4723E9DE99ACCB3030,
+	GADUAppOpenAdFailToLoadCallback_EndInvoke_mB78F527FC9A6431889248A722DFA69EA487E4BCF,
+	GADUAppOpenAdPaidEventCallback__ctor_m829EA30312063BFB0190D64B1790545C59048FD6,
+	GADUAppOpenAdPaidEventCallback_Invoke_m30B7018A6A8D159199A52AE2185DAE0DB20BBD06,
+	GADUAppOpenAdPaidEventCallback_BeginInvoke_m4ADB5AF20B457A62E6DADD082D7E9A276514A6F4,
+	GADUAppOpenAdPaidEventCallback_EndInvoke_mD7C49848D5C4924181F2E1B6DB17B0CFFD3C6B5A,
+	GADUAppOpenAdFailedToPresentFullScreenContentCallback__ctor_mA63D0B158C5713CBBEFF8471ECBD54BDC0D75929,
+	GADUAppOpenAdFailedToPresentFullScreenContentCallback_Invoke_m56DDA7DFBA02C2BE714993001FEB96118B30A256,
+	GADUAppOpenAdFailedToPresentFullScreenContentCallback_BeginInvoke_mCD7555A24E2836809B6C4C924A7FA237AC56A197,
+	GADUAppOpenAdFailedToPresentFullScreenContentCallback_EndInvoke_m051A85186D8B624EA6920DA79A768E05DD650923,
+	GADUAppOpenAdWillPresentFullScreenContentCallback__ctor_m693571A45328A157D96651F851BB428670D9D3AD,
+	GADUAppOpenAdWillPresentFullScreenContentCallback_Invoke_mE313BBCA89E8206443E13E0E6025005B02AB62A9,
+	GADUAppOpenAdWillPresentFullScreenContentCallback_BeginInvoke_mF500077B65DCCA6728A88421F073DA154EBE9650,
+	GADUAppOpenAdWillPresentFullScreenContentCallback_EndInvoke_m0C87E0C23D3D3D1F09910F89CB2697B2B2F21CAF,
+	GADUAppOpenAdDidDismissFullScreenContentCallback__ctor_mB7FCD8BB16F1FC85F8FC3E9102F4BB0D24783E52,
+	GADUAppOpenAdDidDismissFullScreenContentCallback_Invoke_m4519279B4768D057884956BF7F028A724B13863E,
+	GADUAppOpenAdDidDismissFullScreenContentCallback_BeginInvoke_mA965C86549EEBB37948096F419183A89EEBF3DE8,
+	GADUAppOpenAdDidDismissFullScreenContentCallback_EndInvoke_mF706174A7381B080742EF1FDEB0E942FCAD6EF0D,
+	GADUAppOpenAdDidRecordImpressionCallback__ctor_m6FE5429035598E56150AECC0791DEE9B9767A6E3,
+	GADUAppOpenAdDidRecordImpressionCallback_Invoke_m3698003150A94350D1DC8598B26B6AAA49D69581,
+	GADUAppOpenAdDidRecordImpressionCallback_BeginInvoke_m4E247B473995775121C8C587438225805110C28E,
+	GADUAppOpenAdDidRecordImpressionCallback_EndInvoke_m51C61B5147E948C212A4D8EB3D4F82124B5BDE70,
+	BannerClient__ctor_m2A999CB3CDD4B45A245B1D1A9D3A6974EDB545CB,
+	BannerClient_add_OnAdLoaded_m7ADE50A431B636D93371D9B5BCA06DD6BC23A974,
+	BannerClient_remove_OnAdLoaded_m031F35FE4AA0FD02572E9A4EB4B462540867609E,
+	BannerClient_add_OnAdFailedToLoad_m5D7A2A551AF83F93B95A54533C619AC0603C624C,
+	BannerClient_remove_OnAdFailedToLoad_m29D8CCADBD3710BE3FA0CE771E4E82EF646FA3CB,
+	BannerClient_add_OnAdOpening_mC206FC66F596B88AE5330FDE3F3BB9A24DC5A6CB,
+	BannerClient_remove_OnAdOpening_mAC1ECC7EF0B446FB7515F31594A9DC08C7E231CA,
+	BannerClient_add_OnAdClosed_m9D34A02D10499AE8F576D036EC841D96EFC67930,
+	BannerClient_remove_OnAdClosed_mFB335AF1F007E70FC6DA540B7938F95A3B5AD3A9,
+	BannerClient_add_OnPaidEvent_mCBA7ED4A6C8ED662D15AD4B087D9128E3E5709E6,
+	BannerClient_remove_OnPaidEvent_mB1B13B2FE1FCF9FC2278097CC56448C13794FC02,
+	BannerClient_get_BannerViewPtr_mFE9721BC89B4D39753E3B9173DE42C8C99574A68,
+	BannerClient_set_BannerViewPtr_m9997AE2A5655AC1AF4F31F4DCC784B617A9FC2EC,
+	BannerClient_CreateBannerView_m89D5C7F7A3D732C6AFE6D42791459F65F469344D,
+	BannerClient_CreateBannerView_mB4CA8B64DC38024728917FDBC42D2A65F36A2088,
+	BannerClient_LoadAd_mB7D111DB2AA5EF38339CB1CC3F7A45AEEA960D65,
+	BannerClient_ShowBannerView_mD6B18150A2FBA3C3817EBFA85823E9A946121E11,
+	BannerClient_HideBannerView_mF9CB8A0959ACB8DEF0A95F36CAAD2541F21AC273,
+	BannerClient_DestroyBannerView_m4B624DC3751AC3832CF03D2171549C9DE15ABEC6,
+	BannerClient_GetHeightInPixels_mB300A2734D3855CD0E0DB8B7FEAB8D3525C79CD9,
+	BannerClient_GetWidthInPixels_m2DD0901CA1B9D93875D01C36074157CB7E1BB883,
+	BannerClient_SetPosition_mB3980827B21024A58308643C8FC835D5FF38CAB6,
+	BannerClient_SetPosition_mB8410A280E26829484F490FA56340D109B207CFF,
+	BannerClient_GetResponseInfoClient_m6325F81969F640721965A2C840298DDDE3031061,
+	BannerClient_Dispose_m8672056AAD8DEB41AE6E4946842C46B827CC54F3,
+	BannerClient_Finalize_m60F5C8083BC59F9041FD78A118ED24CDEAA2240F,
+	BannerClient_AdViewDidReceiveAdCallback_m083343A1DDD2A57BBEC74A4A9B327CAA9BB961A4,
+	BannerClient_AdViewDidFailToReceiveAdWithErrorCallback_mDA713926142E84827E8B08E66334DDD7234A22E8,
+	BannerClient_AdViewWillPresentScreenCallback_m3F78B1F9B02D9BF9753DE7B83554E197C08BC5A7,
+	BannerClient_AdViewDidDismissScreenCallback_mCCB7D61A9E02D5C1A9A29FB616F97666CD2C8B2B,
+	BannerClient_AdViewPaidEventCallback_m4BEF4BA9013C9ABF4438071DAA0C6171564CD8D3,
+	BannerClient_IntPtrToBannerClient_mC9C6F9C5917330D775319130C0E1529FF5BA3AB8,
+	GADUAdViewDidReceiveAdCallback__ctor_m9305A7851D314FC063D8C6B44F134F03A28627F2,
+	GADUAdViewDidReceiveAdCallback_Invoke_mC31E7D1B884C02488BD66964FF62244CBA8DC47E,
+	GADUAdViewDidReceiveAdCallback_BeginInvoke_m5FFA111B0CBCEC16F5B7C277E07B77297520A703,
+	GADUAdViewDidReceiveAdCallback_EndInvoke_mDC68683DF9944B4EAB4292C7F80CD8CBD148FA5F,
+	GADUAdViewDidFailToReceiveAdWithErrorCallback__ctor_m92EFF391CC08FD582D12551C112D5BF648DCB453,
+	GADUAdViewDidFailToReceiveAdWithErrorCallback_Invoke_m48240381CFB10D9FB2E35E08094D74033D8162CF,
+	GADUAdViewDidFailToReceiveAdWithErrorCallback_BeginInvoke_mE0EF4C932C504D30873A8E0D8395F74AC319524D,
+	GADUAdViewDidFailToReceiveAdWithErrorCallback_EndInvoke_m70C7E6C5CB35DCE03A0BDA3EFDE9084EB31809DE,
+	GADUAdViewWillPresentScreenCallback__ctor_mBCDB587D928251D03044AE11418AB608D262F6E7,
+	GADUAdViewWillPresentScreenCallback_Invoke_m531AC0B9ECBD00652E7618D567922C9E7DDCCD81,
+	GADUAdViewWillPresentScreenCallback_BeginInvoke_mE87F12BB3D9787E29C11D226DC9DC9832831C110,
+	GADUAdViewWillPresentScreenCallback_EndInvoke_mD213A29C2CA000F0AB169AC3724FA32A8E8F0366,
+	GADUAdViewDidDismissScreenCallback__ctor_mE016B8C574DD3AEF0214CA9C5B859FD2E25B71C0,
+	GADUAdViewDidDismissScreenCallback_Invoke_mCB1DE0CF7AE1FC7D2C35CBB0CE9A84491275B538,
+	GADUAdViewDidDismissScreenCallback_BeginInvoke_m1813BB8B665739DB83F864AACDF547075EFFFBCA,
+	GADUAdViewDidDismissScreenCallback_EndInvoke_m9C386E142A0A42CD2CEEF7475F1B4616B15C85DB,
+	GADUAdViewPaidEventCallback__ctor_m0DB3510690B13B23312F5C8B684089F4526102E7,
+	GADUAdViewPaidEventCallback_Invoke_mF374823ADA502B77221EE2AD6C031326129CCBAA,
+	GADUAdViewPaidEventCallback_BeginInvoke_m813300B57B9F4982EFD293727A8A0FC8CD49F134,
+	GADUAdViewPaidEventCallback_EndInvoke_mC027A7C82C2659FFEFAB535112BA600230C64CCE,
+	Externs__ctor_m93B38CA105EBB22753D02A6D598EB957B76A7E93,
+	Externs_GADUInitializeWithCallback_m68AB66017CAD0A481D8A1256D42844F6F4B751C8,
+	Externs_GADUDisableMediationInitialization_m8EF17965D2F09068CA663B6B5D15452BA3A9B07C,
+	Externs_GADUGetInitDescription_mF10B86B2D83BD25E2A975305281203A898934BC4,
+	Externs_GADUGetInitLatency_mA7B4D287F673C5542472A2ADC2BC304D890CCE2D,
+	Externs_GADUGetInitState_mD3AF7D2AD4E5E03F6D4CE49485EBA16119F26411,
+	Externs_GADUGetInitAdapterClasses_mF7881B0BC3A9DB526CF63B78D661E784271FD4ED,
+	Externs_GADUGetInitNumberOfAdapterClasses_m2A1B5DB47397D3FDD99A74A33BFE243F2134936A,
+	Externs_GADUSetApplicationVolume_mC1233CA9810F25254437A242CEDC0A16948E6DE4,
+	Externs_GADUSetApplicationMuted_mF34A36E7E8637F5CA1A31AA791FF050B05199B3F,
+	Externs_GADUSetiOSAppPauseOnBackground_mC2701D64101939987687CF72E9B13679742D5813,
+	Externs_GADUDeviceScale_m383A74056422B0C745A79F31BAD2E98F97B828FE,
+	Externs_GADUDeviceSafeWidth_m00FD5EF4598E1CCBC844BC7589D10C4D177EF33F,
+	Externs_GADUCreateRequest_mEF5A4D6911DBE85B4F3764DEE1BD1C9B8D153211,
+	Externs_GADUCreateMutableDictionary_m1C6F46B6E845179108F457A1647E3BF714A71F96,
+	Externs_GADUMutableDictionarySetValue_m6EF515E855E8D4CB680B7D283159D1017CF8B716,
+	Externs_GADUSetMediationExtras_mC627E6371DAD0A2D3D2E8AB20F6D2A07B57F7DD5,
+	Externs_GADUAddKeyword_m3C2B55F3954369783B32160193F25539CAADCA4A,
+	Externs_GADUSetExtra_m40C8026AC18F79062BEDA55FF71BB318A191C95B,
+	Externs_GADUSetRequestAgent_m858A7BC50E44D4FD831A5D60C08779000171DC3F,
+	Externs_GADURelease_m7FED9EC0AEF5CFD67CFF777B488FA2C59DACC038,
+	Externs_GADUCreateRequestConfiguration_m7B3298D04A8A354A46758080DF758968E8117D49,
+	Externs_GADUSetRequestConfiguration_mDB341DECEE4A7902AD6554E3178A7E13A9972FC1,
+	Externs_GADUSetRequestConfigurationTestDeviceIdentifiers_mECAFB8FC700B00F0B7797BB0D9859AD145BC5566,
+	Externs_GADUSetRequestConfigurationMaxAdContentRating_m195BFD236600D42FD59F4D6478DBFE136D1AD6FC,
+	Externs_GADUSetRequestConfigurationTagForUnderAgeOfConsent_mB9E6ADE56EE89DADE73A424521DF02DBB881C125,
+	Externs_GADUSetRequestConfigurationTagForChildDirectedTreatment_m70F6D07492066D3C962D054248B527279A6CFA10,
+	Externs_GADUSetRequestConfigurationSameAppKeyEnabled_m8B809E1AD80F9584C5B9F291BB6F902DADFE48DF,
+	Externs_GADUGetTestDeviceIdentifiers_m6DD59812B4EEB12FC64F982B2537316356BA43CB,
+	Externs_GADUGetTestDeviceIdentifiersCount_mC5268CFA85EB436BA8E14A91143651751F9E6947,
+	Externs_GADUGetMaxAdContentRating_m6765952A25895A5D90C30BFED0163539A15E6F55,
+	Externs_GADUGetRequestConfigurationTagForUnderAgeOfConsent_m4BC90D02BBA753FCF6E3C93C4D15BB3234860737,
+	Externs_GADUGetRequestConfigurationTagForChildDirectedTreatment_m520A7FF0D011DD2A35DB320F4251D010428B0A43,
+	Externs_GADUGetRequestConfigurationSameAppKeyEnabled_m597FA042E72020CD9760C4C6430B97AA07B98F55,
+	Externs_GADUCreateAppOpenAd_m6ECBDB8B79FA71729A10D01FDCAB5508A7514C1D,
+	Externs_GADULoadAppOpenAd_m4CB96A56C3675E39881621D9542511FB72488E4D,
+	Externs_GADUShowAppOpenAd_mB0680AAF5BD87FC594022349517856FD9C07729C,
+	Externs_GADUSetAppOpenAdCallbacks_m55ED18F5C5DE84F7385CDF49309317BB6A6B1480,
+	Externs_GADUCreateBannerView_mD9DBB76D2030F4288D950644CCF0A62D18245CDD,
+	Externs_GADUCreateBannerViewWithCustomPosition_m8EA77C14B8477A910F66CD31B3356D7C17D1FD03,
+	Externs_GADUCreateSmartBannerView_m967EC6C9123BA61CD267F33B1B39C3E7E06706E8,
+	Externs_GADUCreateSmartBannerViewWithCustomPosition_m5B021BD669169C73B06BA5665C49F546C32730AA,
+	Externs_GADUCreateAnchoredAdaptiveBannerView_m2BA84FECC7577A83EAB72F97BFD3AB27BDB82989,
+	Externs_GADUCreateAnchoredAdaptiveBannerViewWithCustomPosition_m537319AC1247107F68016D3E4D2034153F8DB9C3,
+	Externs_GADUSetBannerCallbacks_m916DD33234142FB01A9A11626EFE6CF31E7EF27D,
+	Externs_GADUHideBannerView_mFCF0DBC74C9763197D461E73F3DBB2EB3770A19D,
+	Externs_GADUShowBannerView_mF4F81545FDD779F28442965B395F7D122E2885A3,
+	Externs_GADURemoveBannerView_m6AA298D0E0F3C6C11C849602A0162A0210884B6F,
+	Externs_GADURequestBannerAd_m5DBA2A686D20EB9DAC4A3156DACBAC9C28AA190F,
+	Externs_GADUGetBannerViewHeightInPixels_m624C93A49BA16046C9ADC489A7738D9A6FFFC6DE,
+	Externs_GADUGetBannerViewWidthInPixels_m816B05EF8C8639CBF4FBB42D5E6AF4CFC42C60E4,
+	Externs_GADUSetBannerViewAdPosition_m3E612364A6F1E4A6BF44713A6C045A1AB25C8E09,
+	Externs_GADUSetBannerViewCustomPosition_m93DD54C048BA2A975D70AAF4DCC496A38C3104D5,
+	Externs_GADUGetResponseInfo_m3EDC5AB2F103710DD1BB844D8475B1E5FDE3CF75,
+	Externs_GADUResponseInfoMediationAdapterClassName_m008A352D7BE280076CAF2A23759ECA2DC2A961DF,
+	Externs_GADUResponseInfoResponseId_m51B73D6CBAEBE33E7177AE536C0DE62183F595B1,
+	Externs_GADUGetResponseInfoDescription_mE01E912C6B105B60D020E2736FFEDE39F6BC41C6,
+	Externs_GADUGetAdErrorCode_mC4F9BF6CA414271F2278611A98A0DCE337B8FFDE,
+	Externs_GADUGetAdErrorDomain_m2E19EC934E4A1C858C3043697E8E0326A8B52587,
+	Externs_GADUGetAdErrorMessage_m3BAAA68867913DC7EED0CA94ACBDD737FE7D140A,
+	Externs_GADUGetAdErrorUnderLyingError_m84E70B24901C49C93C21653A5476CDA80B0CF745,
+	Externs_GADUGetAdErrorResponseInfo_m0DC8541DD95A862D67E876A7B1A56BE5F38EC261,
+	Externs_GADUGetAdErrorDescription_m9F98DEF8F9A91C5C43B296B6A5C315BC4BDFA35F,
+	Externs_GADUCreateInterstitial_mD8EAD878E4489AF1404A465FE78B2435D9063C73,
+	Externs_GADULoadInterstitialAd_mF773B37985EA4A8248B0ED2D29798B785D9A1DD0,
+	Externs_GADUSetInterstitialCallbacks_m582B90F73A5A5E49AF0EBCBCDBA1C70A993A0F78,
+	Externs_GADUShowInterstitial_mBB1400E5F2DF59D6F2FD8CC415C965436A759FE8,
+	Externs_GADUCreateRewardedAd_mB95B8667AE510D36BEB87348D4F055A3A26BBB50,
+	Externs_GADULoadRewardedAd_mEE4994EE75ED46944C4A6AA17E3CF2DE6BC1880C,
+	Externs_GADUShowRewardedAd_m0123A51F89408FF743E4A62B2623514D647E6E4A,
+	Externs_GADUSetRewardedAdCallbacks_mC2B9A1E4C7B065449D19DCF275C785983787CD80,
+	Externs_GADUCreateServerSideVerificationOptions_m779DA32A3B06AFA0C86745760D7ABB105A5217D7,
+	Externs_GADUServerSideVerificationOptionsSetUserId_m2FF8A898DC4779231BCDFD1B6A4D2E639012996D,
+	Externs_GADUServerSideVerificationOptionsSetCustomRewardString_mA4AEEC684987A3672F5B1EB4A3F89DE8563F0E02,
+	Externs_GADURewardedAdSetServerSideVerificationOptions_m7C3E6AA15EDA66D773676275EFA27F266A445F0A,
+	Externs_GADURewardedAdGetRewardType_m30DA335C131B306488EC3599C146D532253F7656,
+	Externs_GADURewardedAdGetRewardAmount_m849EB11EB65993DE72BD2BEADDC37BD66D261BE3,
+	Externs_GADUCreateRewardedInterstitialAd_mA8AA2CFAD488D7754BE2A124935E3ED2E8199193,
+	Externs_GADULoadRewardedInterstitialAd_mD7DBA48CFB8248C1F69786BA685E81925A686517,
+	Externs_GADUShowRewardedInterstitialAd_m1F459EDCFE0E8DF7A0CF1C5202530BE0CC957024,
+	Externs_GADUSetRewardedInterstitialAdCallbacks_m4723EC9B473930DEF31E65B1BB8C40B08DEC8762,
+	Externs_GADURewardedInterstitialAdSetServerSideVerificationOptions_m208B2CD151A4241DBE11C55A3C8806983DD63957,
+	Externs_GADURewardedInterstitialAdGetRewardType_m323EA2879CCE4A9980E57CFF1CBFD7D594FC1975,
+	Externs_GADURewardedInterstitialAdGetRewardAmount_m24E89388E08A688E561F258BB08C8784F62CF607,
+	Externs_GADUPresentAdInspector_mD988B535B66B5324D44136C2268AD81E45043EFE,
+	GoogleMobileAdsClientFactory__ctor_m67A11481320C323CDCD2BF1158E2F84C1EAB564F,
+	GoogleMobileAdsClientFactory_BuildAppOpenAdClient_m8087D0A93CB1E1E132FEC3693331067453D00AEB,
+	GoogleMobileAdsClientFactory_BuildBannerClient_m4F101422036466E2ACA0949974949BF5AC2EE852,
+	GoogleMobileAdsClientFactory_BuildInterstitialClient_m149D1EAFB4FDEC6A28491BCCD2F6A12381E70E8F,
+	GoogleMobileAdsClientFactory_BuildRewardedAdClient_mD298E400A439D65AF6D264B15D393E857DEBE763,
+	GoogleMobileAdsClientFactory_BuildRewardedInterstitialAdClient_mB982C1C3D60615F8AC3F0DECA4761FD298529733,
+	GoogleMobileAdsClientFactory_MobileAdsInstance_mF59A6552F70A3061A1ACDC29496DE32CF736E562,
+	InitializationStatusClient__ctor_mDE93C0FA861099F8818A145BF3C4880B33CC8DA4,
+	InitializationStatusClient_getAdapterStatusForClassName_m93B31C8687D35DFDA72B54E8F8AAF98D41A61995,
+	InitializationStatusClient_getAdapterStatusMap_m94CBFEA4F49B3452954725657F9684345185A17A,
+	InitializationStatusClient_GetAdapterClassNames_m4209C3E1F12D408DC81E607653A34364CE6B08A9,
+	InitializationStatusClient_Dispose_mA986A4F254E70513EC69BB609DC56BCD4EDA6CA1,
+	InitializationStatusClient_Finalize_m94853C7CCADBE511B5C5C0B77377EDA842547988,
+	InterstitialClient__ctor_m690E1C855056543831494E7FFF6ABBDC3B91B4D7,
+	InterstitialClient_add_OnAdLoaded_m3005C21DC537FE22EA924FC06644CDC531CD36DA,
+	InterstitialClient_remove_OnAdLoaded_m98546B2D51D2C66279245A62E4E0E8937AF9F857,
+	InterstitialClient_add_OnAdFailedToLoad_mD4E1D5AF0233ABBA650A3A33FFEB6C3291BCD06C,
+	InterstitialClient_remove_OnAdFailedToLoad_m0F238643BDAEF9201AAD40ED604755C43F526A53,
+	InterstitialClient_add_OnPaidEvent_mEC47F27D98AF47AD1F612A7BAB6BD21438E1ADD2,
+	InterstitialClient_remove_OnPaidEvent_mC20925C92ECB90C5CEC09474B25A6824993B7B35,
+	InterstitialClient_add_OnAdFailedToPresentFullScreenContent_m1B8E78905064D44A42916C732783BFF5D643C373,
+	InterstitialClient_remove_OnAdFailedToPresentFullScreenContent_m19231C38E7AD7747109DA4950EA846F3F64809ED,
+	InterstitialClient_add_OnAdDidPresentFullScreenContent_m8B61F8E4E43FA2F3A37C3C89C0AE225BDD9E4108,
+	InterstitialClient_remove_OnAdDidPresentFullScreenContent_m397276FE3459F77A950960613317CB90D42FB486,
+	InterstitialClient_add_OnAdDidDismissFullScreenContent_m46527063B8E745A8D1C8C206A3F8E9F8D9C7B001,
+	InterstitialClient_remove_OnAdDidDismissFullScreenContent_mC15D62AF930B0F6F46EFEDA8FF9403BFA84A379B,
+	InterstitialClient_add_OnAdDidRecordImpression_mB07B30D92055E554054912CB6A0B4E7B9C3FD65B,
+	InterstitialClient_remove_OnAdDidRecordImpression_m23CA8DBEEF450A0983B792F4878E10351C62E211,
+	InterstitialClient_get_InterstitialPtr_mB668B3F4C5FFB83B001F6C8E61F97B22F4E72C4A,
+	InterstitialClient_set_InterstitialPtr_m961D9DA4C6F9307A2FF973B567C4230C92B8066B,
+	InterstitialClient_CreateInterstitialAd_m35FA38414578EE70079FC30A7C924206F7AD432F,
+	InterstitialClient_LoadAd_m22071B1B3F9A0990F6BE992AE0454FF23BA47746,
+	InterstitialClient_Show_m3D43D48086F95DA1B254B40C439B06ECC98C1B6E,
+	InterstitialClient_GetResponseInfoClient_m023E5C98FED17688F0F20CE01F99E9D71547E27A,
+	InterstitialClient_DestroyInterstitial_m39369ED18C70843E1396C556FAA16C8819AF2A46,
+	InterstitialClient_Dispose_m8FB2855A695A6AB758EFF986EC575717684A4911,
+	InterstitialClient_Finalize_m66312AC9C9B3FED93E02F5A132E1F16A79A1A84E,
+	InterstitialClient_InterstitialLoadedCallback_m368B82C4CA6BA47076BD02E69EC76530E946FE1A,
+	InterstitialClient_InterstitialFailedToLoadCallback_m3B29A67527159C1A42D22A66EDF21BD7CCB194CE,
+	InterstitialClient_InterstitialPaidEventCallback_mBD55D1940819BBD364B840D4F596F5DB7B6005C7,
+	InterstitialClient_AdFailedToPresentFullScreenContentCallback_m9547576B41A6E0478069F9207F6BD54128D1E9F5,
+	InterstitialClient_AdWillPresentFullScreenContentCallback_m678899D537A912C01AF3968833FA613AB1C46036,
+	InterstitialClient_AdDidDismissFullScreenContentCallback_mAFA10C82DBA584626AC626C8CC1ABD27BEFD5142,
+	InterstitialClient_AdDidRecordImpressionCallback_m87BA8289CF579705CDCB7919AFE63C39074920EF,
+	InterstitialClient_IntPtrToInterstitialClient_mE0DE26716604CC4C9BC563E0D8DF25ACE42A0415,
+	GADUInterstitialAdLoadedCallback__ctor_m49DDD1D746C00AC3BF7C4C49C09F8D3CFA939C55,
+	GADUInterstitialAdLoadedCallback_Invoke_mCA5C411AB71112DB71BD0772E47D76649E0E46ED,
+	GADUInterstitialAdLoadedCallback_BeginInvoke_mDCCB1C02E3587DB69C69B6EE80DF3FF6C767F7AA,
+	GADUInterstitialAdLoadedCallback_EndInvoke_m66DF8A247ABCFE20A22E62DDE6D0299EDB69B5E8,
+	GADUInterstitialAdFailedToLoadCallback__ctor_m6C1635D7AF37B4C6A2982E6548424228BD091847,
+	GADUInterstitialAdFailedToLoadCallback_Invoke_m52D5A686393E9D986B5941D32CE170FEADE97039,
+	GADUInterstitialAdFailedToLoadCallback_BeginInvoke_m628DC3A4EF1E49EC0003CE4E11959D7993D6F5F7,
+	GADUInterstitialAdFailedToLoadCallback_EndInvoke_mCCE9C011A00549B915E1D9C058138D13141B972E,
+	GADUInterstitialPaidEventCallback__ctor_m46F49EB0A965CA588477BCE7D5930E86FFA5214E,
+	GADUInterstitialPaidEventCallback_Invoke_mADA8CDBCCE2C931E68F43B6C80CD429F3503B3DD,
+	GADUInterstitialPaidEventCallback_BeginInvoke_mD6F4D25A3290FF6B5222B35BD23F31E973348FCF,
+	GADUInterstitialPaidEventCallback_EndInvoke_m186F677A53FF754D3C25EB49391CA76D8E22F594,
+	GADUInterstitialAdFailedToPresentFullScreenContentCallback__ctor_mDF3B7C7B1D59ADEA0E4E760EDE2E6FFF0F48F4B3,
+	GADUInterstitialAdFailedToPresentFullScreenContentCallback_Invoke_m1F38C9DDD5351BFE2523175262EA73AC3C118219,
+	GADUInterstitialAdFailedToPresentFullScreenContentCallback_BeginInvoke_m18356E0D2C96A876169EB73A48A40B0CB9186F0C,
+	GADUInterstitialAdFailedToPresentFullScreenContentCallback_EndInvoke_m4F9F63701671CADE3CED1FABD123EAEC0DB51C44,
+	GADUInterstitialAdWillPresentFullScreenContentCallback__ctor_mEDCF7716DE27045AE5268A3F28DBB7C37A231067,
+	GADUInterstitialAdWillPresentFullScreenContentCallback_Invoke_m57B90E34A24A303DA8BFDC2E0AF0BA7DA4C76130,
+	GADUInterstitialAdWillPresentFullScreenContentCallback_BeginInvoke_mABF6D4E270DC642EEAB46D03EF5B45CA7B025EDF,
+	GADUInterstitialAdWillPresentFullScreenContentCallback_EndInvoke_m66CB6C8E3BC6B26F142778E269E6D7010CC7CA84,
+	GADUInterstitialAdDidDismissFullScreenContentCallback__ctor_mEFF0F13FE4DF1A13D5CA72DC42E1E426D09B8307,
+	GADUInterstitialAdDidDismissFullScreenContentCallback_Invoke_m8C3FCC425DA5958801A8B5F1421E90E3AC644A51,
+	GADUInterstitialAdDidDismissFullScreenContentCallback_BeginInvoke_m968FAB88CF4240C7D46E1FBF20F2DE987C7A3C0D,
+	GADUInterstitialAdDidDismissFullScreenContentCallback_EndInvoke_mE0CFD8F9D19F4FF52B6940A8C025AC7D204356E3,
+	GADUInterstitialAdDidRecordImpressionCallback__ctor_m074BC3A8F77239D460933F9E1A42E3852F301739,
+	GADUInterstitialAdDidRecordImpressionCallback_Invoke_m048DAF34FE88D8D162DF0FB52A8C99F37CFC4DFC,
+	GADUInterstitialAdDidRecordImpressionCallback_BeginInvoke_mAB815A14B0C46F486B6A0118D69F586B91CDF0A7,
+	GADUInterstitialAdDidRecordImpressionCallback_EndInvoke_mB08E7FF4FA5E8FB22A157F83642C6B1F83D4482E,
+	LoadAdErrorClient__ctor_mA07305CC473E15C70165E245E1CBE43164F0BDF1,
+	LoadAdErrorClient_GetCode_mF3C553227C7BE8C0A70160A14AFCC1531B11CD17,
+	LoadAdErrorClient_GetDomain_m889CD9369E5BC426EE97922D7D424F786BB3AC1E,
+	LoadAdErrorClient_GetMessage_m841ED200B6E5B95473E3EC2BC7394037761C72AA,
+	LoadAdErrorClient_GetCause_m851A8D6BB6BBED436B43659A228A663FAA1FE0DC,
+	LoadAdErrorClient_GetResponseInfoClient_m752F64C8EB720675F2AF74F923563902CC4E66A9,
+	LoadAdErrorClient_ToString_m805E5A41539410A9CABDBADEBC456F7F6872EE35,
+	MobileAdsClient__ctor_m37406C7FFE3C2E280C5D329BDEFECB23414F6F00,
+	MobileAdsClient_get_Instance_mEA2F9587657277F5CF6FF7F5916A620EC222BCBD,
+	MobileAdsClient_Initialize_mE08381F70952826A7D02F998D85BAC6A6F3C603A,
+	MobileAdsClient_DisableMediationInitialization_mACAC97D97D28DAA41AEEE34085D59AAB20F8E494,
+	MobileAdsClient_SetApplicationVolume_mEE86BFA5129BAD3BFEE4574183478B2143E3C8A4,
+	MobileAdsClient_SetApplicationMuted_m1942F3C5D147A11A77756167CEAE9BE9FC91C0E4,
+	MobileAdsClient_SetRequestConfiguration_m6138968CFF951F1371C59634B2D6BA60C8552A64,
+	MobileAdsClient_GetRequestConfiguration_m5EA816BEE706D8BE22777347B787A271F722A58A,
+	MobileAdsClient_SetiOSAppPauseOnBackground_mE0C6F2EA4591CC2C6B5D5DAC384DE3ED89BB7E9A,
+	MobileAdsClient_GetDeviceScale_m79C2D308A2427FF4B6EBD0BDE7262682472225A4,
+	MobileAdsClient_GetDeviceSafeWidth_m844DAC3F2F1FF9F1E89541DE191891D8CA0C324C,
+	MobileAdsClient_OpenAdInspector_m2F389A2306413E1867AF83EFC9F619B8A1E1E6F0,
+	MobileAdsClient_AdInspectorClosedCallback_m71CCB88F3BF826E7320F016145A00A6DD70196F9,
+	MobileAdsClient_InitializationCompleteCallback_mE013122BE35ABC3BECCB456AF4565FA4BB7D64B9,
+	MobileAdsClient_IntPtrToMobileAdsClient_m9E5469B4F0296EBA72E16C24FD5D76503A83164C,
+	MobileAdsClient_Dispose_m16D69D2A4E08AB21B9196D7C7F9D3C8A0C8B0995,
+	MobileAdsClient_Finalize_mDB607341075A360DB2830173899F595BC9AA68F5,
+	MobileAdsClient__cctor_m776FBA14F7F3549546C85BF33B5F65A27E271AAF,
+	GADUAdInspectorClosedCallback__ctor_m83CA289663EB12E871300CD52738AEB5AAA8BCD6,
+	GADUAdInspectorClosedCallback_Invoke_m58C4E7BBD0EC29AD4B7FB435849C3DE59C1E9FA2,
+	GADUAdInspectorClosedCallback_BeginInvoke_m9FC5C206E429D38B7AEEB73FAF0B6CF5C2AF7F59,
+	GADUAdInspectorClosedCallback_EndInvoke_mCED1F5782FA37B87FF58DB057A9FB8AE48F2C34A,
+	GADUInitializationCompleteCallback__ctor_m52854BF4534586568E1C9B3B3784885E231A2D2A,
+	GADUInitializationCompleteCallback_Invoke_m1BF744FCD76105B844DA093FFFF0EEA900C2A3B1,
+	GADUInitializationCompleteCallback_BeginInvoke_m0BA01BB91990C74E69F88503744C9FB3B07ABD53,
+	GADUInitializationCompleteCallback_EndInvoke_mEFAA3CAD0FBDBFD662C260525E465F85A208DB11,
+	MonoPInvokeCallbackAttribute__ctor_m6207C5F79BB9B9240481D0B2648C700351F5E336,
+	RequestConfigurationClient__ctor_m22DF7188087B25224077EA69A7EF11F43B0946AC,
+	RequestConfigurationClient_SetRequestConfiguration_m7EB64A06154076632AD37E770129693A7E874862,
+	RequestConfigurationClient_GetRequestConfiguration_m6C5F2E39EBA1FBE74E8C9802BAC6A752497AB739,
+	RequestConfigurationClient__cctor_mCE976ABC7657F29B83E2037C008AD2AB4B339E49,
+	ResponseInfoClient__ctor_m6C344F37F0C39F6CF7E3418872CA408DB9BB3560,
+	ResponseInfoClient__ctor_mB7672CB4134C73DEA6F6DD70BADD80F834228169,
+	ResponseInfoClient_GetMediationAdapterClassName_mAB3DBA7A3CFFA0CFD492E1B62DCA43FEA0AD9430,
+	ResponseInfoClient_GetResponseId_mBCFFCAB6A4F1601EE2FD948ECF871E12AFEFA0F4,
+	ResponseInfoClient_ToString_m712679B2A6F2A5879883BA12F29B0F3D101EC265,
+	RewardedAdClient__ctor_m7E7B78D3FF45AFE0C7455D8A893B01592EC94311,
+	RewardedAdClient_add_OnAdLoaded_mE9AC8D7655C6C94049CA0C5E8E7FAAF4C493011C,
+	RewardedAdClient_remove_OnAdLoaded_m7286584C437F8AE095EEE657ED20139131823287,
+	RewardedAdClient_add_OnAdFailedToLoad_mB5971CA084C99AAD835F1C26667269FC0B96C323,
+	RewardedAdClient_remove_OnAdFailedToLoad_m82AC06BA8465C58D2F80A912A9CA3B31D1FDEAE8,
+	RewardedAdClient_add_OnUserEarnedReward_m9C1652A8DFA8CC6849E18452782A25D614301BAA,
+	RewardedAdClient_remove_OnUserEarnedReward_m282481A67814E52C2D5CC439F20763FBF1B1DB1E,
+	RewardedAdClient_add_OnPaidEvent_m294A6DE810F7F49B667EB23B3A2778B6D2D69086,
+	RewardedAdClient_remove_OnPaidEvent_m03A322AB2E55CC0B1E3C4F3BE87827BD9B54966C,
+	RewardedAdClient_add_OnAdFailedToPresentFullScreenContent_m018DDE88AA9E76BF3175183114535BAB0EEEB069,
+	RewardedAdClient_remove_OnAdFailedToPresentFullScreenContent_mC88B1E5986324B8044A6F54C14F7A7642FB6366D,
+	RewardedAdClient_add_OnAdDidPresentFullScreenContent_m0510849E63086703E42921016FD56EFF042882A9,
+	RewardedAdClient_remove_OnAdDidPresentFullScreenContent_m863A91CEBD3EBB5F998F20D605D8ED93C8CD4D95,
+	RewardedAdClient_add_OnAdDidDismissFullScreenContent_m4ABA1074BF1B24E9C5713AD5C006FE7D78EF07F7,
+	RewardedAdClient_remove_OnAdDidDismissFullScreenContent_mC35CDAED0F7043785A047B47169AD9A47C56C05B,
+	RewardedAdClient_add_OnAdDidRecordImpression_m07462D0A08B56FA77E1E68F96AB2FBA578771293,
+	RewardedAdClient_remove_OnAdDidRecordImpression_mCE3BCE12DC96E5CA65FD0A8DC04716E4DFA603DE,
+	RewardedAdClient_get_RewardedAdPtr_m9D5C7C8191A31FB6A71A7E45B9C24215D6FC29BE,
+	RewardedAdClient_set_RewardedAdPtr_mCA80FE51C121CDF37DA806A199AE9690F5528118,
+	RewardedAdClient_CreateRewardedAd_mB5F1DDF7FC470B8003FA9C8691B4DAD21111CB44,
+	RewardedAdClient_LoadAd_mDD5D9F6536415A723D54E77096F9651076AED7BE,
+	RewardedAdClient_Show_mF116DD0ACD1FA2978DBFA75380C4ABA559788ED0,
+	RewardedAdClient_SetServerSideVerificationOptions_m4301FD84A23BEBF6F260E1045386C861339EF294,
+	RewardedAdClient_GetRewardItem_m4CB7B0EF72E79373A6611CC04D54EEC584494BDA,
+	RewardedAdClient_GetResponseInfoClient_mCA381A2B9185D0D0B8F82A505EBC940E88AE6F77,
+	RewardedAdClient_DestroyRewardedAd_m19E82C1D90BD984F2CC3C5C9206FFDADF366D843,
+	RewardedAdClient_Dispose_mE5C981F4A8A2346DF4C3F5B1BCF4650373E469FF,
+	RewardedAdClient_Finalize_m0FE6ACC5417451BD7589F2F533D6473EA9D123CA,
+	RewardedAdClient_RewardedAdLoadedCallback_mE0E4A96B961FF0D3C90570C56F29F2AFFF0E8221,
+	RewardedAdClient_RewardedAdFailedToLoadCallback_m064E25C933FD7924D1941BD78B3655524F171039,
+	RewardedAdClient_RewardedAdUserDidEarnRewardCallback_mC1985A1F18C6E9A8D71F8FF30744D679A037EAA2,
+	RewardedAdClient_RewardedAdPaidEventCallback_m7710A1F9A90BD5081057D14B6A215EE3ECA5AE0B,
+	RewardedAdClient_AdFailedToPresentFullScreenContentCallback_mAD6B76E000E53090E0F000BC01FC58F54A60DFA3,
+	RewardedAdClient_AdWillPresentFullScreenContentCallback_m8B97AE1D2BAF75538F588A76400187764F8BE362,
+	RewardedAdClient_AdDidDismissFullScreenContentCallback_mB64A3FE4B78BDA3362FF15DB0BD19B8674D522AD,
+	RewardedAdClient_AdDidRecordImpressionCallback_m37FA90962C2CF8C91421C2850DFA52144D45E447,
+	RewardedAdClient_IntPtrToRewardedAdClient_mD18E9E76A08ACEB432C6BBA95613F74093D54EF3,
+	GADURewardedAdLoadedCallback__ctor_mAB4343558F716A1FD7A954EA2B9828064F683754,
+	GADURewardedAdLoadedCallback_Invoke_m17BB2914A68E6AA85B4469A7194532021938F292,
+	GADURewardedAdLoadedCallback_BeginInvoke_mE8FB181442805CC77F9161A3ABCE364D07FD5B8E,
+	GADURewardedAdLoadedCallback_EndInvoke_mCA23E942B61AB9B32642DAED1DD2038917FB1C05,
+	GADURewardedAdFailedToLoadCallback__ctor_m53CE3C261CCEB2AE3066C2D11801E871AC41A52E,
+	GADURewardedAdFailedToLoadCallback_Invoke_mCC10B1F01067DE542BE8054F7D910351CC2896A3,
+	GADURewardedAdFailedToLoadCallback_BeginInvoke_mE379397C08817001B07E676EE3F458FF619676E3,
+	GADURewardedAdFailedToLoadCallback_EndInvoke_mC79486D5A60A164FF0C3E38924EAC373E98DAFCA,
+	GADURewardedAdUserEarnedRewardCallback__ctor_m3F987217B3D27799C552E287178D82F91FD5C56B,
+	GADURewardedAdUserEarnedRewardCallback_Invoke_m8342A73A5BBB577F7945F351B5CB7EFEA26B215E,
+	GADURewardedAdUserEarnedRewardCallback_BeginInvoke_mFCDA5B08650FE8AD1606E6B3C29D19E2750EAD49,
+	GADURewardedAdUserEarnedRewardCallback_EndInvoke_mAF79E633DBDC776ACF948C005899C2ACE0EBDCF4,
+	GADURewardedAdPaidEventCallback__ctor_m7D972EBAE73AF733497FF3D12D6848383FF092B4,
+	GADURewardedAdPaidEventCallback_Invoke_mBBD715EE105485078AD7CCF79B86E48EA75D0871,
+	GADURewardedAdPaidEventCallback_BeginInvoke_mD5ED92C23EA04F2ADF2B01805491F1A44E05C5EA,
+	GADURewardedAdPaidEventCallback_EndInvoke_mB0AD2A5F0B346A80A5D5B7AE2AFD91CAAD347DC7,
+	GADURewardedAdFailedToPresentFullScreenContentCallback__ctor_m01C668CAACFECFE11058C7EB564801863A8461CB,
+	GADURewardedAdFailedToPresentFullScreenContentCallback_Invoke_m4D6CEC29D6EB9E1AFBFE798CE11799337931A578,
+	GADURewardedAdFailedToPresentFullScreenContentCallback_BeginInvoke_m5FAC1E006379B83AAA2707F156F360387F6BF50D,
+	GADURewardedAdFailedToPresentFullScreenContentCallback_EndInvoke_m8F6ACFC57F18C427EA23C422C33745512936E278,
+	GADURewardedAdWillPresentFullScreenContentCallback__ctor_mB29EFB6AB4051F57419CE50C6598F9754F52CFF2,
+	GADURewardedAdWillPresentFullScreenContentCallback_Invoke_mB1DEFB7DEBFE43A2C772CA576C1698C81AD9A947,
+	GADURewardedAdWillPresentFullScreenContentCallback_BeginInvoke_m6FE2C203B44F6795D1B6BC0B010611DE7A0AA9AC,
+	GADURewardedAdWillPresentFullScreenContentCallback_EndInvoke_m1699F1A878EB873EC3B0A90A4A4500EDDE610FA0,
+	GADURewardedAdDidDismissFullScreenContentCallback__ctor_m6105C6D1B29FD5CB4B3425A13A68DC2B42AAC27F,
+	GADURewardedAdDidDismissFullScreenContentCallback_Invoke_m4D84EE8C2042C141A86607BA7251F21B5CDD9159,
+	GADURewardedAdDidDismissFullScreenContentCallback_BeginInvoke_m444E5BB33DE841401CA96FDB3A7B539B897A2565,
+	GADURewardedAdDidDismissFullScreenContentCallback_EndInvoke_m7E87C511508EF8470B5645158DEDBF3EC7B5BCCC,
+	GADURewardedAdDidRecordImpressionCallback__ctor_mB7B0530FF42FA92922A3EFFB52E88F36299E89ED,
+	GADURewardedAdDidRecordImpressionCallback_Invoke_mAA48DD5787990187A16E6B9D48B011CF264800FE,
+	GADURewardedAdDidRecordImpressionCallback_BeginInvoke_mAD0C815CB2ECBCC2F078F9B0311BB4C39ED2B155,
+	GADURewardedAdDidRecordImpressionCallback_EndInvoke_m5D15AFC43E89A8137823DF9864CA2F5D055545CF,
+	RewardedInterstitialAdClient__ctor_m2D9AA18220E15B12E56D3B683F5D484543CE4ACF,
+	RewardedInterstitialAdClient_add_OnAdLoaded_m4F3ED9C738D8039A0D5EBEA209F643106018C193,
+	RewardedInterstitialAdClient_remove_OnAdLoaded_m3C1B7973E27B02FC649016D3CFC3432A61597F1B,
+	RewardedInterstitialAdClient_add_OnAdFailedToLoad_mDF62CFA9ED72722F93CD5F7C8C4C4C59C4FFBECD,
+	RewardedInterstitialAdClient_remove_OnAdFailedToLoad_mD0338A5443C7EDD8BC82D4535550ACE28A0ED465,
+	RewardedInterstitialAdClient_add_OnUserEarnedReward_m7169A9AA01EB8B218F8812FC9A092669A63CF0EA,
+	RewardedInterstitialAdClient_remove_OnUserEarnedReward_mEC2FF0BD00D25086D51CEFF10FF1E0F3045B1D92,
+	RewardedInterstitialAdClient_add_OnPaidEvent_m7E75FC5562C6AAF1736B43782D686BB70DA5E711,
+	RewardedInterstitialAdClient_remove_OnPaidEvent_mBE4C77BEA4F576D8FDB20E69D1E8C2C89478C641,
+	RewardedInterstitialAdClient_add_OnAdFailedToPresentFullScreenContent_m2BAC6B236FDA794688F10E3FC89FFCC23CC74AA4,
+	RewardedInterstitialAdClient_remove_OnAdFailedToPresentFullScreenContent_m902E55E0C42D9330BDB119950A93C519C11DC843,
+	RewardedInterstitialAdClient_add_OnAdDidPresentFullScreenContent_m681506D8A1CCD427C60D9664D70AA69D8364B300,
+	RewardedInterstitialAdClient_remove_OnAdDidPresentFullScreenContent_m755D14BB948C17AA9425E21A50ED7E6A738AF5AE,
+	RewardedInterstitialAdClient_add_OnAdDidDismissFullScreenContent_mF73BD1326FC1A986BE33184324FBAE8E06373B66,
+	RewardedInterstitialAdClient_remove_OnAdDidDismissFullScreenContent_m08304D53C6BE46F7691831AC7DBBBBC40A79CC32,
+	RewardedInterstitialAdClient_add_OnAdDidRecordImpression_m6F76BE200EDF4698E04E6DA641EC5B374FCC37F3,
+	RewardedInterstitialAdClient_remove_OnAdDidRecordImpression_m5B80D0D00F0EF210ED287D6913E7F4CC1AD4FB31,
+	RewardedInterstitialAdClient_get_RewardedInterstitialAdPtr_m323F17BC68DB8C1D7B3E1C04630ADDA61EAEEEE8,
+	RewardedInterstitialAdClient_set_RewardedInterstitialAdPtr_m9A7EE9C79B399ECCDEF7A8D32C6C741F9E4F76F3,
+	RewardedInterstitialAdClient_CreateRewardedInterstitialAd_m77CBDB4BCF71DEC1D046D846AFF493B65A4B3826,
+	RewardedInterstitialAdClient_LoadAd_mD6B151C8C72F30E1ED95F1752408B8FFBB7174C3,
+	RewardedInterstitialAdClient_Show_m2B89722827624CAA68EB2C1BDD65402F824579F6,
+	RewardedInterstitialAdClient_SetServerSideVerificationOptions_m8446761E276DC574F4F84C9B37122333799A0A71,
+	RewardedInterstitialAdClient_GetRewardItem_mACBD2EB8F270FE5236777CBB2F466444447FCFD5,
+	RewardedInterstitialAdClient_GetResponseInfoClient_m33EF91C2BD4AE1B9E156DE240D6A4B5E10E18313,
+	RewardedInterstitialAdClient_DestroyRewardedInterstitialAd_mBFFA3CECCFBD99AB20E259F2C95C655FBA87FBC8,
+	RewardedInterstitialAdClient_Dispose_mA2C74F31CA044CC8BA9514E970BAD4DB611CC5D9,
+	RewardedInterstitialAdClient_Finalize_m3D560BB9CDC69FCC3028E9B04A7DA7C8DE4CF6E2,
+	RewardedInterstitialAdClient_RewardedInterstitialAdLoadedCallback_m3C198B805390488E7DFA1A4C32D72BAFB5559C5B,
+	RewardedInterstitialAdClient_RewardedInterstitialAdFailedToLoadCallback_m8D6235A7FA6B064C35D489AE061069377ECA6016,
+	RewardedInterstitialAdClient_RewardedInterstitialAdUserDidEarnRewardCallback_mF56FA1935C15033D0FC5BF50DC3144BDE4FD6B79,
+	RewardedInterstitialAdClient_RewardedInterstitialAdPaidEventCallback_m83A9819AC3247112D0ADAF0D6B40F0CC0FE9D86C,
+	RewardedInterstitialAdClient_AdFailedToPresentFullScreenContentCallback_m9CDEAA3B429ACA4252C4179CD3EFE80AA833B766,
+	RewardedInterstitialAdClient_AdWillPresentFullScreenContentCallback_mCAD4621C45FDA4DEBF4A99DBF91BF0AE52BA9E6D,
+	RewardedInterstitialAdClient_AdDidDismissFullScreenContentCallback_mB0351BC7A58A280BB59C01F4C0C8F9E262C93E70,
+	RewardedInterstitialAdClient_AdDidRecordImpressionCallback_m30A02604920E78D2255513508F90E1255DF92182,
+	RewardedInterstitialAdClient_IntPtrToRewardedInterstitialAdClient_m207C0041903F774490874541E91DB1B9EA85AAC9,
+	GADURewardedInterstitialAdLoadedCallback__ctor_m20F9B31DF38EDCD59429DD70F49361216C8532B9,
+	GADURewardedInterstitialAdLoadedCallback_Invoke_mEA35D906FFF060E07902C5ADB24CDAB8F558E763,
+	GADURewardedInterstitialAdLoadedCallback_BeginInvoke_mF8999D96AC93AE59CCC5519E9A2D1E0EC34B7016,
+	GADURewardedInterstitialAdLoadedCallback_EndInvoke_m77770AC2AF086C844A6FE33C9087F502A5780EB6,
+	GADURewardedInterstitialAdFailedToLoadCallback__ctor_m079CBF393A6D84A760A07818FBA2A811BB012004,
+	GADURewardedInterstitialAdFailedToLoadCallback_Invoke_m659CCB2F6094631AD3A60505C91CEE22F3082A87,
+	GADURewardedInterstitialAdFailedToLoadCallback_BeginInvoke_mF303E42770325FCAF58752220713B1D83E3C492A,
+	GADURewardedInterstitialAdFailedToLoadCallback_EndInvoke_mBC32576384E7F8869C59B545074758EA4A785720,
+	GADURewardedInterstitialAdUserEarnedRewardCallback__ctor_mBD859FFB3913ED467F8FE3598B28F3A1627117D7,
+	GADURewardedInterstitialAdUserEarnedRewardCallback_Invoke_mBA20BD60BBE3133C7E884E3A4F47D31B65937FA6,
+	GADURewardedInterstitialAdUserEarnedRewardCallback_BeginInvoke_m168F6674EAA8A09A9C459EFB847988C6AA3AE53E,
+	GADURewardedInterstitialAdUserEarnedRewardCallback_EndInvoke_mE074DF78A7469D7885370824D7138547E831AF66,
+	GADURewardedInterstitialAdPaidEventCallback__ctor_m6EE9E2FC68D79449C5668734C208E1235EEBD896,
+	GADURewardedInterstitialAdPaidEventCallback_Invoke_m4285C90659BFB32AAD418278D9A5FFFAE8956E8A,
+	GADURewardedInterstitialAdPaidEventCallback_BeginInvoke_m0B5F860C4719B5D98222102CBB087065E7A9F60F,
+	GADURewardedInterstitialAdPaidEventCallback_EndInvoke_mC97D38489456F9621A45C34CF9829FF1D8FCD2BF,
+	GADURewardedInterstitialAdFailedToPresentFullScreenContentCallback__ctor_mFF0C8390911A49E11C79611A086B6CD6547B30F7,
+	GADURewardedInterstitialAdFailedToPresentFullScreenContentCallback_Invoke_m652C988A5DF8A71EF3E0BF4E7AB20AE13B10C6C3,
+	GADURewardedInterstitialAdFailedToPresentFullScreenContentCallback_BeginInvoke_mBF7103708F1B7E2CA8E7EBE4C2E3FF034DE977AD,
+	GADURewardedInterstitialAdFailedToPresentFullScreenContentCallback_EndInvoke_mC287923F3A38F728F8FB8DD0C3047EB31D6BF0FA,
+	GADURewardedInterstitialAdWillPresentFullScreenContentCallback__ctor_mE5435F371D6D0E554402C538F73A4FD35245E6EE,
+	GADURewardedInterstitialAdWillPresentFullScreenContentCallback_Invoke_mAC0EF08A5D69F2C98C8302D18169F293F0D9EC6A,
+	GADURewardedInterstitialAdWillPresentFullScreenContentCallback_BeginInvoke_mD34B08A607D469E7A11DDB0BB66DF69C31271FD2,
+	GADURewardedInterstitialAdWillPresentFullScreenContentCallback_EndInvoke_m960DB2273A33001D14F9817592904F8506B501FD,
+	GADURewardedInterstitialAdDidDismissFullScreenContentCallback__ctor_m149B78952FDCDF9121ACA16717AB6B97D3FD0845,
+	GADURewardedInterstitialAdDidDismissFullScreenContentCallback_Invoke_m78F4F2A6375136F403D8F9CC7C9414D4F5244B49,
+	GADURewardedInterstitialAdDidDismissFullScreenContentCallback_BeginInvoke_m948433AA136A73546206CDF4AE7096B9B0D96C6E,
+	GADURewardedInterstitialAdDidDismissFullScreenContentCallback_EndInvoke_m82BBCFA493524806ABE441C1AEB080CEA10DC6A3,
+	GADURewardedInterstitialAdDidRecordImpressionCallback__ctor_mB2CB6224BFDAE68A3D23FA9C75DDD9004915BF95,
+	GADURewardedInterstitialAdDidRecordImpressionCallback_Invoke_mBC3D9BF92997A21558920243F7FC158FA2C0A340,
+	GADURewardedInterstitialAdDidRecordImpressionCallback_BeginInvoke_mCD2422EFFEE15A8B48D2D6FC0C98B757D259D596,
+	GADURewardedInterstitialAdDidRecordImpressionCallback_EndInvoke_m9D8A30F6CED54832AED488A911542B07B046FD5D,
+	Utils__ctor_mA447CFE3B47D42DD02289B7CCB5D37FBD2E43685,
+	Utils_BuildAdRequest_m4175342151681E043424D403CF80A3531150CEDD,
+	Utils_BuildServerSideVerificationOptions_m0093831CEAA627500056871DB9EFCEAD182E60A7,
+	Utils_PtrToString_m0230B2903AC08132A532FFCCEB47FCD34A6659A6,
+	Utils_PtrArrayToManagedList_m037EA912187730527C2BA269EADB1ECA32B60B71,
+};
+static const int32_t s_InvokerIndices[463] = 
+{
+	3167,
+	3779,
+	3799,
+	3799,
+	3799,
+	3799,
+	3167,
+	3894,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3781,
+	3167,
+	3894,
+	1039,
+	3894,
+	3799,
+	3894,
+	3894,
+	3894,
+	5935,
+	5523,
+	4702,
+	5523,
+	5935,
+	5935,
+	5935,
+	5789,
+	1840,
+	3167,
+	832,
+	3183,
+	1840,
+	1824,
+	543,
+	3183,
+	1840,
+	614,
+	163,
+	3183,
+	1840,
+	1824,
+	543,
+	3183,
+	1840,
+	3167,
+	832,
+	3183,
+	1840,
+	3167,
+	832,
+	3183,
+	1840,
+	3167,
+	832,
+	3183,
+	3894,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3781,
+	3167,
+	1039,
+	671,
+	3183,
+	3894,
+	3894,
+	3894,
+	3836,
+	3836,
+	3165,
+	1693,
+	3799,
+	3894,
+	3894,
+	5935,
+	5523,
+	5935,
+	5935,
+	4702,
+	5789,
+	1840,
+	3167,
+	832,
+	3183,
+	1840,
+	1824,
+	543,
+	3183,
+	1840,
+	3167,
+	832,
+	3183,
+	1840,
+	3167,
+	832,
+	3183,
+	1840,
+	614,
+	163,
+	3183,
+	3894,
+	5524,
+	6057,
+	5341,
+	5313,
+	5313,
+	5752,
+	5726,
+	5943,
+	5930,
+	5930,
+	6044,
+	6022,
+	6024,
+	6024,
+	5084,
+	5079,
+	5524,
+	5084,
+	5524,
+	5935,
+	6024,
+	5935,
+	5083,
+	5524,
+	5522,
+	5522,
+	5521,
+	5752,
+	5726,
+	5789,
+	5726,
+	5726,
+	5645,
+	5752,
+	4705,
+	5935,
+	4021,
+	4286,
+	4114,
+	4895,
+	4538,
+	4286,
+	4114,
+	4162,
+	5935,
+	5935,
+	5935,
+	5523,
+	5839,
+	5839,
+	5522,
+	5076,
+	5752,
+	5789,
+	5789,
+	5789,
+	5726,
+	5789,
+	5789,
+	5752,
+	5752,
+	5789,
+	5752,
+	4896,
+	4021,
+	5935,
+	5752,
+	4896,
+	5935,
+	3993,
+	6024,
+	5524,
+	5524,
+	5523,
+	5789,
+	5690,
+	5752,
+	4896,
+	5935,
+	3993,
+	5523,
+	5789,
+	5690,
+	5524,
+	3894,
+	3799,
+	3799,
+	3799,
+	3799,
+	3799,
+	3799,
+	3167,
+	2824,
+	3799,
+	3799,
+	3894,
+	3894,
+	3894,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3781,
+	3167,
+	3894,
+	1843,
+	3894,
+	3799,
+	3894,
+	3894,
+	3894,
+	5935,
+	5523,
+	4702,
+	5523,
+	5935,
+	5935,
+	5935,
+	5789,
+	1840,
+	3167,
+	832,
+	3183,
+	1840,
+	1824,
+	543,
+	3183,
+	1840,
+	614,
+	163,
+	3183,
+	1840,
+	1824,
+	543,
+	3183,
+	1840,
+	3167,
+	832,
+	3183,
+	1840,
+	3167,
+	832,
+	3183,
+	1840,
+	3167,
+	832,
+	3183,
+	3167,
+	3779,
+	3799,
+	3799,
+	3799,
+	3799,
+	3799,
+	3894,
+	6029,
+	3183,
+	3894,
+	3216,
+	3113,
+	3183,
+	3799,
+	3113,
+	3836,
+	3779,
+	3183,
+	5523,
+	5523,
+	5789,
+	3894,
+	3894,
+	6057,
+	1840,
+	1824,
+	543,
+	3183,
+	1840,
+	1824,
+	543,
+	3183,
+	3183,
+	3894,
+	5937,
+	6029,
+	6057,
+	1695,
+	1824,
+	3799,
+	3799,
+	3799,
+	3894,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3781,
+	3167,
+	3894,
+	1843,
+	3894,
+	3183,
+	3799,
+	3799,
+	3894,
+	3894,
+	3894,
+	5935,
+	5523,
+	5082,
+	4702,
+	5523,
+	5935,
+	5935,
+	5935,
+	5789,
+	1840,
+	3167,
+	832,
+	3183,
+	1840,
+	1824,
+	543,
+	3183,
+	1840,
+	1003,
+	298,
+	3183,
+	1840,
+	614,
+	163,
+	3183,
+	1840,
+	1824,
+	543,
+	3183,
+	1840,
+	3167,
+	832,
+	3183,
+	1840,
+	3167,
+	832,
+	3183,
+	1840,
+	3167,
+	832,
+	3183,
+	3894,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3183,
+	3781,
+	3167,
+	3894,
+	1843,
+	3894,
+	3183,
+	3799,
+	3799,
+	3894,
+	3894,
+	3894,
+	5935,
+	5523,
+	5082,
+	4702,
+	5523,
+	5935,
+	5935,
+	5935,
+	5789,
+	1840,
+	3167,
+	832,
+	3183,
+	1840,
+	1824,
+	543,
+	3183,
+	1840,
+	1003,
+	298,
+	3183,
+	1840,
+	614,
+	163,
+	3183,
+	1840,
+	1824,
+	543,
+	3183,
+	1840,
+	3167,
+	832,
+	3183,
+	1840,
+	3167,
+	832,
+	3183,
+	1840,
+	3167,
+	832,
+	3183,
+	3894,
+	5343,
+	5753,
+	5789,
+	5364,
+};
+static const Il2CppTokenIndexMethodTuple s_reversePInvokeIndices[37] = 
+{
+	{ 0x06000020, 5,  (void**)&AppOpenAdClient_AppOpenAdLoadedCallback_mB38142C3AB6AE0E7F5360343B938FE933CE2AAE6_RuntimeMethod_var, 0 },
+	{ 0x06000021, 4,  (void**)&AppOpenAdClient_AppOpenAdFailedToLoadCallback_mC16DC470E32257D43392DABCA54BA59C91F64C1D_RuntimeMethod_var, 0 },
+	{ 0x06000022, 6,  (void**)&AppOpenAdClient_AppOpenAdPaidEventCallback_m517798F765BAB7105A83E3EB4BBE34E433A8A5DD_RuntimeMethod_var, 0 },
+	{ 0x06000023, 2,  (void**)&AppOpenAdClient_AdFailedToPresentFullScreenContentCallback_m203EAABD07153231B220D44A73FD4B0802AE679D_RuntimeMethod_var, 0 },
+	{ 0x06000024, 3,  (void**)&AppOpenAdClient_AdWillPresentFullScreenContentCallback_m22B6A8F83734DEE33C24C8C5CC38AA53D688D259_RuntimeMethod_var, 0 },
+	{ 0x06000025, 0,  (void**)&AppOpenAdClient_AdDidDismissFullScreenContentCallback_m2D6AD5153EA3DF298571BC371027F4FB98FA0F03_RuntimeMethod_var, 0 },
+	{ 0x06000026, 1,  (void**)&AppOpenAdClient_AdDidRecordImpressionCallback_m89B4FA206E14A19C98C033FEB2829D3E641368B4_RuntimeMethod_var, 0 },
+	{ 0x0600005E, 10,  (void**)&BannerClient_AdViewDidReceiveAdCallback_m083343A1DDD2A57BBEC74A4A9B327CAA9BB961A4_RuntimeMethod_var, 0 },
+	{ 0x0600005F, 9,  (void**)&BannerClient_AdViewDidFailToReceiveAdWithErrorCallback_mDA713926142E84827E8B08E66334DDD7234A22E8_RuntimeMethod_var, 0 },
+	{ 0x06000060, 12,  (void**)&BannerClient_AdViewWillPresentScreenCallback_m3F78B1F9B02D9BF9753DE7B83554E197C08BC5A7_RuntimeMethod_var, 0 },
+	{ 0x06000061, 8,  (void**)&BannerClient_AdViewDidDismissScreenCallback_mCCB7D61A9E02D5C1A9A29FB616F97666CD2C8B2B_RuntimeMethod_var, 0 },
+	{ 0x06000062, 11,  (void**)&BannerClient_AdViewPaidEventCallback_m4BEF4BA9013C9ABF4438071DAA0C6171564CD8D3_RuntimeMethod_var, 0 },
+	{ 0x060000F2, 19,  (void**)&InterstitialClient_InterstitialLoadedCallback_m368B82C4CA6BA47076BD02E69EC76530E946FE1A_RuntimeMethod_var, 0 },
+	{ 0x060000F3, 18,  (void**)&InterstitialClient_InterstitialFailedToLoadCallback_m3B29A67527159C1A42D22A66EDF21BD7CCB194CE_RuntimeMethod_var, 0 },
+	{ 0x060000F4, 20,  (void**)&InterstitialClient_InterstitialPaidEventCallback_mBD55D1940819BBD364B840D4F596F5DB7B6005C7_RuntimeMethod_var, 0 },
+	{ 0x060000F5, 16,  (void**)&InterstitialClient_AdFailedToPresentFullScreenContentCallback_m9547576B41A6E0478069F9207F6BD54128D1E9F5_RuntimeMethod_var, 0 },
+	{ 0x060000F6, 17,  (void**)&InterstitialClient_AdWillPresentFullScreenContentCallback_m678899D537A912C01AF3968833FA613AB1C46036_RuntimeMethod_var, 0 },
+	{ 0x060000F7, 14,  (void**)&InterstitialClient_AdDidDismissFullScreenContentCallback_mAFA10C82DBA584626AC626C8CC1ABD27BEFD5142_RuntimeMethod_var, 0 },
+	{ 0x060000F8, 15,  (void**)&InterstitialClient_AdDidRecordImpressionCallback_m87BA8289CF579705CDCB7919AFE63C39074920EF_RuntimeMethod_var, 0 },
+	{ 0x06000129, 24,  (void**)&MobileAdsClient_AdInspectorClosedCallback_m71CCB88F3BF826E7320F016145A00A6DD70196F9_RuntimeMethod_var, 0 },
+	{ 0x0600012A, 25,  (void**)&MobileAdsClient_InitializationCompleteCallback_mE013122BE35ABC3BECCB456AF4565FA4BB7D64B9_RuntimeMethod_var, 0 },
+	{ 0x0600015D, 32,  (void**)&RewardedAdClient_RewardedAdLoadedCallback_mE0E4A96B961FF0D3C90570C56F29F2AFFF0E8221_RuntimeMethod_var, 0 },
+	{ 0x0600015E, 31,  (void**)&RewardedAdClient_RewardedAdFailedToLoadCallback_m064E25C933FD7924D1941BD78B3655524F171039_RuntimeMethod_var, 0 },
+	{ 0x0600015F, 34,  (void**)&RewardedAdClient_RewardedAdUserDidEarnRewardCallback_mC1985A1F18C6E9A8D71F8FF30744D679A037EAA2_RuntimeMethod_var, 0 },
+	{ 0x06000160, 33,  (void**)&RewardedAdClient_RewardedAdPaidEventCallback_m7710A1F9A90BD5081057D14B6A215EE3ECA5AE0B_RuntimeMethod_var, 0 },
+	{ 0x06000161, 29,  (void**)&RewardedAdClient_AdFailedToPresentFullScreenContentCallback_mAD6B76E000E53090E0F000BC01FC58F54A60DFA3_RuntimeMethod_var, 0 },
+	{ 0x06000162, 30,  (void**)&RewardedAdClient_AdWillPresentFullScreenContentCallback_m8B97AE1D2BAF75538F588A76400187764F8BE362_RuntimeMethod_var, 0 },
+	{ 0x06000163, 27,  (void**)&RewardedAdClient_AdDidDismissFullScreenContentCallback_mB64A3FE4B78BDA3362FF15DB0BD19B8674D522AD_RuntimeMethod_var, 0 },
+	{ 0x06000164, 28,  (void**)&RewardedAdClient_AdDidRecordImpressionCallback_m37FA90962C2CF8C91421C2850DFA52144D45E447_RuntimeMethod_var, 0 },
+	{ 0x060001A2, 40,  (void**)&RewardedInterstitialAdClient_RewardedInterstitialAdLoadedCallback_m3C198B805390488E7DFA1A4C32D72BAFB5559C5B_RuntimeMethod_var, 0 },
+	{ 0x060001A3, 39,  (void**)&RewardedInterstitialAdClient_RewardedInterstitialAdFailedToLoadCallback_m8D6235A7FA6B064C35D489AE061069377ECA6016_RuntimeMethod_var, 0 },
+	{ 0x060001A4, 42,  (void**)&RewardedInterstitialAdClient_RewardedInterstitialAdUserDidEarnRewardCallback_mF56FA1935C15033D0FC5BF50DC3144BDE4FD6B79_RuntimeMethod_var, 0 },
+	{ 0x060001A5, 41,  (void**)&RewardedInterstitialAdClient_RewardedInterstitialAdPaidEventCallback_m83A9819AC3247112D0ADAF0D6B40F0CC0FE9D86C_RuntimeMethod_var, 0 },
+	{ 0x060001A6, 37,  (void**)&RewardedInterstitialAdClient_AdFailedToPresentFullScreenContentCallback_m9CDEAA3B429ACA4252C4179CD3EFE80AA833B766_RuntimeMethod_var, 0 },
+	{ 0x060001A7, 38,  (void**)&RewardedInterstitialAdClient_AdWillPresentFullScreenContentCallback_mCAD4621C45FDA4DEBF4A99DBF91BF0AE52BA9E6D_RuntimeMethod_var, 0 },
+	{ 0x060001A8, 35,  (void**)&RewardedInterstitialAdClient_AdDidDismissFullScreenContentCallback_mB0351BC7A58A280BB59C01F4C0C8F9E262C93E70_RuntimeMethod_var, 0 },
+	{ 0x060001A9, 36,  (void**)&RewardedInterstitialAdClient_AdDidRecordImpressionCallback_m30A02604920E78D2255513508F90E1255DF92182_RuntimeMethod_var, 0 },
+};
+IL2CPP_EXTERN_C const Il2CppCodeGenModule g_GoogleMobileAds_iOS_CodeGenModule;
+const Il2CppCodeGenModule g_GoogleMobileAds_iOS_CodeGenModule = 
+{
+	"GoogleMobileAds.iOS.dll",
+	463,
+	s_methodPointers,
+	0,
+	NULL,
+	s_InvokerIndices,
+	37,
+	s_reversePInvokeIndices,
+	0,
+	NULL,
+	0,
+	NULL,
+	NULL,
+	NULL, // module initializer,
+	NULL,
+	NULL,
+	NULL,
+};
